@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,31 @@ namespace ZPI_Projekt_Anonimizator
         public MainWindow()
         {
             InitializeComponent();
+
+            mojaTestowaFunkcja();
+
+
+        }
+
+        public void mojaTestowaFunkcja()
+        {
+            var jpg_gen = new ZPI_Projekt_Anonimizator.Generators.JPGGenerator();
+
+            testTextBox.Text = jpg_gen.generateDocument("data");
+
+            var jpg_parser = new ZPI_Projekt_Anonimizator.Parsers.JPGParser();
+
+            var table = jpg_parser.parseDocument("path");
+
+            testTextBox.Text += "\n ";
+            foreach (DataRow r in table.Rows)
+            {
+                foreach (DataColumn c in table.Columns)
+                {
+                    testTextBox.Text += r[c];
+                    testTextBox.Text += " ";
+                }
+            }
         }
     }
 }
