@@ -49,6 +49,9 @@ namespace ZPI_Projekt_Anonimizator
                     testTextBox.Text += " ";
                 }
             }
+
+            var xml_gen = new ZPI_Projekt_Anonimizator.Generators.XMLGenerator(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/XMLtest.txt");
+            xml_gen.generateDocument("data");
         }
     }
 }

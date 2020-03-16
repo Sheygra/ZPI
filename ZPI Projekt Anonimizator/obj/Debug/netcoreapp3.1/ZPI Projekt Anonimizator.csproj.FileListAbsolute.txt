@@ -15,3 +15,20 @@ C:\Users\kzakrzew\source\repos\ZPI Projekt Anonimizator\ZPI Projekt Anonimizator
 C:\Users\kzakrzew\source\repos\ZPI Projekt Anonimizator\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.AssemblyInfo.cs
 C:\Users\kzakrzew\source\repos\ZPI Projekt Anonimizator\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.dll
 C:\Users\kzakrzew\source\repos\ZPI Projekt Anonimizator\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.pdb
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.exe
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.deps.json
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.runtimeconfig.json
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.runtimeconfig.dev.json
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.dll
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.pdb
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.csprojAssemblyReference.cache
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator_MarkupCompile.cache
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator_MarkupCompile.lref
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.g.resources
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.AssemblyInfoInputs.cache
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.AssemblyInfo.cs
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.dll
+C:\Users\Artiom\Desktop\aninimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.pdb
