@@ -13,7 +13,7 @@ namespace ZPI_Projekt_Anonimizator.Parsers
 
             table.Columns.Add("dane1", typeof(String));
             table.Columns.Add("dane2", typeof(int));
-            // itd...
+            // itd.....
 
             var row = table.NewRow();
             row["dane1"] = "DANE1";
