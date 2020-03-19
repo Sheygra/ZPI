@@ -14,8 +14,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
         public String generateDocument(String patientData)
         {
             String resource_file_path = resource_dir_path + filename;
-            String new_file_path = resource_dir_path + "new_img.jpg";
-            FileInfo originalImage = new FileInfo(resource_dir_path);
+            String new_file_path = resource_dir_path + generateNewFileName();
             
             try
             {
@@ -36,6 +35,11 @@ namespace ZPI_Projekt_Anonimizator.Generators
                         if (meta_Data != null)
                         {
                             meta_Data.Comment = "NEW COMMENT";
+                            meta_Data.ApplicationName = "INFO1";
+                            meta_Data.Copyright = "INFO3";
+                            //meta_Data.DateTaken = DateTime.Now.ToString();
+                            meta_Data.Subject = "INFO5";
+                            meta_Data.Title = "INFO6";
 
                             JpegBitmapEncoder encoder = new JpegBitmapEncoder();
                             encoder.Frames.Add(BitmapFrame.Create(bitmapFrame, bitmapFrame.Thumbnail, meta_Data, bitmapFrame.ColorContexts));
@@ -55,6 +59,14 @@ namespace ZPI_Projekt_Anonimizator.Generators
             {
                 return "EXCEPTION CAUGHT:" + e;
             }
+        }
+
+        private String generateNewFileName()
+        {
+            Random r = new Random();
+            string s = "abcdefghijklmnoprstuwxyz123456789_";
+
+            return "new_file_" + r.Next(1, 1000000) + s[r.Next(0, s.Length-1)] + ".jpg";
         }
     }
 }

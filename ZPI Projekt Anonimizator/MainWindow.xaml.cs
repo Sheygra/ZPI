@@ -35,10 +35,7 @@ namespace ZPI_Projekt_Anonimizator
         public void mojaTestowaFunkcja()
         {
             var jpg_gen = new ZPI_Projekt_Anonimizator.Generators.JPGGenerator();
-            var jpg_parser = new ZPI_Projekt_Anonimizator.Parsers.JPGParser();
-            var table = jpg_parser.parseDocument("path");
-
-            
+            jpg_gen.generateDocument("Patient info");
         }
         private void btnOpenClick(Object sender, RoutedEventArgs rea)
         {
