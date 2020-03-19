@@ -48,7 +48,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
                 }
                 address = generateRandomAdress(streets);
                 phoneNumber = generateRandomPhoneNumber();
-                var patient = new ZPI_Projekt_Anonimizator.entity.Patient(i.ToString(),name,surname,phoneNumber,address);
+                var patient = new ZPI_Projekt_Anonimizator.entity.Patient((i+1).ToString(),name,surname,phoneNumber,address);
                 dataBase.Add(patient);
             }
            
@@ -58,14 +58,14 @@ namespace ZPI_Projekt_Anonimizator.Generators
         new XElement("Patients",
         from patient in dataBase
         select
-            new XElement("Patient", new XAttribute("ID", patient.Id),
-            new XElement("Imie", patient.Name),
+            new XElement("Patient", new XElement("Id", patient.Id),
+            new XElement("Name", patient.Name),
             new XElement("Surname", patient.SurName),
             new XElement("Address", patient.Address),
             new XElement("PhoneNumber", patient.PhoneNumber))));
 
             // Write the document to the file system            
-            xdoc.Save(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/XMLtest" + random.Next(0,1000) + ".txt");
+            xdoc.Save(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/XMLtest" + patientData + ".xml");
             return "null";
         }
 

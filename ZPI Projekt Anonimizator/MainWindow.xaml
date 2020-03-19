@@ -5,10 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZPI_Projekt_Anonimizator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBox Name="testTextBox">
-            Initial text contents of the TextBox.
+        Title="MainWindow" Height="870" Width="1500">
+    <Grid Height="1000" Width="1500">
+
+        <TextBox Name="testChoseFile" Margin="145,10,1065,946" TextChanged="testTextBox_TextChanged">
+            
         </TextBox>
+
+        <TextBox Name="choseAalgorythm" Margin="0,83,1210,887">
+            Chose the aldorithm
+        </TextBox>
+        <CheckBox x:Name="firstAlgorythm" Margin="10,120,1398,864">
+            first alforythm
+        </CheckBox>
+        <CheckBox x:Name="secondAlgorythm" Margin="120,120,1278,864">
+            second alforythm
+        </CheckBox>
+        <TextBox Name="testTextBox1" Margin="5,505,760,143">
+            TestBox for XML testing
+        </TextBox>
+        <TextBox Name="testTextBox2" Margin="0,192,765,500">
+            TestBox for word testing
+        </TextBox>
+        <TextBox Name="testTextBox3" Margin="740,192,0,500" TextChanged="testTextBox3_TextChanged">
+            TestBox for Diconm testing
+        </TextBox>
+        <TextBox Name="testTextBox4" Margin="740,505,10,143" TextChanged="testTextBox4_TextChanged">
+            TestBox for JPEG testing
+        </TextBox>
+        <Button Content="Chose file" HorizontalAlignment="Left" Margin="16,10,0,0" VerticalAlignment="Top" Height="44" Width="86" Click="btnOpenClick"/>
     </Grid>
+
 </Window>
