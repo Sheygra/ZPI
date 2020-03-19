@@ -51,6 +51,7 @@ namespace ZPI_Projekt_Anonimizator
             if(dialogOK == true)
             {
                 filePath = fileDialog.FileName;
+
             }
             try
             {
