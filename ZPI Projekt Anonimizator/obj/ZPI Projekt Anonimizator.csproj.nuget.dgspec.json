@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Artiom\\Desktop\\aninimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {}
+    "C:\\Users\\kzakrzew\\source\\repos\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Artiom\\Desktop\\aninimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
+    "C:\\Users\\kzakrzew\\source\\repos\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Artiom\\Desktop\\aninimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
+        "projectUniqueName": "C:\\Users\\kzakrzew\\source\\repos\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
         "projectName": "ZPI Projekt Anonimizator",
-        "projectPath": "C:\\Users\\Artiom\\Desktop\\aninimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
-        "packagesPath": "C:\\Users\\Artiom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Artiom\\Desktop\\aninimizator\\ZPI\\ZPI Projekt Anonimizator\\obj\\",
+        "projectPath": "C:\\Users\\kzakrzew\\source\\repos\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
+        "packagesPath": "C:\\Users\\kzakrzew\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kzakrzew\\source\\repos\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Artiom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kzakrzew\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
