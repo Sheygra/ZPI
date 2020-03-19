@@ -28,7 +28,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
             List<string> surnames = fileToArray(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/Surnames.txt");
             List<string> streets = fileToArray(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/Streets.txt");
 
-            for (int i = 0; i< 10000; i++)
+            for (int i = 0; i< 1000; i++)
             {
                 
                 string name;
@@ -58,7 +58,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
         new XElement("Patients",
         from patient in dataBase
         select
-            new XElement("Patient", new XAttribute("ID", patient.Id),
+            new XElement("Patient", new XElement("ID", patient.Id),
             new XElement("Imie", patient.Name),
             new XElement("Surname", patient.SurName),
             new XElement("Address", patient.Address),
