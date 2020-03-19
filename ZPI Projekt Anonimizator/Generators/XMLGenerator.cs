@@ -65,7 +65,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
             new XElement("PhoneNumber", patient.PhoneNumber))));
 
             // Write the document to the file system            
-            xdoc.Save(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/XMLtest" + patientData + ".txt");
+            xdoc.Save(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/XMLtest" + patientData + ".xml");
             return "null";
         }
 

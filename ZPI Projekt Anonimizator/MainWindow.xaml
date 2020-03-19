@@ -8,10 +8,10 @@
         Title="MainWindow" Height="870" Width="1500">
     <Grid Height="1000" Width="1500">
 
-        <TextBox Name="testTextBox" Margin="0,10,1210,946">
-            Chose the file
+        <TextBox Name="testChoseFile" Margin="145,10,1065,946" TextChanged="testTextBox_TextChanged">
+            
         </TextBox>
-        
+
         <TextBox Name="choseAalgorythm" Margin="0,83,1210,887">
             Chose the aldorithm
         </TextBox>
@@ -33,6 +33,7 @@
         <TextBox Name="testTextBox4" Margin="740,505,10,143" TextChanged="testTextBox4_TextChanged">
             TestBox for JPEG testing
         </TextBox>
+        <Button Content="Chose file" HorizontalAlignment="Left" Margin="16,10,0,0" VerticalAlignment="Top" Height="44" Width="86" Click="btnOpenClick"/>
     </Grid>
 
 </Window>
