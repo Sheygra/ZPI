@@ -42,15 +42,15 @@ namespace ZPI_Projekt_Anonimizator
 
             
 
-            /*var xml_gen = new ZPI_Projekt_Anonimizator.Generators.XMLGenerator(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/XMLtest.txt");
-            xml_gen.generateDocument("data");*/
+            var xml_gen = new ZPI_Projekt_Anonimizator.Generators.XMLGenerator(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/XMLtest.txt");
+            xml_gen.generateDocument("001");
 
             var xml_reader = new ZPI_Projekt_Anonimizator.Parsers.XMLParser();
-            DataTable dt = xml_reader.parseDocument(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/XMLtest352.txt");
+            DataTable dt = xml_reader.parseDocument(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/XMLtest001.txt");
             string s = "";
             foreach (DataRow dr in dt.Rows)
             {
-                s = s + dr["id"].ToString() + ".  " + dr["Imie"].ToString() + "  " +
+                s = s + dr["id"].ToString() + ".  " + dr["Name"].ToString() + "  " +
                     dr["Surname"].ToString() + " |  " + dr["Address"].ToString() + "  (" +  dr["PhoneNumber"].ToString() + ")\n";
 
             }

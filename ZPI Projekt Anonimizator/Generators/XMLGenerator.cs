@@ -28,7 +28,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
             List<string> surnames = fileToArray(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/Surnames.txt");
             List<string> streets = fileToArray(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/Streets.txt");
 
-            for (int i = 0; i< 1000; i++)
+            for (int i = 0; i< 10000; i++)
             {
                 
                 string name;
@@ -48,7 +48,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
                 }
                 address = generateRandomAdress(streets);
                 phoneNumber = generateRandomPhoneNumber();
-                var patient = new ZPI_Projekt_Anonimizator.entity.Patient(i.ToString(),name,surname,phoneNumber,address);
+                var patient = new ZPI_Projekt_Anonimizator.entity.Patient((i+1).ToString(),name,surname,phoneNumber,address);
                 dataBase.Add(patient);
             }
            
@@ -58,14 +58,14 @@ namespace ZPI_Projekt_Anonimizator.Generators
         new XElement("Patients",
         from patient in dataBase
         select
-            new XElement("Patient", new XElement("ID", patient.Id),
-            new XElement("Imie", patient.Name),
+            new XElement("Patient", new XElement("Id", patient.Id),
+            new XElement("Name", patient.Name),
             new XElement("Surname", patient.SurName),
             new XElement("Address", patient.Address),
             new XElement("PhoneNumber", patient.PhoneNumber))));
 
             // Write the document to the file system            
-            xdoc.Save(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/XMLtest" + random.Next(0,1000) + ".txt");
+            xdoc.Save(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/XMLtest" + patientData + ".txt");
             return "null";
         }
 

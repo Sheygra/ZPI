@@ -15,7 +15,6 @@ namespace ZPI_Projekt_Anonimizator.Parsers
             {
                 objDataTable = new DataTable();
                 ds = new DataSet();
-                String s  ="";
                 ds.ReadXml(path);
                 objDataTable = ds.Tables[0];
                 
