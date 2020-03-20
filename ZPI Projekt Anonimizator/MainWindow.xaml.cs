@@ -36,6 +36,15 @@ namespace ZPI_Projekt_Anonimizator
         {
             var jpg_gen = new ZPI_Projekt_Anonimizator.Generators.JPGGenerator();
             jpg_gen.generateDocument("Patient info");
+
+            testTextBox4.Text = "";
+            var jpg_parser = new ZPI_Projekt_Anonimizator.Parsers.JPGParser();
+            var table = jpg_parser.parseDocument(@"C:\Users\kzakrzew\source\repos\ZPI Projekt Anonimizator\ZPI Projekt Anonimizator\resource");
+            foreach (DataRow row in table.Rows)
+            {
+                testTextBox4.Text += row["Comment"].ToString() + " | " + row["AplicationName"] + " | \n";
+            }
+
         }
         private void btnOpenClick(Object sender, RoutedEventArgs rea)
         {
