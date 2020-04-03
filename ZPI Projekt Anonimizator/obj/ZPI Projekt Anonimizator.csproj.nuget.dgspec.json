@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kzakrzew\\source\\repos\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {}
+    "C:\\Users\\ASUS UX410U\\source\\repos\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kzakrzew\\source\\repos\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
+    "C:\\Users\\ASUS UX410U\\source\\repos\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kzakrzew\\source\\repos\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS UX410U\\source\\repos\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
         "projectName": "ZPI Projekt Anonimizator",
-        "projectPath": "C:\\Users\\kzakrzew\\source\\repos\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
-        "packagesPath": "C:\\Users\\kzakrzew\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kzakrzew\\source\\repos\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator\\obj\\",
+        "projectPath": "C:\\Users\\ASUS UX410U\\source\\repos\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
+        "packagesPath": "C:\\Users\\ASUS UX410U\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS UX410U\\source\\repos\\ZPI\\ZPI Projekt Anonimizator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kzakrzew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS UX410U\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,6 +37,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "fo-dicom": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
