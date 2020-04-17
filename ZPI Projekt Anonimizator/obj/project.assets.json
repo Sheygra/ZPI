@@ -5829,19 +5829,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS UX410U\\.nuget\\packages\\": {}
+    "C:\\Users\\Michal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS UX410U\\source\\repos\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
+      "projectUniqueName": "C:\\Users\\Michal\\Source\\Repos\\ZPI2\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
       "projectName": "ZPI Projekt Anonimizator",
-      "projectPath": "C:\\Users\\ASUS UX410U\\source\\repos\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
-      "packagesPath": "C:\\Users\\ASUS UX410U\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS UX410U\\source\\repos\\ZPI\\ZPI Projekt Anonimizator\\obj\\",
+      "projectPath": "C:\\Users\\Michal\\Source\\Repos\\ZPI2\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
+      "packagesPath": "C:\\Users\\Michal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Michal\\Source\\Repos\\ZPI2\\ZPI Projekt Anonimizator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ASUS UX410U\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Michal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

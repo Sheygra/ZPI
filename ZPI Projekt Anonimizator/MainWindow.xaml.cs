@@ -29,6 +29,7 @@ namespace ZPI_Projekt_Anonimizator
 
             mojaTestowaFunkcja();
 
+            mojaBardziejTestowaFunkcja();
 
         }
 
@@ -45,6 +46,23 @@ namespace ZPI_Projekt_Anonimizator
                 testTextBox4.Text += row["Comment"].ToString() + " | " + row["AplicationName"] + " | \n";
             }
 
+        }
+        public void mojaBardziejTestowaFunkcja()
+        {
+            var docx_parser = new ZPI_Projekt_Anonimizator.Parsers.DOCXParser();
+            DataTable dt = docx_parser.parseDocument(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\historia_choroby_wzor_1.docx");
+            string s = "";
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                s = s + dr["Id"].ToString() + ".  " + dr["Name"].ToString() + "  " +
+                    dr["Surname"].ToString() + " | " + dr["PESEL"].ToString() + "  " + " | " + dr["Address"].ToString() + "  (" + dr["PhoneNumber"].ToString() + ")\n";
+            }
+            testTextBox2.Text = s;
+
+            var docx_generator = new ZPI_Projekt_Anonimizator.Generators.DOCXGenerator();
+
+            docx_generator.generateDocument("");
         }
         private void btnOpenClick(Object sender, RoutedEventArgs rea)
         {
