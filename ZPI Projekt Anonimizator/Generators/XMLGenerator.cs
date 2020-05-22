@@ -26,12 +26,12 @@ namespace ZPI_Projekt_Anonimizator.Generators
             Random random = new Random();
 
             
-            List<string> maleNames = fileToArray(data_generate_files + "MaleNames.txt");
+            /*List<string> maleNames = fileToArray(data_generate_files + "MaleNames.txt");
             List<string> femaleNames = fileToArray(data_generate_files + "FemaleNames.txt");
             List<string> surnames = fileToArray(data_generate_files + "Surnames.txt");
             List<string> streets = fileToArray(data_generate_files + "Streets.txt");
             List<string> cities = fileToArray(data_generate_files + "Cities.txt");
-            List<string> professions = fileToArray(data_generate_files + "Professions.txt");
+            List<string> professions = fileToArray(data_generate_files + "Professions.txt");*/
 
             for (int i = 0; i< 10000; i++)
             {
@@ -83,7 +83,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
             new XElement("PhoneNumber", patient.PhoneNumber))));
 
             // Write the document to the file system            
-            xdoc.Save(resource_dir_path_XML + "XML" + dataBase.Count  + patientData +  ".xml");
+            xdoc.Save(resource_dir_path_XML + "XMLtest" + dataBase.Count  + patientData +  ".xml");
             return "null";
         }
 
