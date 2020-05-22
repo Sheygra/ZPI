@@ -27,7 +27,8 @@ namespace ZPI_Projekt_Anonimizator
         public MainWindow()
         {
             InitializeComponent();
-
+            var xml_gen = new ZPI_Projekt_Anonimizator.Generators.XMLGenerator();
+            xml_gen.generateDocument("001");
             //mojaTestowaFunkcja();
 
             //mojaBardziejTestowaFunkcja();
@@ -84,8 +85,6 @@ namespace ZPI_Projekt_Anonimizator
             }
             try
             {
-                /*var xml_gen = new ZPI_Projekt_Anonimizator.Generators.XMLGenerator(@"C:/Users/Artiom/Desktop/aninimizator/ZPI/ZPI Projekt Anonimizator/Generators/Files/XMLtest.txt");
-                xml_gen.generateDocument("001");*/
                 var xml_reader = new ZPI_Projekt_Anonimizator.Parsers.XMLParser();
 
                 DataTable dt = xml_reader.parseDocument(filePath);
