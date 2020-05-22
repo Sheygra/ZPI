@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
+using ZPI_Projekt_Anonimizator.Generators;
 
 namespace ZPI_Projekt_Anonimizator
 {
@@ -27,10 +28,12 @@ namespace ZPI_Projekt_Anonimizator
         {
             InitializeComponent();
 
-            mojaTestowaFunkcja();
+            //mojaTestowaFunkcja();
 
-            mojaBardziejTestowaFunkcja();
+            //mojaBardziejTestowaFunkcja();
 
+            //var dicom_gen = new DICOMGenerator();
+            //dicom_gen.generateDocument("");
         }
 
         public void mojaTestowaFunkcja()

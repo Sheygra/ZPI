@@ -8,13 +8,13 @@ namespace ZPI_Projekt_Anonimizator.Generators
 {
     class DICOMGenerator : DocumentGenerator
     {
-        private String resource_dir_path = @"C:\Users\ASUS UX410U\source\repos\ZPI\ZPI Projekt Anonimizator\resource";
+        private String resource_dir_path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\";
         private Random gen = new Random();
         private DateTime date_start = new DateTime(1920, 1, 1);
 
         public String generateDocument(String patientData)
         {
-            String resource_file_path = resource_dir_path + @"\MRBRAIN.DCM";
+            String resource_file_path = resource_dir_path + "MRBRAIN.DCM";
             String new_file_path = resource_dir_path + generateNewFileName();
 
             try
