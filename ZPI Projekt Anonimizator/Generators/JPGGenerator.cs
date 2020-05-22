@@ -8,7 +8,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
 {
     class JPGGenerator : DocumentGenerator
     {
-        private String resource_dir_path = @"C:\Users\kzakrzew\source\repos\ZPI Projekt Anonimizator\ZPI Projekt Anonimizator\resource\";
+        private String resource_dir_path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\";
         private String filename = "lungs.jpg";
         
         public String generateDocument(String patientData)
