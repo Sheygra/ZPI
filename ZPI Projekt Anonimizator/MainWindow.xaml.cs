@@ -40,7 +40,9 @@ namespace ZPI_Projekt_Anonimizator
 
             testTextBox4.Text = "";
             var jpg_parser = new ZPI_Projekt_Anonimizator.Parsers.JPGParser();
-            var table = jpg_parser.parseDocument(@"C:\Users\kzakrzew\source\repos\ZPI Projekt Anonimizator\ZPI Projekt Anonimizator\resource");
+            var path_jpgs = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\";
+            var table = jpg_parser.parseDocument(path_jpgs);
+            testTextBox4.Text += path_jpgs + " \n";
             foreach (DataRow row in table.Rows)
             {
                 testTextBox4.Text += row["Comment"].ToString() + " | " + row["AplicationName"] + " | \n";
