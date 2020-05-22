@@ -92,7 +92,7 @@ namespace ZPI_Projekt_Anonimizator
                 foreach (DataRow dr in dt.Rows)
                 {
                     s = s + dr["id"].ToString() + ".  " + dr["Name"].ToString() + "  " +
-                        dr["Surname"].ToString() + " |  " + dr["Address"].ToString() + "  (" + dr["PhoneNumber"].ToString() + ")\n";
+                        dr["Surname"].ToString() + dr["Profession"].ToString() + " |  " + dr["City"].ToString() + dr["Address"].ToString() + "  (" + dr["PhoneNumber"].ToString() + ")\n";
                 }
                 testTextBox1.Text = s;
             }
