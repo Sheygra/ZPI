@@ -6,13 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 using System.Xml.Linq;
+using ZPI_Projekt_Anonimizator.entity;
 
 namespace ZPI_Projekt_Anonimizator.Generators
 {
     class DOCXGenerator : DocumentGenerator
     {
 
-        public string generateDocument(string patientData)
+        public string generateDocument(Patient patientData)
         {
             Random random = new Random();
             List<string> maleNames = fileToArray(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\Generators\Files\MaleNames.txt");

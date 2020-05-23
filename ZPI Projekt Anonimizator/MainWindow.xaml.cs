@@ -1,20 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Microsoft.Win32;
+using ZPI_Projekt_Anonimizator.entity;
 using ZPI_Projekt_Anonimizator.Generators;
 
 namespace ZPI_Projekt_Anonimizator
@@ -28,7 +18,8 @@ namespace ZPI_Projekt_Anonimizator
         {
             InitializeComponent();
             var xml_gen = new ZPI_Projekt_Anonimizator.Generators.XMLGenerator();
-            xml_gen.generateDocument("001");
+            Patient p = new Patient("001", "FFF", "XXX", "654728111", "Kwiatkowa 5", "K", "XD", "Wrocław", "00.00.2002");
+            xml_gen.generateDocument(p);
             //mojaTestowaFunkcja();
 
             //mojaBardziejTestowaFunkcja();
@@ -40,7 +31,8 @@ namespace ZPI_Projekt_Anonimizator
         public void mojaTestowaFunkcja()
         {
             var jpg_gen = new ZPI_Projekt_Anonimizator.Generators.JPGGenerator();
-            jpg_gen.generateDocument("Patient info");
+            Patient p = new Patient("18922", "FFF", "XXX", "654728111", "Kwiatkowa 5", "K", "XD", "Wrocław", "00.00.2002");
+            jpg_gen.generateDocument(p);
 
             testTextBox4.Text = "";
             var jpg_parser = new ZPI_Projekt_Anonimizator.Parsers.JPGParser();
@@ -55,6 +47,7 @@ namespace ZPI_Projekt_Anonimizator
         }
         public void mojaBardziejTestowaFunkcja()
         {
+            Patient p = new Patient("18922", "FFF", "XXX", "654728111", "Kwiatkowa 5", "K", "XD", "Wrocław", "00.00.2002");
             var docx_parser = new ZPI_Projekt_Anonimizator.Parsers.DOCXParser();
             DataTable dt = docx_parser.parseDocument(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\historia_choroby_wzor_1.docx");
             string s = "";
@@ -68,7 +61,7 @@ namespace ZPI_Projekt_Anonimizator
 
             var docx_generator = new ZPI_Projekt_Anonimizator.Generators.DOCXGenerator();
 
-            docx_generator.generateDocument("");
+            docx_generator.generateDocument(p);
         }
         private void btnOpenClick(Object sender, RoutedEventArgs rea)
         {

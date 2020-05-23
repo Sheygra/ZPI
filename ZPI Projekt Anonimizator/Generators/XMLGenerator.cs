@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 using System.Xml.Linq;
+using ZPI_Projekt_Anonimizator.entity;
 
 namespace ZPI_Projekt_Anonimizator.Generators
 {
@@ -21,7 +22,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
             dataBase = new List<ZPI_Projekt_Anonimizator.entity.Patient>();
         }
 
-        public string generateDocument(string patientData)
+        public string generateDocument(Patient patientData)
         {
             Random random = new Random();
 

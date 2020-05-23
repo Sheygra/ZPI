@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
-using System.Text;
 using System.Windows.Media.Imaging;
+using ZPI_Projekt_Anonimizator.entity;
 
 namespace ZPI_Projekt_Anonimizator.Generators
 {
@@ -11,7 +12,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
         private String resource_dir_path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\";
         private String filename = "lungs.jpg";
         
-        public String generateDocument(String patientData)
+        public String generateDocument(Patient patientData)
         {
             String resource_file_path = resource_dir_path + filename;
             String new_file_path = resource_dir_path + generateNewFileName();
@@ -34,12 +35,13 @@ namespace ZPI_Projekt_Anonimizator.Generators
 
                         if (meta_Data != null)
                         {
-                            meta_Data.Comment = "NEW COMMENT";
-                            meta_Data.ApplicationName = "INFO1";
-                            meta_Data.Copyright = "INFO3";
-                            //meta_Data.DateTaken = DateTime.Now.ToString();
-                            meta_Data.Subject = "INFO5";
-                            meta_Data.Title = "INFO6";
+                            meta_Data.Comment = "date of birth: " + patientData.DateOfBirth;
+                            meta_Data.DateTaken = DateTime.Now.ToString();
+                            meta_Data.Subject = "Patient " + patientData.Name + " " + patientData.SurName;
+                            meta_Data.Title = "Document patientID: " + patientData.Id;
+                            List<String> l = new List<string>{ patientData.Gender, patientData.Profession, patientData.City };
+                            ReadOnlyCollection<String> keywords = new ReadOnlyCollection<String>(l);
+                            meta_Data.Keywords = keywords;
 
                             JpegBitmapEncoder encoder = new JpegBitmapEncoder();
                             encoder.Frames.Add(BitmapFrame.Create(bitmapFrame, bitmapFrame.Thumbnail, meta_Data, bitmapFrame.ColorContexts));
@@ -50,7 +52,6 @@ namespace ZPI_Projekt_Anonimizator.Generators
                             }
                         }
                     }
-                    
                     return new_file_path;
                 }
                 else return "RESOURSE FILE DOESNT EXIST";
@@ -65,7 +66,6 @@ namespace ZPI_Projekt_Anonimizator.Generators
         {
             Random r = new Random();
             string s = "abcdefghijklmnoprstuwxyz123456789_";
-
             return "new_file_" + r.Next(1, 1000000) + s[r.Next(0, s.Length-1)] + ".jpg";
         }
     }

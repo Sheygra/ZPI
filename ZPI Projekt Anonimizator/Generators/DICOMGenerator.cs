@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using Dicom;
+using ZPI_Projekt_Anonimizator.entity;
 
 namespace ZPI_Projekt_Anonimizator.Generators
 {
@@ -12,7 +13,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
         private Random gen = new Random();
         private DateTime date_start = new DateTime(1920, 1, 1);
 
-        public String generateDocument(String patientData)
+        public String generateDocument(Patient patientData)
         {
             String resource_file_path = resource_dir_path + "MRBRAIN.DCM";
             String new_file_path = resource_dir_path + generateNewFileName();
