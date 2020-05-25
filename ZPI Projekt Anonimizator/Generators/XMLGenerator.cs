@@ -9,7 +9,7 @@ using ZPI_Projekt_Anonimizator.entity;
 
 namespace ZPI_Projekt_Anonimizator.Generators
 {
-    class XMLGenerator : DocumentGenerator
+    class XMLGenerator
     {
 
         List<ZPI_Projekt_Anonimizator.entity.Patient> dataBase;
@@ -22,10 +22,12 @@ namespace ZPI_Projekt_Anonimizator.Generators
             dataBase = new List<ZPI_Projekt_Anonimizator.entity.Patient>();
         }
 
-        public string generateDocument(Patient patientData)
+        public string generateDocument(String xmlDocName)
         {
             Random random = new Random();
-
+            DocumentGenerator JPG_gen = new JPGGenerator();
+            DocumentGenerator DICOM_gen = new DICOMGenerator();
+            DocumentGenerator DOCX_gen = new DOCXGenerator();
             
             List<string> maleNames = fileToArray(data_generate_files + "MaleNames.txt");
             List<string> femaleNames = fileToArray(data_generate_files + "FemaleNames.txt");
@@ -33,6 +35,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
             List<string> streets = fileToArray(data_generate_files + "Streets.txt");
             List<string> cities = fileToArray(data_generate_files + "Cities.txt");
             List<string> professions = fileToArray(data_generate_files + "Professions.txt");
+            List<string> pathes = new List<string>();
 
             for (int i = 0; i< 10000; i++)
             {
@@ -45,6 +48,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
                 string city;
                 string profession;
                 string dateOfBirth;
+                
                 if(random.Next(0,100) > 50)
                 {
                     name = choseRandomValueFromArray(maleNames);
@@ -63,8 +67,21 @@ namespace ZPI_Projekt_Anonimizator.Generators
                 city = generateRandomCity(cities);
                 profession = generateRandomProfession(professions);
                 dateOfBirth = generateRandomDateOfBirth();
+
                 var patient = new ZPI_Projekt_Anonimizator.entity.Patient((i+1).ToString(),name,surname,phoneNumber,address, gender, profession, city, dateOfBirth);
                 dataBase.Add(patient);
+            }
+
+            foreach (Patient p in dataBase)
+            {
+                if( Int32.Parse(p.Id) < 101)
+                {
+                    string s = JPG_gen.generateDocument(p) + " | " + DICOM_gen.generateDocument(p) + " | " + DOCX_gen.generateDocument(p);
+                    pathes.Add(s);
+                } else
+                {
+                    pathes.Add("");
+                }
             }
            
             XDocument xdoc = new XDocument(
@@ -81,10 +98,16 @@ namespace ZPI_Projekt_Anonimizator.Generators
             new XElement("Profession", patient.Profession),
             new XElement("City", patient.City),
             new XElement("Address", patient.Address),
-            new XElement("PhoneNumber", patient.PhoneNumber))));
+            new XElement("PhoneNumber", patient.PhoneNumber),
+            new XElement("PathForFiles", pathes[Int32.Parse(patient.Id)-1])
+
+            )
+            
+     
+            ));
 
             // Write the document to the file system            
-            xdoc.Save(resource_dir_path_XML + "XMLtest" + dataBase.Count  + patientData +  ".xml");
+            xdoc.Save(resource_dir_path_XML + xmlDocName +  ".xml");
             return "null";
         }
 

@@ -68,9 +68,7 @@ namespace ZPI_Projekt_Anonimizator
                     try
                     {
                         var xml_gen = new ZPI_Projekt_Anonimizator.Generators.XMLGenerator();
-                        Patient p = new Patient("001", "FFF", "XXX", "654728111", "Kwiatkowa 5", "K", "XD", "Wrocław", "00.00.2002");
-
-                        xml_gen.generateDocument(p); //generate XML with given parameters
+                        xml_gen.generateDocument(filename); //generate XML with given parameters
 
                         OutputFileNameInput.Text = "";
                         PatientNumberInput.Text = "";

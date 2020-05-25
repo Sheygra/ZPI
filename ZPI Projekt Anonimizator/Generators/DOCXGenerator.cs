@@ -91,7 +91,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
 
             Directory.Delete(projectDirectory + @"\temporary", true);
 
-            return "null";
+            return "nowa sciezka";
         }
 
         public List<string> fileToArray(String filePath)

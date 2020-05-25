@@ -15,8 +15,9 @@ namespace ZPI_Projekt_Anonimizator.entity
         private string profession;
         private string city;
         private string dateOfBirth;
-
-        public Patient(string id, string name, string surName, string phoneNumber, string address, string gender, string profession, string city, string dateOfBirth)
+       
+        public Patient(string id, string name, string surName, string phoneNumber, string address, string gender, string profession, string city, 
+            string dateOfBirth)
         {
             this.Id = id;
             this.Name = name;
@@ -40,6 +41,7 @@ namespace ZPI_Projekt_Anonimizator.entity
         public string Profession { get => profession; set => profession = value; }
         public string City { get => city; set => city = value; }
         public string DateOfBirth { get => dateOfBirth; set => dateOfBirth = value; }
+        
 
 
     }
