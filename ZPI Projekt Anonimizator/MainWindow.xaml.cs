@@ -135,88 +135,101 @@ namespace ZPI_Projekt_Anonimizator
             ((Storyboard)FindResource("animate")).Begin(Prompt);
         }
 
-        /* public void mojaTestowaFunkcja()
+        public void mojaTestowaFunkcja()
          {
-             var jpg_gen = new ZPI_Projekt_Anonimizator.Generators.JPGGenerator();
-             Patient p = new Patient("18922", "FFF", "XXX", "654728111", "Kwiatkowa 5", "K", "XD", "Wrocław", "00.00.2002");
-             jpg_gen.generateDocument(p);
+            try
+            {
+                var jpg_gen = new ZPI_Projekt_Anonimizator.Generators.JPGGenerator();
+                Patient p = new Patient("18922", "FFF", "XXX", "654728111", "Kwiatkowa 5", "K", "XD", "Wrocław", "00.00.2002");
+                var path = jpg_gen.generateDocument(p);
+                
 
-             testTextBox4.Text = "";
-             var jpg_parser = new ZPI_Projekt_Anonimizator.Parsers.JPGParser();
-             var path_jpgs = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\";
-             var table = jpg_parser.parseDocument(path_jpgs);
-             testTextBox4.Text += path_jpgs + " \n";
-             foreach (DataRow row in table.Rows)
-             {
-                 testTextBox4.Text += row["Comment"].ToString() + " | " + row["AplicationName"] + " | \n";
-             }
+                var jpg_parser = new ZPI_Projekt_Anonimizator.Parsers.JPGParser();
+                var table = jpg_parser.parseDocument(path);
+                if (table == null) promptUser("NULL");
+                else
+                {
+                    var values = table.Rows[0].ItemArray;
+                    TextLine0.Text = table.Columns[0].ColumnName + ": " + values[0];
+                    TextLine1.Text = table.Columns[1].ColumnName + ": " + values[1];
+                    TextLine2.Text = table.Columns[2].ColumnName + ": " + values[2];
+                    TextLine3.Text = table.Columns[3].ColumnName + ": " + values[3];
+                    TextLine4.Text = table.Columns[4].ColumnName + ": " + values[4];
+                    TextLine5.Text = "PATH: " + path;
+                }
+            }
+            catch (Exception ex)
+            {
+                promptUser(ex.ToString());
+            }
 
-         }
-         public void mojaBardziejTestowaFunkcja()
-         {
-             Patient p = new Patient("18922", "FFF", "XXX", "654728111", "Kwiatkowa 5", "K", "XD", "Wrocław", "00.00.2002");
-             var docx_parser = new ZPI_Projekt_Anonimizator.Parsers.DOCXParser();
-             DataTable dt = docx_parser.parseDocument(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\historia_choroby_wzor_1.docx");
-             string s = "";
+        }
+        /*
+        public void mojaBardziejTestowaFunkcja()
+        {
+            Patient p = new Patient("18922", "FFF", "XXX", "654728111", "Kwiatkowa 5", "K", "XD", "Wrocław", "00.00.2002");
+            var docx_parser = new ZPI_Projekt_Anonimizator.Parsers.DOCXParser();
+            DataTable dt = docx_parser.parseDocument(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\historia_choroby_wzor_1.docx");
+            string s = "";
 
-             foreach (DataRow dr in dt.Rows)
-             {
-                 s = s + dr["Id"].ToString() + ".  " + dr["Name"].ToString() + "  " +
-                     dr["Surname"].ToString() + " | " + dr["PESEL"].ToString() + "  " + " | " + dr["Address"].ToString() + "  (" + dr["PhoneNumber"].ToString() + ")\n";
-             }
-             testTextBox2.Text = s;
+            foreach (DataRow dr in dt.Rows)
+            {
+                s = s + dr["Id"].ToString() + ".  " + dr["Name"].ToString() + "  " +
+                    dr["Surname"].ToString() + " | " + dr["PESEL"].ToString() + "  " + " | " + dr["Address"].ToString() + "  (" + dr["PhoneNumber"].ToString() + ")\n";
+            }
+            testTextBox2.Text = s;
 
-             var docx_generator = new ZPI_Projekt_Anonimizator.Generators.DOCXGenerator();
+            var docx_generator = new ZPI_Projekt_Anonimizator.Generators.DOCXGenerator();
 
-             docx_generator.generateDocument(p);
-         }
-         private void btnOpenClick(Object sender, RoutedEventArgs rea)
-         {
-             string filePath ="";
-             OpenFileDialog fileDialog = new OpenFileDialog();
-             fileDialog.Multiselect = false;
-             fileDialog.Filter = "XML file|*.xml";
-             fileDialog.DefaultExt = ".xml";
-             Nullable<bool> dialogOK = fileDialog.ShowDialog();
-             if(dialogOK == true)
-             {
-                 filePath = fileDialog.FileName;
+            docx_generator.generateDocument(p);
+        }
+        private void btnOpenClick(Object sender, RoutedEventArgs rea)
+        {
+            string filePath ="";
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Multiselect = false;
+            fileDialog.Filter = "XML file|*.xml";
+            fileDialog.DefaultExt = ".xml";
+            Nullable<bool> dialogOK = fileDialog.ShowDialog();
+            if(dialogOK == true)
+            {
+                filePath = fileDialog.FileName;
 
-             }
-             try
-             {
-                 var xml_reader = new ZPI_Projekt_Anonimizator.Parsers.XMLParser();
+            }
+            try
+            {
+                var xml_reader = new ZPI_Projekt_Anonimizator.Parsers.XMLParser();
 
-                 DataTable dt = xml_reader.parseDocument(filePath);
-                 string s = "";
-                 foreach (DataRow dr in dt.Rows)
-                 {
-                     s = s + dr["id"].ToString() + ".  " + dr["Name"].ToString() + "  " +
-                         dr["Surname"].ToString() + dr["Profession"].ToString() + " |  " + dr["City"].ToString() + dr["Address"].ToString() + "  (" + dr["PhoneNumber"].ToString() + ")\n";
-                 }
-                 testTextBox1.Text = s;
-             }
-             catch (Exception ex)
-             {
-                 testTextBox1.Text = "Blędna sciezka!!\n" + ex;
-             }
+                DataTable dt = xml_reader.parseDocument(filePath);
+                string s = "";
+                foreach (DataRow dr in dt.Rows)
+                {
+                    s = s + dr["id"].ToString() + ".  " + dr["Name"].ToString() + "  " +
+                        dr["Surname"].ToString() + dr["Profession"].ToString() + " |  " + dr["City"].ToString() + dr["Address"].ToString() + "  (" + dr["PhoneNumber"].ToString() + ")\n";
+                }
+                testTextBox1.Text = s;
+            }
+            catch (Exception ex)
+            {
+                testTextBox1.Text = "Blędna sciezka!!\n" + ex;
+            }
 
-         }
+        }
 
-         private void testTextBox3_TextChanged(object sender, TextChangedEventArgs e)
-         {
+        private void testTextBox3_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
-         }
+        }
 
-         private void testTextBox4_TextChanged(object sender, TextChangedEventArgs e)
-         {
+        private void testTextBox4_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
-         }
+        }
 
-         private void testTextBox_TextChanged(object sender, TextChangedEventArgs e)
-         {
+        private void testTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
-         }
-     }*/
+        }
+    }*/
     }
 }

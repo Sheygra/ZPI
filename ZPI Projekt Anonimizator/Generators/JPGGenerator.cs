@@ -35,10 +35,10 @@ namespace ZPI_Projekt_Anonimizator.Generators
 
                         if (meta_Data != null)
                         {
-                            meta_Data.Comment = "date of birth: " + patientData.DateOfBirth;
-                            meta_Data.DateTaken = DateTime.Now.ToString();
-                            meta_Data.Subject = "Patient " + patientData.Name + " " + patientData.SurName;
-                            meta_Data.Title = "Document patientID: " + patientData.Id;
+                            meta_Data.Comment = "Born " + patientData.DateOfBirth;
+                            meta_Data.DateTaken = "2020/05/23";
+                            meta_Data.Subject = "Patient name - " + patientData.Name + " " + patientData.SurName;
+                            meta_Data.Title = "The document for PatientID " + patientData.Id;
                             List<String> l = new List<string>{ patientData.Gender, patientData.Profession, patientData.City };
                             ReadOnlyCollection<String> keywords = new ReadOnlyCollection<String>(l);
                             meta_Data.Keywords = keywords;
