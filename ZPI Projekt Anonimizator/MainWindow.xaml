@@ -133,9 +133,9 @@
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
-                                            <Button Name="BtnJPG" Click="Button_Click" Margin="3,3,3,3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Foreground="Black" Background="{StaticResource primaryCustomOrange}" BorderBrush="Transparent">JPG</Button>
-                                            <Button Name="BtnDICOM" Click="Button_Click" Margin="3,3,3,3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Foreground="Black" Background="{StaticResource primaryCustomOrange}" BorderBrush="Transparent">DICOM</Button>
-                                            <Button Name="BtnDOCX"  Click="Button_Click" Margin="3,3,3,3"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Foreground="Black" Background="{StaticResource primaryCustomOrange}" BorderBrush="Transparent">DOCX</Button>
+                                            <Button Name="BtnJPG" Click="MetadataOpen_Button_Click" Margin="3,3,3,3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Foreground="Black" Background="{StaticResource primaryCustomOrange}" BorderBrush="Transparent">JPG</Button>
+                                            <Button Name="BtnDICOM" Click="MetadataOpen_Button_Click" Margin="3,3,3,3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Foreground="Black" Background="{StaticResource primaryCustomOrange}" BorderBrush="Transparent">DICOM</Button>
+                                            <Button Name="BtnDOCX"  Click="MetadataOpen_Button_Click" Margin="3,3,3,3"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Foreground="Black" Background="{StaticResource primaryCustomOrange}" BorderBrush="Transparent">DOCX</Button>
                                         </StackPanel>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>

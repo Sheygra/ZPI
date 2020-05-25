@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
@@ -16,7 +17,6 @@ namespace ZPI_Projekt_Anonimizator
         public MainWindow()
         {
             InitializeComponent();
-            showDICOMMetadata("");
         }
 
         private void bindXMLBeforeGridData()
@@ -69,7 +69,7 @@ namespace ZPI_Projekt_Anonimizator
                     try
                     {
                         var xml_gen = new ZPI_Projekt_Anonimizator.Generators.XMLGenerator();
-                        xml_gen.generateDocument(filename, patientNumber); //generate XML with given parameters
+                        xml_gen.generateDocument(filename, patientNumber);
 
                         OutputFileNameInput.Text = "";
                         PatientNumberInput.Text = "";
@@ -186,7 +186,25 @@ namespace ZPI_Projekt_Anonimizator
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void showDOCX(String path)
+        {
+            try
+            {
+                var docxGenerator = new DOCXGenerator();
+                path = docxGenerator.generateDocument(new Patient("10", "ANNA", "KOWALSKA", "", "", "K", "prof", "krakow", "10/10/2010"));
+                
+                Process wordProcess = new Process();
+                wordProcess.StartInfo.FileName = path;
+                wordProcess.StartInfo.UseShellExecute = true;
+                wordProcess.Start();
+            }
+            catch (Exception ex)
+            {
+                promptUser("An error ocurred, unable to open the docx file.");
+            }
+        }
+
+        private void MetadataOpen_Button_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -198,9 +216,9 @@ namespace ZPI_Projekt_Anonimizator
                 switch (button.Name)
                 {
                     case "BtnJPG": showJPGMetadata(links[0]); break;
-                    case "BtnDICOM": showDICOMMetadata(""); break;
+                    case "BtnDICOM": showDICOMMetadata(links[1]); break;
                     case "BtnDOCX": break;
-                    default: break; //promptUser("An error ocurred, no file can be opened."); break;
+                    default: promptUser("An error ocurred, no file can be opened."); break;
                 }
             }
             catch (Exception ex)
