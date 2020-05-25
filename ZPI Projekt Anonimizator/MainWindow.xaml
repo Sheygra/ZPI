@@ -87,12 +87,12 @@
                                     <Label FontWeight="Bold" FontSize="13" Margin="5,4,0,0">Choose algorithm</Label>
                                     <Rectangle Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Fill="{DynamicResource MaterialDesignPaper}" Margin="10,28,52,10"></Rectangle>
                                     <StackPanel Margin="10,40,10,10" >
-                                        <RadioButton Margin="0,5"  Foreground="White">
+                                        <RadioButton Name="RButton1KAnoAlgorithm" Margin="0,5"  Foreground="White">
                                             <WrapPanel>
                                                 <TextBlock Text="k-anonimization" />
                                             </WrapPanel>
                                         </RadioButton>
-                                        <RadioButton Margin="0,5" Foreground="White">
+                                        <RadioButton Name="RButton1KAlfaAnoAlgorithm" Margin="0,5" Foreground="White">
                                             <WrapPanel>
                                                 <TextBlock Text="(k, alfa)-anonimization"/>
                                             </WrapPanel>
@@ -100,7 +100,7 @@
                                     </StackPanel>
                                 </Grid>
                                 <Grid Grid.Row="3">
-                                    <Button Content="Run algorithm" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0,10,0" Height="44" Background="{StaticResource primaryCustomOrange}" BorderThickness="0" FontFamily="{DynamicResource MaterialDesignFont}"/>
+                                    <Button Name="RunAlgButton" Content="Run algorithm" Click="RunAlgorithm_Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0,10,0" Height="44" Background="{StaticResource primaryCustomOrange}" BorderThickness="0" FontFamily="{DynamicResource MaterialDesignFont}"/>
                                 </Grid>
                             </Grid>
                         </Grid>
@@ -138,7 +138,7 @@
             </Grid>
             <Grid Name="Prompt" Opacity="0.0" Height="100" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20,20,20,40">
                 <Rectangle Fill="{StaticResource primaryCustomOrange}"  RadiusX="30" RadiusY="30"></Rectangle>
-                <TextBlock Name="InfoBoxPrompt" FontSize="12" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2,2,2,2" TextWrapping="Wrap"></TextBlock>
+                <TextBlock Name="InfoBoxPrompt" FontSize="12" FontWeight="Bold" TextAlignment="Center" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2,2,2,2" TextWrapping="Wrap"></TextBlock>
             </Grid>
 
             

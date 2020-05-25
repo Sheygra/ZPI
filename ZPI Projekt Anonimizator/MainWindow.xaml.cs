@@ -12,6 +12,7 @@ namespace ZPI_Projekt_Anonimizator
 {
     public partial class MainWindow : Window
     {
+        DataTable patientDataGenerated = null;
         public MainWindow()
         {
             InitializeComponent();
@@ -35,17 +36,14 @@ namespace ZPI_Projekt_Anonimizator
                 BrowseTextBlockPath.Visibility = Visibility.Visible;
                 var xml_reader = new ZPI_Projekt_Anonimizator.Parsers.XMLParser();
 
-                var xml_before = xml_reader.parseDocument(filePath);
+                patientDataGenerated = xml_reader.parseDocument(filePath);
 
-                xml_before = xml_reader.parseDocument(filePath);
-
-                XMLbeforeDataGrid.DataContext = xml_before.DefaultView;
+                XMLbeforeDataGrid.DataContext = patientDataGenerated.DefaultView;
                 XMLbeforeDataGrid.Visibility = Visibility.Visible;
             }
             catch (Exception ex)
             {
-                InfoBoxPrompt.Text = "Unable to retrieve patient data. Please try again.";
-                ((Storyboard)FindResource("animate")).Begin(Prompt);
+                promptUser("Unable to retrieve patient data. Please try again.");
             }
         }
 
@@ -58,21 +56,67 @@ namespace ZPI_Projekt_Anonimizator
         {
             var filename = OutputFileNameInput.Text;
             int patientNumber = 0;
-            try
+            if (filename == null || filename.Length == 0)
             {
-                patientNumber = Int32.Parse(PatientNumberInput.Text);
-                var xml_gen = new ZPI_Projekt_Anonimizator.Generators.XMLGenerator();
-                Patient p = new Patient("001", "FFF", "XXX", "654728111", "Kwiatkowa 5", "K", "XD", "Wrocław", "00.00.2002");
-                xml_gen.generateDocument(p); //generate XML with given parameters
+                promptUser("File name is incorrect. Name has to be at least one character.");
+            }
+            else
+            {
+                Int32.TryParse(PatientNumberInput.Text, out patientNumber);
+                if (patientNumber != 0)
+                {
+                    try
+                    {
+                        var xml_gen = new ZPI_Projekt_Anonimizator.Generators.XMLGenerator();
+                        Patient p = new Patient("001", "FFF", "XXX", "654728111", "Kwiatkowa 5", "K", "XD", "Wrocław", "00.00.2002");
 
-                OutputFileNameInput.Text = "";
-                PatientNumberInput.Text = "";
+                        xml_gen.generateDocument(p); //generate XML with given parameters
+
+                        OutputFileNameInput.Text = "";
+                        PatientNumberInput.Text = "";
+
+                        promptUser("Successfully generated patient data file: " + filename + ".xml");
+                    }
+                    catch (Exception ex)
+                    {
+                        promptUser("Unable to generate patient data. An error occured.");
+                    }
+                }
+                else
+                {
+                    promptUser("Patient number is incorrect. Enter an integer.");
+                }
             }
-            catch(Exception ex)
+        }
+
+        private void RunAlgorithm_Button_Click(object sender, RoutedEventArgs e)
+        {
+            bool k_anonimization = RButton1KAnoAlgorithm.IsChecked == null ? false : RButton1KAnoAlgorithm.IsChecked == true ? true : false;
+            bool k_alfa_anonimization = RButton1KAlfaAnoAlgorithm.IsChecked == null ? false : RButton1KAlfaAnoAlgorithm.IsChecked == true ? true : false;
+
+            if(patientDataGenerated == null || patientDataGenerated.Rows.Count == 0)
             {
-                InfoBoxPrompt.Text = "Patient number format is incorrect.\nInput must be an integer.";
-                ((Storyboard)FindResource("animate")).Begin(Prompt);
+                promptUser("Patient data is empty.");
             }
+            else if (k_anonimization)
+            {
+                promptUser("K-anonimization algoritm.");
+            }
+            else if(k_alfa_anonimization)
+            {
+                promptUser("K-alfa-anonimization algoritm.");
+            }
+            else
+            {
+                promptUser("One of algorithms must be selected.");
+            }
+            
+        }
+        
+        private void promptUser(String msg)
+        {
+            InfoBoxPrompt.Text = msg;
+            ((Storyboard)FindResource("animate")).Begin(Prompt);
         }
 
         /* public void mojaTestowaFunkcja()
