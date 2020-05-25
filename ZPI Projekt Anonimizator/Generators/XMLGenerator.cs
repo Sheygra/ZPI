@@ -18,7 +18,6 @@ namespace ZPI_Projekt_Anonimizator.Generators
         private String resource_dir_path_XML = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\XML_files\";
         public XMLGenerator()
         {
-            
             dataBase = new List<ZPI_Projekt_Anonimizator.entity.Patient>();
         }
 

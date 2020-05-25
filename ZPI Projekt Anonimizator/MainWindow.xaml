@@ -160,7 +160,28 @@
                 <TextBlock Name="InfoBoxPrompt" FontSize="12" FontWeight="Bold" TextAlignment="Center" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2,2,2,2" TextWrapping="Wrap"></TextBlock>
             </Grid>
 
-            
+            <Grid Name="MetadataDocumentView" Visibility="Hidden" Opacity="0.0" Height="400" Width="800" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20,20,20,20">
+                <Rectangle VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="1,1,1,1"  Fill="{DynamicResource MaterialDesignPaper}" Stroke="{StaticResource primaryCustomOrange}"></Rectangle>
+                <Label Content="Document details" FontSize="16" FontWeight="Bold" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,10,10"></Label>
+                <Rectangle VerticalAlignment="Top" HorizontalAlignment="Left" Width="140" Height="1" Fill="White" Margin="12,38,0,0"></Rectangle>
+
+                <DataGrid Name="DocumentDetailsGrid" ItemsSource="{Binding}" FontSize="10" Foreground="White" AutoGenerateColumns="True" Visibility="Hidden" Width="300" VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="10,50,10,10">
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="FontSize" Value="10"></Setter>
+                            <Setter Property="Foreground" Value="White"></Setter>
+                            <Setter Property="Background" Value="Transparent"></Setter>
+                            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
+                    <DataGrid.Columns>
+
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Image HorizontalAlignment="Right" VerticalAlignment="Stretch" Width="500">
+                    
+                </Image>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
