@@ -128,6 +128,18 @@
                             <DataGridTextColumn Header="Profession" Binding="{Binding Path=Profession}" FontSize="10"></DataGridTextColumn>
                             <DataGridTextColumn Header="Address" Binding="{Binding Path=Address}" FontSize="10"></DataGridTextColumn>
                             <DataGridTextColumn Header="Phone" Binding="{Binding Path=PhoneNumber}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="PathForFiles" Binding="{Binding Path=PathForFiles}" FontSize="10" Visibility="Hidden"></DataGridTextColumn>
+                            <DataGridTemplateColumn Header="Documents">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button Name="BtnJPG" Click="Button_Click" Margin="3,3,3,3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Foreground="Black" Background="{StaticResource primaryCustomOrange}" BorderBrush="Transparent">JPG</Button>
+                                            <Button Name="BtnDICOM" Click="Button_Click" Margin="3,3,3,3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Foreground="Black" Background="{StaticResource primaryCustomOrange}" BorderBrush="Transparent">DICOM</Button>
+                                            <Button Name="BtnDOCX"  Click="Button_Click" Margin="3,3,3,3"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Foreground="Black" Background="{StaticResource primaryCustomOrange}" BorderBrush="Transparent">DOCX</Button>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
                         </DataGrid.Columns>
                     </DataGrid>
                 </Grid>
@@ -193,6 +205,7 @@
                         <TextBlock x:Name="TextLine5" FontSize="12" FontWeight="Bold" Margin="5" TextWrapping="Wrap"></TextBlock>
                     </Grid>
                 </Grid>
+                <Button Click="MetadataClose_Button_Click"  Foreground="Black" BorderBrush="Transparent" Background="{StaticResource primaryCustomOrange}" Width="60"  VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="30,10,10,10">X</Button>
             </Grid>
         </Grid>
     </Grid>
