@@ -22,10 +22,10 @@ namespace ZPI_Projekt_Anonimizator.Generators
             {
                 var source_file = DicomFile.Open(resource_file_path);
                 var output_file = source_file.Clone();
-                output_file.Dataset.AddOrUpdate(DicomTag.PatientName, "Artur");
-                output_file.Dataset.AddOrUpdate(DicomTag.PatientBirthDate, RandomDay().ToString());
-                output_file.Dataset.AddOrUpdate(DicomTag.PatientSex, RandomSex());
-                output_file.Dataset.AddOrUpdate(DicomTag.PatientWeight, gen.Next(200));
+                output_file.Dataset.AddOrUpdate(DicomTag.PatientName, patientData.Name + " " + patientData.SurName);
+                output_file.Dataset.AddOrUpdate(DicomTag.PatientBirthDate, patientData.DateOfBirth);
+                output_file.Dataset.AddOrUpdate(DicomTag.PatientSex, patientData.Gender);
+                output_file.Dataset.AddOrUpdate(DicomTag.PatientWeight, gen.Next(150) +"");
                 output_file.Save(new_file_path);
 
                 return new_file_path;

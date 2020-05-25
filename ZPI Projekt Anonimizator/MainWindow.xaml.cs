@@ -16,6 +16,7 @@ namespace ZPI_Projekt_Anonimizator
         public MainWindow()
         {
             InitializeComponent();
+            showDICOMMetadata("");
         }
 
         private void bindXMLBeforeGridData()
@@ -139,7 +140,6 @@ namespace ZPI_Projekt_Anonimizator
          {
             try
             {
-                promptUser("show JPG called");
                 var jpg_parser = new ZPI_Projekt_Anonimizator.Parsers.JPGParser();
                 var table = jpg_parser.parseDocument(path);
                 if (table == null) promptUser("An error ocurred, unable to open the jpg file." + path);
@@ -159,7 +159,31 @@ namespace ZPI_Projekt_Anonimizator
             {
                 promptUser("An error ocurred, unable to open the jpg file." + path);
             }
-
+        }
+        public void showDICOMMetadata(String path)
+        {
+            try
+            {
+                var dicomGenerator = new DICOMGenerator();
+                path = dicomGenerator.generateDocument(new Patient("10", "ANNA", "KOWALSKA", "", "", "K", "prof", "krakow", "10/10/2010"));
+                var dicom_parser = new ZPI_Projekt_Anonimizator.Parsers.DICOMParser();
+                var table = dicom_parser.parseDocument(path);
+                if (table == null) promptUser("An error ocurred, unable to open the jpg file." + path);
+                else
+                {
+                    var values = table.Rows[0].ItemArray;
+                    TextLine0.Text = table.Columns[0].ColumnName + ": " + values[0];
+                    TextLine1.Text = table.Columns[1].ColumnName + ": " + values[1];
+                    TextLine2.Text = table.Columns[2].ColumnName + ": " + values[2];
+                    TextLine3.Text = table.Columns[3].ColumnName + ": " + values[3];
+                    TextLine5.Text = "PATH: " + path;
+                    MetadataDocumentView.Visibility = Visibility.Visible;
+                }
+            }
+            catch (Exception ex)
+            {
+                promptUser("An error ocurred, unable to open the jpg file." + path);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -171,15 +195,15 @@ namespace ZPI_Projekt_Anonimizator
                 var row = context.Row;
                 var links = row["PathForFiles"].ToString().Split(";");
                 //promptUser(links[0]);
-                switch(button.Name)
+                switch (button.Name)
                 {
                     case "BtnJPG": showJPGMetadata(links[0]); break;
-                    case "BtnDICOM": break;
+                    case "BtnDICOM": showDICOMMetadata(""); break;
                     case "BtnDOCX": break;
-                    default:break; //promptUser("An error ocurred, no file can be opened."); break;
+                    default: break; //promptUser("An error ocurred, no file can be opened."); break;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 promptUser("An error ocured while trying to read the file.");
             }
@@ -194,72 +218,5 @@ namespace ZPI_Projekt_Anonimizator
             TextLine5.Text = "";
             MetadataDocumentView.Visibility = Visibility.Hidden;
         }
-        /*
-public void mojaBardziejTestowaFunkcja()
-{
-Patient p = new Patient("18922", "FFF", "XXX", "654728111", "Kwiatkowa 5", "K", "XD", "Wrocław", "00.00.2002");
-var docx_parser = new ZPI_Projekt_Anonimizator.Parsers.DOCXParser();
-DataTable dt = docx_parser.parseDocument(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\historia_choroby_wzor_1.docx");
-string s = "";
-
-foreach (DataRow dr in dt.Rows)
-{
-s = s + dr["Id"].ToString() + ".  " + dr["Name"].ToString() + "  " +
-dr["Surname"].ToString() + " | " + dr["PESEL"].ToString() + "  " + " | " + dr["Address"].ToString() + "  (" + dr["PhoneNumber"].ToString() + ")\n";
-}
-testTextBox2.Text = s;
-
-var docx_generator = new ZPI_Projekt_Anonimizator.Generators.DOCXGenerator();
-
-docx_generator.generateDocument(p);
-}
-private void btnOpenClick(Object sender, RoutedEventArgs rea)
-{
-string filePath ="";
-OpenFileDialog fileDialog = new OpenFileDialog();
-fileDialog.Multiselect = false;
-fileDialog.Filter = "XML file|*.xml";
-fileDialog.DefaultExt = ".xml";
-Nullable<bool> dialogOK = fileDialog.ShowDialog();
-if(dialogOK == true)
-{
-filePath = fileDialog.FileName;
-
-}
-try
-{
-var xml_reader = new ZPI_Projekt_Anonimizator.Parsers.XMLParser();
-
-DataTable dt = xml_reader.parseDocument(filePath);
-string s = "";
-foreach (DataRow dr in dt.Rows)
-{
-s = s + dr["id"].ToString() + ".  " + dr["Name"].ToString() + "  " +
-dr["Surname"].ToString() + dr["Profession"].ToString() + " |  " + dr["City"].ToString() + dr["Address"].ToString() + "  (" + dr["PhoneNumber"].ToString() + ")\n";
-}
-testTextBox1.Text = s;
-}
-catch (Exception ex)
-{
-testTextBox1.Text = "Blędna sciezka!!\n" + ex;
-}
-
-}
-
-private void testTextBox3_TextChanged(object sender, TextChangedEventArgs e)
-{
-
-}
-
-private void testTextBox4_TextChanged(object sender, TextChangedEventArgs e)
-{
-
-}
-
-private void testTextBox_TextChanged(object sender, TextChangedEventArgs e)
-{
-
-}
-}*/
     }
 }
