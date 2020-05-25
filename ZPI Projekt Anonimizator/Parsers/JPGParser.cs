@@ -16,6 +16,7 @@ namespace ZPI_Projekt_Anonimizator.Parsers
             table.Columns.Add("Subject", typeof(String));
             table.Columns.Add("Keywords", typeof(String));
             table.Columns.Add("Comment", typeof(String));
+            table.Columns.Add("DateTaken", typeof(String));
      
             try
             {
@@ -40,6 +41,7 @@ namespace ZPI_Projekt_Anonimizator.Parsers
                     }
                     row["Keywords"] = meta_Data.Keywords == null ? "" : s;
                     row["Comment"] = meta_Data.Comment == null ? "" : meta_Data.Comment;
+                    row["DateTaken"] = meta_Data.DateTaken == null ? "" : meta_Data.DateTaken;
                     table.Rows.Add(row);
                 }
                 return table;
