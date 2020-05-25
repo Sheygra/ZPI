@@ -14,8 +14,12 @@
             <SolidColorBrush x:Key="secondaryCustomOrange" Color="#ffe97d" />
             <SolidColorBrush x:Key="primaryCustomLightGrey" Color="#eceff1" />
             <SolidColorBrush x:Key="secondaryBackgroundGrey" Color="#616161" />
-            
-            
+            <Storyboard x:Key="animate">
+                <DoubleAnimation BeginTime="0:0:0.0" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:1.0"/>
+                <DoubleAnimation BeginTime="0:0:4.0" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.5"/>
+            </Storyboard>
+
         </ResourceDictionary>
     </Application.Resources>
+    
 </Application>

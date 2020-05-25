@@ -22,7 +22,7 @@
         </Grid>
         <Grid Grid.Row="1">
             <Grid Height="600" Background="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                
+
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*" Name="MenuColumn"></ColumnDefinition>
                     <ColumnDefinition Width="4*" Name="XMLbefore"></ColumnDefinition>
@@ -40,7 +40,7 @@
                             <RowDefinition Height="4.45*"></RowDefinition>
                             <RowDefinition Height="5.55*"></RowDefinition>
                         </Grid.RowDefinitions>
-                        
+
                         <Grid Grid.Row="0" Name="TopMenu">
                             <Grid Name="TopMenuRowsGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,15,10,15">
                                 <Grid.RowDefinitions>
@@ -60,10 +60,11 @@
                                     <TextBox  Name="OutputFileNameInput" MaxLength="50" Text="" Width="200px" Height="40px" VerticalAlignment="Top" Margin="0,80,0,0" MaxLines="1" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" />
                                 </Grid>
                                 <Grid Grid.Row="2">
-                                    <Button Content="Generate" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0,10,0" Height="44" Background="{StaticResource primaryCustomOrange}" BorderThickness="0" FontFamily="{DynamicResource MaterialDesignFont}"/>
+                                    <Button Content="Generate" Click="Generate_Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0,10,0" Height="44" Background="{StaticResource primaryCustomOrange}" BorderThickness="0" FontFamily="{DynamicResource MaterialDesignFont}"/>
                                 </Grid>
                             </Grid>
-                        </Grid><!--TOP MENU END></-->
+                        </Grid>
+                        <!--TOP MENU END></-->
                         <Grid Grid.Row="1" Name="BottomMenu">
                             <Grid Name="BottomMenuRowsGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,15,10,15">
                                 <Grid.RowDefinitions>
@@ -135,8 +136,12 @@
                     <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White">Podgląd zanonimizowanego xml</TextBlock>
                 </Grid>
             </Grid>
+            <Grid Name="Prompt" Opacity="0.0" Height="100" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20,20,20,40">
+                <Rectangle Fill="{StaticResource primaryCustomOrange}"  RadiusX="30" RadiusY="30"></Rectangle>
+                <TextBlock Name="InfoBoxPrompt" FontSize="12" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2,2,2,2" TextWrapping="Wrap"></TextBlock>
+            </Grid>
+
             
-        
-    </Grid>
+        </Grid>
     </Grid>
 </Window>
