@@ -142,3 +142,32 @@ C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netc
 C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.csproj.CopyComplete
 C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.dll
 C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.pdb
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.exe
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.deps.json
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.runtimeconfig.json
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.runtimeconfig.dev.json
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.dll
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.pdb
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\csharls.dll
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\CSJ2K.dll
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\Dicom.Core.dll
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\BitMiracle.LibJpeg.NetCore.dll
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\sni.dll
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\sni.dll
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard1.3\System.Data.SqlClient.dll
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Data.SqlClient.dll
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.csprojAssemblyReference.cache
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator_MarkupCompile.cache
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator_MarkupCompile.lref
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.g.resources
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.AssemblyInfoInputs.cache
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.AssemblyInfo.cs
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.csproj.CopyComplete
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.dll
+C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.pdb

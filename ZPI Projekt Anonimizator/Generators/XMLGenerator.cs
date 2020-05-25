@@ -21,7 +21,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
             dataBase = new List<ZPI_Projekt_Anonimizator.entity.Patient>();
         }
 
-        public string generateDocument(String xmlDocName)
+        public string generateDocument(String xmlDocName, int patientNumber)
         {
             Random random = new Random();
             DocumentGenerator JPG_gen = new JPGGenerator();
@@ -36,7 +36,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
             List<string> professions = fileToArray(data_generate_files + "Professions.txt");
             List<string> pathes = new List<string>();
 
-            for (int i = 0; i< 10000; i++)
+            for (int i = 0; i< patientNumber; i++)
             {
                 
                 string name;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {}
+    "C:\\Users\\Artiom\\Desktop\\anonim\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
+    "C:\\Users\\Artiom\\Desktop\\anonim\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
+        "projectUniqueName": "C:\\Users\\Artiom\\Desktop\\anonim\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
         "projectName": "ZPI Projekt Anonimizator",
-        "projectPath": "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
+        "projectPath": "C:\\Users\\Artiom\\Desktop\\anonim\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
         "packagesPath": "C:\\Users\\Artiom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\obj\\",
+        "outputPath": "C:\\Users\\Artiom\\Desktop\\anonim\\ZPI\\ZPI Projekt Anonimizator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
