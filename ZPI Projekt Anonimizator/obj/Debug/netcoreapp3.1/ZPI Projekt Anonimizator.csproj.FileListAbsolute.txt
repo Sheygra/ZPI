@@ -112,3 +112,4 @@ C:\Users\Artiom\Desktop\anon\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.
 C:\Users\Artiom\Desktop\anon\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.csproj.CopyComplete
 C:\Users\Artiom\Desktop\anon\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.dll
 C:\Users\Artiom\Desktop\anon\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.pdb
+C:\Users\kzakrzew\source\repos\ZPI Projekt Anonimizator\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.csprojAssemblyReference.cache
