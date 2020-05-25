@@ -79,8 +79,8 @@
                                 <Grid Grid.Row="1">
                                     <Label FontWeight="Bold" VerticalAlignment="Top" FontSize="13" Margin="5,4,0,0">Choose patient data file</Label>
                                     <Rectangle Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Fill="{DynamicResource MaterialDesignPaper}" Margin="10,28,52,10"></Rectangle>
-                                    <Button Content="Browse" HorizontalAlignment="Left" FontSize="11" VerticalAlignment="Bottom" Margin="10,0,140,10" Height="20" Background="{StaticResource primaryCustomOrange}" BorderThickness="0" FontFamily="{DynamicResource MaterialDesignFont}"/>
-                                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="20"  Margin="90,0,10,8" FontSize="12">C:/path...</TextBlock>
+                                    <Button Content="Browse" Click="Browse_Button_Click" HorizontalAlignment="Left" FontSize="11" VerticalAlignment="Bottom" Margin="10,0,140,10" Height="20" Background="{StaticResource primaryCustomOrange}" BorderThickness="0" FontFamily="{DynamicResource MaterialDesignFont}"/>
+                                    <TextBlock Name="BrowseTextBlockPath" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="20"  Margin="90,0,10,8" FontSize="10" Visibility="Hidden"></TextBlock>
                                 </Grid>
                                 <Grid Grid.Row="2">
                                     <Label FontWeight="Bold" FontSize="13" Margin="5,4,0,0">Choose algorithm</Label>
@@ -109,7 +109,7 @@
 
                 <Grid Grid.Column="1" VerticalAlignment="Stretch">
                     <Rectangle Stroke="{StaticResource primaryCustomOrange}" Margin="1"></Rectangle>
-                    <DataGrid Name="XMLbeforeDataGrid" ItemsSource="{Binding}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" AutoGenerateColumns="False"  Margin="10,10,10,10">
+                    <DataGrid Name="XMLbeforeDataGrid" ItemsSource="{Binding}" Visibility="Hidden" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" AutoGenerateColumns="False"  Margin="10,10,10,10">
                         <DataGrid.ColumnHeaderStyle>
                             <Style TargetType="DataGridColumnHeader">
                                 <Setter Property="FontSize" Value="10"></Setter>
