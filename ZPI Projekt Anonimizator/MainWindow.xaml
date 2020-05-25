@@ -5,35 +5,138 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZPI_Projekt_Anonimizator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="870" Width="1500">
-    <Grid Height="1000" Width="1500">
+        Background= "{DynamicResource MaterialDesignPaper}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Title="MainWindow" Height="700" Width="1215">
 
-        <TextBox Name="testChoseFile" Margin="145,10,1065,946" TextChanged="testTextBox_TextChanged">
+    <Grid VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.9*" Name="Toolbar"></RowDefinition>
+            <RowDefinition Height="9.1*" Name="Body"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Rectangle Height="30px" VerticalAlignment="Top" Fill="{StaticResource primaryCustomOrange}"></Rectangle>
+            <Rectangle Height="50px" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="50px" Fill="{StaticResource primaryCustomOrange}"></Rectangle>
+            <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch" RadiusX="20" RadiusY="50" Fill="{StaticResource primaryCustomOrange}"></Rectangle>
+            <Label Name="AppBar" Content="Document anonimization" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="40,0,0,0" FontSize="25px" Foreground="Black" FontWeight="Bold" FontFamily="{DynamicResource MaterialDesignFont}" Style="{DynamicResource MaterialDesignLabel}"></Label>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid Height="600" Background="{DynamicResource MaterialDesignPaper}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" Name="MenuColumn"></ColumnDefinition>
+                    <ColumnDefinition Width="4*" Name="XMLbefore"></ColumnDefinition>
+                    <ColumnDefinition Width="4*" Name="XMLafter"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+                <Grid Grid.Column="0" Name="Menu" VerticalAlignment="Stretch" HorizontalAlignment="Left">
+                    <Rectangle Width="240px" VerticalAlignment="Stretch" HorizontalAlignment="Left" Fill="{DynamicResource MaterialDesignPaper}"></Rectangle>
+                    <Rectangle Width="220px" Height="250px" RadiusX="10" RadiusY="10" Fill="{StaticResource secondaryBackgroundGrey}" VerticalAlignment="Top" Margin="10px"></Rectangle>
+                    <Rectangle Width="220px" Height="320px" RadiusX="10" RadiusY="10" Fill="{StaticResource secondaryBackgroundGrey}" VerticalAlignment="Bottom" Margin="10px"></Rectangle>
+
+                    <Grid Name="MenuGrid" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="4.45*"></RowDefinition>
+                            <RowDefinition Height="5.55*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        
+                        <Grid Grid.Row="0" Name="TopMenu">
+                            <Grid Name="TopMenuRowsGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,15,10,15">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="2*" Name="Title"></RowDefinition>
+                                    <RowDefinition Height="6*" Name="Input"></RowDefinition>
+                                    <RowDefinition Height="2*" Name="GenerateButton"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Label Name="TitleGenerate" Content="Generate patient data" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5,0,0" FontSize="18px" Foreground="White" FontWeight="Bold" FontFamily="{DynamicResource MaterialDesignFont}"></Label>
+                                    <Rectangle Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Fill="White" Margin="10,35,10,0"></Rectangle>
+                                </Grid>
+                                <Grid Grid.Row="1">
+                                    <Label Name="PatientNumberInputTextBoxLabel" Content="Patient Number" VerticalAlignment="Top" FontSize="10px" FontWeight="Bold" Margin="5,0,0,0"></Label>
+                                    <TextBox  Name="PatientNumberInput" MaxLength="50" Text="" Width="200px" Height="40px" VerticalAlignment="Top" Margin="0,20,0,0"  MaxLines="1"  Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" />
+
+                                    <Label Name="OutputFileNameInputTextBoxLabel" Content="Output File Name" VerticalAlignment="Top" FontSize="10px" FontWeight="Bold" Margin="5,59,0,0"></Label>
+                                    <TextBox  Name="OutputFileNameInput" MaxLength="50" Text="" Width="200px" Height="40px" VerticalAlignment="Top" Margin="0,80,0,0" MaxLines="1" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" />
+                                </Grid>
+                                <Grid Grid.Row="2">
+                                    <Button Content="Generate" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0,10,0" Height="44" Background="{StaticResource primaryCustomOrange}" BorderThickness="0" FontFamily="{DynamicResource MaterialDesignFont}"/>
+                                </Grid>
+                            </Grid>
+                        </Grid><!--TOP MENU END></-->
+                        <Grid Grid.Row="1" Name="BottomMenu">
+                            <Grid Name="BottomMenuRowsGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,15,10,15">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1.5*" Name="TitleRow"></RowDefinition>
+                                    <RowDefinition Height="2.5*" Name="ChooseFileRow"></RowDefinition>
+                                    <RowDefinition Height="4*" Name="AlgorithmTypeSelection"></RowDefinition>
+                                    <RowDefinition Height="2*" Name="RunAlgorithmRow"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+                                    <Label Name="AlgorthmLabel" Content="Run algorithm" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,5,0,0" FontSize="18px" Foreground="White" FontWeight="Bold" FontFamily="{DynamicResource MaterialDesignFont}"></Label>
+                                    <Rectangle Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Fill="White" Margin="10,35,10,0"></Rectangle>
+                                </Grid>
+                                <Grid Grid.Row="1">
+                                    <Label FontWeight="Bold" VerticalAlignment="Top" FontSize="13" Margin="5,4,0,0">Choose patient data file</Label>
+                                    <Rectangle Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Fill="{DynamicResource MaterialDesignPaper}" Margin="10,28,52,10"></Rectangle>
+                                    <Button Content="Browse" HorizontalAlignment="Left" FontSize="11" VerticalAlignment="Bottom" Margin="10,0,140,10" Height="20" Background="{StaticResource primaryCustomOrange}" BorderThickness="0" FontFamily="{DynamicResource MaterialDesignFont}"/>
+                                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="20"  Margin="90,0,10,8" FontSize="12">C:/path...</TextBlock>
+                                </Grid>
+                                <Grid Grid.Row="2">
+                                    <Label FontWeight="Bold" FontSize="13" Margin="5,4,0,0">Choose algorithm</Label>
+                                    <Rectangle Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Fill="{DynamicResource MaterialDesignPaper}" Margin="10,28,52,10"></Rectangle>
+                                    <StackPanel Margin="10,40,10,10" >
+                                        <RadioButton Margin="0,5"  Foreground="White">
+                                            <WrapPanel>
+                                                <TextBlock Text="k-anonimization" />
+                                            </WrapPanel>
+                                        </RadioButton>
+                                        <RadioButton Margin="0,5" Foreground="White">
+                                            <WrapPanel>
+                                                <TextBlock Text="(k, alfa)-anonimization"/>
+                                            </WrapPanel>
+                                        </RadioButton>
+                                    </StackPanel>
+                                </Grid>
+                                <Grid Grid.Row="3">
+                                    <Button Content="Run algorithm" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0,10,0" Height="44" Background="{StaticResource primaryCustomOrange}" BorderThickness="0" FontFamily="{DynamicResource MaterialDesignFont}"/>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <!--MENU END></-->
+
+                <Grid Grid.Column="1" VerticalAlignment="Stretch">
+                    <Rectangle Stroke="{StaticResource primaryCustomOrange}" Margin="1"></Rectangle>
+                    <DataGrid Name="XMLbeforeDataGrid" ItemsSource="{Binding}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" AutoGenerateColumns="False"  Margin="10,10,10,10">
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="FontSize" Value="10"></Setter>
+                                <Setter Property="Foreground" Value="White"></Setter>
+                                <Setter Property="Background" Value="Transparent"></Setter>
+                                <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="PatientID" Binding="{Binding Path=Id}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Surname" Binding="{Binding Path=Surname}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Gender" Binding="{Binding Path=Gender}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Date of birth" Binding="{Binding Path=DateOfBirth}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Profession" Binding="{Binding Path=Profession}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Address" Binding="{Binding Path=Address}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Phone" Binding="{Binding Path=PhoneNumber}" FontSize="10"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+                <Grid Grid.Column="2" VerticalAlignment="Stretch">
+                    <Rectangle Stroke="{StaticResource primaryCustomOrange}" Margin="1"></Rectangle>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White">Podgląd zanonimizowanego xml</TextBlock>
+                </Grid>
+            </Grid>
             
-        </TextBox>
-
-        <TextBox Name="choseAalgorythm" Margin="0,83,1210,887">
-            Chose the aldorithm
-        </TextBox>
-        <CheckBox x:Name="firstAlgorythm" Margin="10,120,1398,864">
-            first alforythm
-        </CheckBox>
-        <CheckBox x:Name="secondAlgorythm" Margin="120,120,1278,864">
-            second alforythm
-        </CheckBox>
-        <TextBox Name="testTextBox1" Margin="5,505,760,143">
-            TestBox for XML testing
-        </TextBox>
-        <TextBox Name="testTextBox2" Margin="0,192,765,500">
-            TestBox for word testing
-        </TextBox>
-        <TextBox Name="testTextBox3" Margin="740,192,0,500" TextChanged="testTextBox3_TextChanged">
-            TestBox for Diconm testing
-        </TextBox>
-        <TextBox Name="testTextBox4" Margin="740,505,10,143" TextChanged="testTextBox4_TextChanged">
-            TestBox for JPEG testing
-        </TextBox>
-        <Button Content="Chose file" HorizontalAlignment="Left" Margin="16,10,0,0" VerticalAlignment="Top" Height="44" Width="86" Click="btnOpenClick"/>
+        
     </Grid>
-
+    </Grid>
 </Window>
