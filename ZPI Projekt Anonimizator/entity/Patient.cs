@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZPI_Projekt_Anonimizator.entity
 {
-    class Patient
+    public class Patient
     {
         private string id;
         private string name;

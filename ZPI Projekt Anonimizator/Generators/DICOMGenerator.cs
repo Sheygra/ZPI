@@ -7,7 +7,7 @@ using ZPI_Projekt_Anonimizator.entity;
 
 namespace ZPI_Projekt_Anonimizator.Generators
 {
-    class DICOMGenerator : DocumentGenerator
+    public class DICOMGenerator : DocumentGenerator
     {
         private String resource_dir_path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\";
         private Random gen = new Random();

@@ -7,7 +7,7 @@ using ZPI_Projekt_Anonimizator.entity;
 
 namespace ZPI_Projekt_Anonimizator.Generators
 {
-    class JPGGenerator : DocumentGenerator
+    public class JPGGenerator : DocumentGenerator
     {
         private String resource_dir_path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\JPG_files\";
         private String filename = "lungs.jpg";

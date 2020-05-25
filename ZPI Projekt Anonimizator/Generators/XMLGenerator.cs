@@ -9,7 +9,7 @@ using ZPI_Projekt_Anonimizator.entity;
 
 namespace ZPI_Projekt_Anonimizator.Generators
 {
-    class XMLGenerator
+    public class XMLGenerator
     {
 
         List<ZPI_Projekt_Anonimizator.entity.Patient> dataBase;

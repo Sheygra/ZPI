@@ -10,7 +10,7 @@ using ZPI_Projekt_Anonimizator.entity;
 
 namespace ZPI_Projekt_Anonimizator.Generators
 {
-    class DOCXGenerator : DocumentGenerator
+    public class DOCXGenerator : DocumentGenerator
     {
 
         public string generateDocument(Patient patientData)
