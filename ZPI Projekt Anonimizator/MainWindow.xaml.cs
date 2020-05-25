@@ -16,7 +16,6 @@ namespace ZPI_Projekt_Anonimizator
         public MainWindow()
         {
             InitializeComponent();
-            //mojaTestowaFunkcja();
         }
 
         private void bindXMLBeforeGridData()
@@ -145,16 +144,20 @@ namespace ZPI_Projekt_Anonimizator
                 var jpg_gen = new ZPI_Projekt_Anonimizator.Generators.JPGGenerator();
                 Patient p = new Patient("18922", "FFF", "XXX", "654728111", "Kwiatkowa 5", "K", "XD", "Wrocław", "00.00.2002");
                 var path = jpg_gen.generateDocument(p);
-                promptUser(path);
+                
 
                 var jpg_parser = new ZPI_Projekt_Anonimizator.Parsers.JPGParser();
-                var path_jpgs = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\lungs.jpg";
                 var table = jpg_parser.parseDocument(path);
                 if (table == null) promptUser("NULL");
                 else
                 {
-                    DocumentDetailsGrid.DataContext = table.DefaultView;
-                    DocumentDetailsGrid.Visibility = Visibility.Visible;
+                    var values = table.Rows[0].ItemArray;
+                    TextLine0.Text = table.Columns[0].ColumnName + ": " + values[0];
+                    TextLine1.Text = table.Columns[1].ColumnName + ": " + values[1];
+                    TextLine2.Text = table.Columns[2].ColumnName + ": " + values[2];
+                    TextLine3.Text = table.Columns[3].ColumnName + ": " + values[3];
+                    TextLine4.Text = table.Columns[4].ColumnName + ": " + values[4];
+                    TextLine5.Text = "PATH: " + path;
                 }
             }
             catch (Exception ex)
