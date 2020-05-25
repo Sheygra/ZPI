@@ -101,10 +101,28 @@ namespace ZPI_Projekt_Anonimizator
             else if (k_anonimization)
             {
                 promptUser("K-anonimization algoritm.");
+                try
+                {
+                    XMLAfterAnonimizationGrid.DataContext = patientDataGenerated.DefaultView; //tutaj wynik anonimizacji
+                    XMLAfterAnonimizationGrid.Visibility = Visibility.Visible;
+                }
+                catch(Exception ex)
+                {
+                    promptUser("Algoritm execution resulted in an error.");
+                }
             }
             else if(k_alfa_anonimization)
             {
                 promptUser("K-alfa-anonimization algoritm.");
+                try
+                {
+                    XMLAfterAnonimizationGrid.DataContext = patientDataGenerated.DefaultView; //tutaj wynik anonimizacji
+                    XMLAfterAnonimizationGrid.Visibility = Visibility.Visible;
+                }
+                catch (Exception ex)
+                {
+                    promptUser("Algoritm execution resulted in an error.");
+                }
             }
             else
             {

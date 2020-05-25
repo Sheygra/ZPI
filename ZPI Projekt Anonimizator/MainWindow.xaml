@@ -133,7 +133,26 @@
                 </Grid>
                 <Grid Grid.Column="2" VerticalAlignment="Stretch">
                     <Rectangle Stroke="{StaticResource primaryCustomOrange}" Margin="1"></Rectangle>
-                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White">Podgląd zanonimizowanego xml</TextBlock>
+                    <DataGrid Name="XMLAfterAnonimizationGrid" ItemsSource="{Binding}" Visibility="Hidden" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" AutoGenerateColumns="False"  Margin="10,10,10,10">
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="FontSize" Value="10"></Setter>
+                                <Setter Property="Foreground" Value="White"></Setter>
+                                <Setter Property="Background" Value="Transparent"></Setter>
+                                <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="PatientID" Binding="{Binding Path=Id}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Surname" Binding="{Binding Path=Surname}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Gender" Binding="{Binding Path=Gender}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Date of birth" Binding="{Binding Path=DateOfBirth}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Profession" Binding="{Binding Path=Profession}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Address" Binding="{Binding Path=Address}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Phone" Binding="{Binding Path=PhoneNumber}" FontSize="10"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
                 </Grid>
             </Grid>
             <Grid Name="Prompt" Opacity="0.0" Height="100" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20,20,20,40">
