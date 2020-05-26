@@ -30,6 +30,10 @@ namespace ZPI.NUnitTests.ParsersTests
             Assert.IsNotNull(table);
             Assert.IsNotNull(dr);
             Assert.IsTrue(s[0].ToString().Equals("1"));
+            Assert.IsTrue(s[1].ToString().Equals("Edyta"));
+            Assert.IsTrue(s[2].ToString().Equals("Wójcik"));
+            Assert.IsTrue(s[3].ToString().Equals("F"));
+            Assert.IsTrue(s[4].ToString().Equals("Monday, June 30, 2008"));
             
             
             
