@@ -22,6 +22,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
             List<string> streets = fileToArray(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\Generators\Files\Streets.txt");
             String projectDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
             Directory.CreateDirectory(projectDirectory + @"\temporary");
+            string fullPath = "";
 
             for (int i = 0; i < 1; i++)
             {
@@ -63,7 +64,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
 
                 try
                 {
-                    String path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\historia_choroby_wzor_1.docx";
+                    String path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\DOCX_files\historia_choroby_wzor_1.docx";
                     FileInfo fileInfo = new FileInfo(path);
                     String newPath = projectDirectory + @"\temporary\" + fileInfo.Name + ".zip";
                     File.Copy(path, newPath, true);
@@ -78,7 +79,8 @@ namespace ZPI_Projekt_Anonimizator.Generators
                         archive.CreateEntryFromFile(projectDirectory + @"\temporary\item1.xml", @"customXml\item1.xml");  
                     }
 
-                    File.Move(newPath, projectDirectory + @"\Generators\Files\" + id + ".docx", true);
+                    fullPath = projectDirectory + @"\resource\DOCX_files\" + id + ".docx";
+                    File.Move(newPath, fullPath, true);
 
                 }
                 catch (Exception Ex)
@@ -91,7 +93,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
 
             Directory.Delete(projectDirectory + @"\temporary", true);
 
-            return "nowa sciezka";
+            return fullPath;
         }
 
         public List<string> fileToArray(String filePath)

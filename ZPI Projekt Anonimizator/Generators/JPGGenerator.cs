@@ -62,7 +62,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
             }
         }
 
-        private String generateNewFileName()
+        public String generateNewFileName()
         {
             Random r = new Random();
             string s = "abcdefghijklmnoprstuwxyz123456789_";

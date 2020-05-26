@@ -1,0 +1,20 @@
+﻿programista
+lekarz
+pilkarz
+nauczyciel
+professor
+sprzedawca
+prawnik
+notariusz
+straznik
+zolnierz
+weterynarz
+pracownik ofisu
+ksiegowy
+barista
+kelner
+menager
+pracownik recepcji
+trener
+kierowca
+taksowkarz
