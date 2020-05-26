@@ -7,7 +7,7 @@ using System.Windows.Media.Imaging;
 
 namespace ZPI_Projekt_Anonimizator.Parsers
 {
-    class JPGParser : DocumentParser
+    public class JPGParser : DocumentParser
     {
         public DataTable parseDocument(string path)
         {

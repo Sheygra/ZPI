@@ -9,7 +9,7 @@ using System.Text;
 namespace ZPI_Projekt_Anonimizator.Parsers
 {
 
-    class DOCXParser : DocumentParser
+    public class DOCXParser : DocumentParser
     {
         public DataTable parseDocument(string path)
         {

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ZPI_Projekt_Anonimizator.Parsers
 {
-    class XMLParser : DocumentParser
+    public class XMLParser : DocumentParser
     {
         public DataTable parseDocument(string path)
         {

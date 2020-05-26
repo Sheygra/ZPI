@@ -8,13 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="resource\Новая папка\**" />
-    <EmbeddedResource Remove="resource\Новая папка\**" />
-    <None Remove="resource\Новая папка\**" />
-    <Page Remove="resource\Новая папка\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="fo-dicom" Version="4.0.4" />
     <PackageReference Include="MaterialDesignColors" Version="1.2.6" />
     <PackageReference Include="MaterialDesignThemes" Version="3.1.3" />

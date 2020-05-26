@@ -9,7 +9,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
 {
     public class DICOMGenerator : DocumentGenerator
     {
-        private String resource_dir_path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\";
+        private String resource_dir_path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\resource\DICOM_files\";
         private Random gen = new Random();
         private DateTime date_start = new DateTime(1920, 1, 1);
 
@@ -35,7 +35,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
                 return "EXCEPTION CAUGHT:" + e;
             }
         }
-        private String generateNewFileName()
+        public String generateNewFileName()
         {
             Random r = new Random();
             string s = "DicomFile_";
@@ -48,7 +48,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
             return date_start.AddDays(gen.Next(range));
         }
 
-        private String RandomSex()
+        public String RandomSex()
         {
             String sex = "";
             int number = gen.Next(3);

@@ -73,7 +73,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
 
             foreach (Patient p in dataBase)
             {
-                if(Int32.Parse(p.Id) < 101)
+                if(Int32.Parse(p.Id) < 3)
                 {
                     string s = JPG_gen.generateDocument(p) + ";" + DICOM_gen.generateDocument(p) + ";" + DOCX_gen.generateDocument(p);
                     pathes.Add(s);
@@ -105,9 +105,9 @@ namespace ZPI_Projekt_Anonimizator.Generators
      
             ));
 
-            // Write the document to the file system            
-            xdoc.Save(resource_dir_path_XML + xmlDocName +  ".xml");
-            return "null";
+            string path = resource_dir_path_XML + xmlDocName + ".xml";          
+            xdoc.Save(path);
+            return path;
         }
 
         public List<string> fileToArray(String filePath)
