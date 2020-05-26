@@ -16,4 +16,8 @@
     <ProjectReference Include="..\ZPI Projekt Anonimizator\ZPI Projekt Anonimizator.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="resource\DOCX_files\" />
+  </ItemGroup>
+
 </Project>

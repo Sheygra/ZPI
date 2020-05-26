@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Patients>
+  <Patient>
+    <Id>132349819123045956</Id>
+    <Name>Paweł</Name>
+    <Surname>Rutkowski</Surname>
+    <PESEL>61072232642</PESEL>
+    <Address>SKWER WŁADYSŁAWA BEŁZY 197/3, 41-439</Address>
+    <PhoneNumber>854-613-8</PhoneNumber>
+  </Patient>
+</Patients>

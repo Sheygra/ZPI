@@ -7,7 +7,7 @@ using Dicom;
 
 namespace ZPI_Projekt_Anonimizator.Parsers
 {
-    class DICOMParser : DocumentParser
+    public class DICOMParser : DocumentParser
     {
         public DataTable parseDocument(String file_path)
         {
