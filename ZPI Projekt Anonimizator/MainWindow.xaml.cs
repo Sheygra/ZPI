@@ -128,13 +128,7 @@ namespace ZPI_Projekt_Anonimizator
                 promptUser("One of algorithms must be selected.");
             }
             
-        }
-        
-        private void promptUser(String msg)
-        {
-            InfoBoxPrompt.Text = msg;
-            ((Storyboard)FindResource("animate")).Begin(Prompt);
-        }
+        }    
 
         public void showJPGMetadata(String path)
          {
@@ -183,8 +177,7 @@ namespace ZPI_Projekt_Anonimizator
                 promptUser("An error ocurred, unable to open the dicom file." + path);
             }
         }
-
-        public void showDOCX(String path)
+        public void showDOCXData(String path)
         {
             try
             {
@@ -203,8 +196,6 @@ namespace ZPI_Projekt_Anonimizator
                                     "\n\nPATH: " + path;
                     MetadataDocumentView.Visibility = Visibility.Visible;
                 }
-
-
             }
             catch (Exception ex)
             {
@@ -220,12 +211,11 @@ namespace ZPI_Projekt_Anonimizator
                 DataRowView context = (DataRowView)button.DataContext;
                 var row = context.Row;
                 var links = row["PathForFiles"].ToString().Split(";");
-                //promptUser(links[0]);
                 switch (button.Name)
                 {
                     case "BtnJPG": showJPGMetadata(links[0]); break;
                     case "BtnDICOM": showDICOMMetadata(links[1]); break;
-                    case "BtnDOCX": showDOCX(links[2]); break;
+                    case "BtnDOCX": showDOCXData(links[2]); break;
                     default: promptUser("An error ocurred, no file can be opened."); break;
                 }
             }
@@ -243,6 +233,12 @@ namespace ZPI_Projekt_Anonimizator
             TextLine4.Text = "";
             TextLine5.Text = "";
             MetadataDocumentView.Visibility = Visibility.Hidden;
+        }
+
+        private void promptUser(String msg)
+        {
+            InfoBoxPrompt.Text = msg;
+            ((Storyboard)FindResource("animate")).Begin(Prompt);
         }
     }
 }

@@ -31,12 +31,15 @@ namespace ZPI_Projekt_Anonimizator.Generators
                     
                     if (bitmapFrame != null)
                     {
-                        BitmapMetadata meta_Data = (BitmapMetadata)bitmapFrame.Metadata.Clone(); //metadane przykładowego obrazu 
+                        BitmapMetadata meta_Data = (BitmapMetadata)bitmapFrame.Metadata.Clone();
 
                         if (meta_Data != null)
                         {
                             meta_Data.Comment = "Born " + patientData.DateOfBirth;
-                            meta_Data.DateTaken = "2020/05/23";
+                            var data = getDateInCorrectFormat(patientData.DateOfBirth);
+                            if (data != "")
+                                meta_Data.DateTaken = data;
+                            else meta_Data.DateTaken = "2100/01/01";
                             meta_Data.Subject = "Patient name - " + patientData.Name + " " + patientData.SurName;
                             meta_Data.Title = "The document for PatientID " + patientData.Id;
                             List<String> l = new List<string>{ patientData.Gender, patientData.Profession, patientData.City };
@@ -67,6 +70,21 @@ namespace ZPI_Projekt_Anonimizator.Generators
             Random r = new Random();
             string s = "abcdefghijklmnoprstuwxyz123456789_";
             return "new_file_" + r.Next(1, 1000000) + s[r.Next(0, s.Length-1)] + ".jpg";
+        }
+        
+        private String getDateInCorrectFormat(String date)
+        {
+            var d = new DateTime();
+            DateTime data = d;
+            try
+            {
+                data = DateTime.Parse(date);
+            }
+            catch(Exception ex)
+            {
+                return "";
+            }
+            return d == data ? "" : data.ToString("yyyy/MM/dd").Replace('.','/');
         }
     }
 }
