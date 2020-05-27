@@ -164,8 +164,6 @@ namespace ZPI_Projekt_Anonimizator
         {
             try
             {
-                var dicomGenerator = new DICOMGenerator();
-                path = dicomGenerator.generateDocument(new Patient("10", "ANNA", "KOWALSKA", "", "", "K", "prof", "krakow", "10/10/2010"));
                 var dicom_parser = new ZPI_Projekt_Anonimizator.Parsers.DICOMParser();
                 var table = dicom_parser.parseDocument(path);
                 if (table == null) promptUser("An error ocurred, unable to open the jpg file." + path);
@@ -182,7 +180,7 @@ namespace ZPI_Projekt_Anonimizator
             }
             catch (Exception ex)
             {
-                promptUser("An error ocurred, unable to open the jpg file." + path);
+                promptUser("An error ocurred, unable to open the dicom file." + path);
             }
         }
 
@@ -190,13 +188,23 @@ namespace ZPI_Projekt_Anonimizator
         {
             try
             {
-                var docxGenerator = new DOCXGenerator();
-                path = docxGenerator.generateDocument(new Patient("10", "ANNA", "KOWALSKA", "", "", "K", "prof", "krakow", "10/10/2010"));
-                
-                Process wordProcess = new Process();
-                wordProcess.StartInfo.FileName = path;
-                wordProcess.StartInfo.UseShellExecute = true;
-                wordProcess.Start();
+                var docx_parser = new ZPI_Projekt_Anonimizator.Parsers.DOCXParser();
+                var table = docx_parser.parseDocument(path);
+                if (table == null) promptUser("An error ocurred, unable to open the docx file." + path);
+                else
+                {
+                    var values = table.Rows[0].ItemArray;
+                    TextLine0.Text = "Patient: " + table.Columns[0].ColumnName + " " + values[0] + ", " + values[1] + " " + values[2]; ;
+                    TextLine1.Text = table.Columns[3].ColumnName + ", " + table.Columns[4].ColumnName + ": " + values[3] + ", " + values[4];
+                    TextLine2.Text = table.Columns[5].ColumnName + ": " + values[5];
+                    TextLine3.Text = table.Columns[6].ColumnName + ": " + values[6];
+                    TextLine4.Text = table.Columns[7].ColumnName + ": " + values[7];
+                    TextLine5.Text = table.Columns[8].ColumnName + ": " + values[8] +
+                                    "\n\nPATH: " + path;
+                    MetadataDocumentView.Visibility = Visibility.Visible;
+                }
+
+
             }
             catch (Exception ex)
             {
@@ -217,7 +225,7 @@ namespace ZPI_Projekt_Anonimizator
                 {
                     case "BtnJPG": showJPGMetadata(links[0]); break;
                     case "BtnDICOM": showDICOMMetadata(links[1]); break;
-                    case "BtnDOCX": break;
+                    case "BtnDOCX": showDOCX(links[2]); break;
                     default: promptUser("An error ocurred, no file can be opened."); break;
                 }
             }
