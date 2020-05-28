@@ -8,7 +8,7 @@ using System.Globalization;
 using System.Linq;
 
 
-private class Node
+class Node
 {
 	List<Node> nodes = new List<Node>(0);
 	char sign;
@@ -244,7 +244,7 @@ public class KAnonymization
 			{
 				if (node.getNodes()[i].getCounter() < k)
 				{
-					node.getNodes()[i] = null;
+					node.getNodes()[i].setSign="*";
 					node.setEnd(true);
 				}
 				else nodeStack.Push(node.getNodes()[i]);
