@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Patients>
+  <Patient>
+    <Id>1</Id>
+    <Name>Stefania</Name>
+    <Surname>Witkowska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>niedziela, 18 sierpnia 1968</DateOfBirth>
+    <Profession>Dekarz</Profession>
+    <City>Olawa</City>
+    <Address>UL. BALONOWA 12/16, 79-145</Address>
+    <PhoneNumber>572-561-973</PhoneNumber>
+    <PathForFiles>C:\Users\kzakrzew\source\repos\ZPI Projekt Anonimizator\ZPI Projekt Anonimizator\resource\JPG_files\new_file_695050h.jpg;C:\Users\kzakrzew\source\repos\ZPI Projekt Anonimizator\ZPI Projekt Anonimizator\resource\DICOM_files\new_file_546224D.DCM;C:\Users\kzakrzew\source\repos\ZPI Projekt Anonimizator\ZPI Projekt Anonimizator\resource\DOCX_files\1-132351608910171053.docx</PathForFiles>
+  </Patient>
+</Patients>
