@@ -6,7 +6,7 @@ using System.Security.Permissions;
 using System.Data;
 using System.Globalization;
 using System.Linq;
-
+using ZPI_Projekt_Anonimizator.entity;
 
 class Node
 {

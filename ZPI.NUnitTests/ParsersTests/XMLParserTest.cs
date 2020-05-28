@@ -34,9 +34,7 @@ namespace ZPI.NUnitTests.ParsersTests
             Assert.IsTrue(s[2].ToString().Equals("Wójcik"));
             Assert.IsTrue(s[3].ToString().Equals("F"));
             Assert.IsTrue(s[4].ToString().Equals("Monday, June 30, 2008"));
-            
-            
-            
+                   
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZPI.NUnitTests.AnonimizationTests
 {
-    class KAlphaAnonimizationTest
+    class KAnonimizationOneTest
     {
     }
 }

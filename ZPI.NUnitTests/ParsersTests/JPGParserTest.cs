@@ -27,11 +27,13 @@ namespace ZPI.NUnitTests.ParsersTests
             table = JPGParser.parseDocument(path);
             var values = table.Rows[0].ItemArray;
             Assert.IsNotNull(table);
-            Assert.IsNotNull(values[0]);
-            Assert.IsNotNull(values[1]);
-            Assert.IsNotNull(values[2]);
-            Assert.IsNotNull(values[3]);
-            Assert.IsNotNull(values[4]);
+            Assert.IsTrue(values[0].Equals("The document for PatientID 1"));
+            Assert.IsTrue(values[1].Equals("Patient name - Jadwiga Jabłońska"));
+            Assert.IsTrue(values[2].Equals("F kierowca Poznan "));
+            Assert.IsTrue(values[3].Equals("Born Saturday, February 14, 1970"));
+            Assert.IsTrue(values[4].Equals("5/23/2020 12:00:00 AM"));
+
+            
         }
     }
 }

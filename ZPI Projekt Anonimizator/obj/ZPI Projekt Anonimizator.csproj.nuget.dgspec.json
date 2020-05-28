@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Michal\\source\\repos\\ZPI2\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {}
+    "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Michal\\source\\repos\\ZPI2\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
+    "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Michal\\source\\repos\\ZPI2\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
+        "projectUniqueName": "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
         "projectName": "ZPI Projekt Anonimizator",
-        "projectPath": "C:\\Users\\Michal\\source\\repos\\ZPI2\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
-        "packagesPath": "C:\\Users\\Michal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Michal\\source\\repos\\ZPI2\\ZPI Projekt Anonimizator\\obj\\",
+        "projectPath": "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
+        "packagesPath": "C:\\Users\\Artiom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Michal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Artiom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,7 +72,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
