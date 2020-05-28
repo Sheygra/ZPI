@@ -22,7 +22,7 @@ namespace ZPI.NUnitTests.ParsersTests
         }
 
         [TestCase]
-        public void CanBeCanseledBy_JPGParser_ReturnsNullValue()
+        public void CanBeCanseledBy_JPGParser_ReturnsWrongValue()
         {
             table = JPGParser.parseDocument(path);
             var values = table.Rows[0].ItemArray;

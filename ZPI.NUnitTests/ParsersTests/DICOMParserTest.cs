@@ -23,7 +23,7 @@ namespace ZPI.NUnitTests.ParsersTests
         }
 
         [TestCase]
-        public void CanBeCanseledBy_DOCXParser_ReturnsNullValue()
+        public void CanBeCanseledBy_DICOMParser_ReturnsWrongValue()
         {
             table = DICOMParser.parseDocument(path);
             var values = table.Rows[0].ItemArray;

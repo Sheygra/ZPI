@@ -23,7 +23,7 @@ namespace ZPI.NUnitTests.ParsersTests
         }
 
         [TestCase]
-        public void CanBeCanseledBy_DOCXParser_ReturnsNullValue()
+        public void CanBeCanseledBy_DOCXParser_ReturnsWrongValue()
         {
             table = DOCXParser.parseDocument(path);
             var values = table.Rows[0].ItemArray;
