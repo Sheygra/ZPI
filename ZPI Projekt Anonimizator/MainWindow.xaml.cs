@@ -101,7 +101,6 @@ namespace ZPI_Projekt_Anonimizator
             }
             else if (k_anonimization)
             {
-                //promptUser("K-anonimization algoritm.");
                 try
                 {
                     int k = 0;
@@ -112,10 +111,10 @@ namespace ZPI_Projekt_Anonimizator
                     {
                         var anonimizator = new Anonymization();
                         var anonymized = anonimizator.AnonymizeData(patientDataGenerated, k);
-                        XMLAfterAnonimizationGrid.DataContext = anonymized.DefaultView; //tutaj wynik anonimizacji
+                        XMLAfterAnonimizationGrid.DataContext = anonymized.DefaultView;
                         XMLAfterAnonimizationGrid.Visibility = Visibility.Visible;
                     }
-                    else promptUser("K has to be in range <3,10>");
+                    else promptUser("K has to be in range <3,20>");
                 }
                 catch(Exception ex)
                 {
@@ -124,7 +123,6 @@ namespace ZPI_Projekt_Anonimizator
             }
             else if(k_alfa_anonimization)
             {
-               // promptUser("K-alfa-anonimization algoritm.");
                 try
                 {
                  
@@ -185,7 +183,7 @@ namespace ZPI_Projekt_Anonimizator
             }
             catch (Exception ex)
             {
-                promptUser("An error ocurred, unable to open the dicom file." + path);
+                promptUser("An error ocurred, unable to open the dicom file.");
             }
         }
         public void showDOCXData(String path)

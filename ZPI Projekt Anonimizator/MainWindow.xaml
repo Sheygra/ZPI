@@ -165,6 +165,17 @@
                             <DataGridTextColumn Header="Profession" Binding="{Binding Path=Profession}" FontSize="10"></DataGridTextColumn>
                             <DataGridTextColumn Header="Address" Binding="{Binding Path=Address}" FontSize="10"></DataGridTextColumn>
                             <DataGridTextColumn Header="Phone" Binding="{Binding Path=PhoneNumber}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTemplateColumn Header="Documents">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button Name="BtnJPG" Click="MetadataOpen_Button_Click" Margin="3,3,3,3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Foreground="Black" Background="{StaticResource primaryCustomOrange}" BorderBrush="Transparent">JPG</Button>
+                                            <Button Name="BtnDICOM" Click="MetadataOpen_Button_Click" Margin="3,3,3,3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Foreground="Black" Background="{StaticResource primaryCustomOrange}" BorderBrush="Transparent">DICOM</Button>
+                                            <Button Name="BtnDOCX"  Click="MetadataOpen_Button_Click" Margin="3,3,3,3"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" Foreground="Black" Background="{StaticResource primaryCustomOrange}" BorderBrush="Transparent">DOCX</Button>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
                         </DataGrid.Columns>
                     </DataGrid>
                 </Grid>
