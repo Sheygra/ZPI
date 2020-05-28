@@ -18,7 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="resource\DICOM_files\" />
     <Folder Include="resource\XML_files\" />
     <Folder Include="resource\DOCX_files\" />
   </ItemGroup>

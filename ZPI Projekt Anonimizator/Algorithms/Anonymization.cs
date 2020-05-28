@@ -173,7 +173,7 @@ namespace ZPI_Projekt_Anonimizator.Algorithm
                     originalIndexes.Add(init);
             }
 
-            int a, b;
+            int a, b, c, d, e;
 
             do
             {
@@ -181,7 +181,8 @@ namespace ZPI_Projekt_Anonimizator.Algorithm
                 representative = generalizeValues(representative, occurs, k, column);
                 (representative, occurs, originalIndexes) = designateRep(representative, occurs, originalIndexes);
 
-                (a, b) = getMinOccur(occurs, k);
+                (a, b, c, d) = getMinOccur(occurs, k);
+                e = getOriginalIndexesCount(originalIndexes);
             } while (a>k || b>=k);
 
             return saveToDataTable(representative, originalIndexes, dataCopy);
@@ -196,25 +197,29 @@ namespace ZPI_Projekt_Anonimizator.Algorithm
             List<List<int>> newOriginalIndexes = new List<List<int>>();
 
             int x = 0;
-            int y = 0;
+            int y;
 
             foreach (var tuple in representative)
             {
-                foreach(var newTuple in newRepresentative)
-                {
-                    if (newTuple.Equals(tuple))
-                    {
-                        newOccurs[y]++;
-                        newOriginalIndexes[y].Add(x);
-                    }
-                    y++;
-                }
-                y = 0;
+                
                 if (!newRepresentative.Contains(tuple))
                 {
                     newRepresentative.Add(tuple);
                     newOccurs.Add(occurs[x]);
                     newOriginalIndexes.Add(originalIndexes[x]);
+                }
+                else
+                {
+                    y = 0;
+                    foreach (var newTuple in newRepresentative)
+                    {
+                        if (newTuple.Equals(tuple))
+                        {
+                            newOccurs[y]+=occurs[x];
+                            newOriginalIndexes[y].AddRange(originalIndexes[x]);
+                        }
+                        y++;
+                    }
                 }
                 x++;
             }
@@ -222,19 +227,32 @@ namespace ZPI_Projekt_Anonimizator.Algorithm
             return (newRepresentative, newOccurs, newOriginalIndexes);
         }
 
-        private (int, int) getMinOccur(List<int> occurs, int k)
+        private int getOriginalIndexesCount(List<List<int>> originalIndexes)
+        {
+            int count = 0;
+            foreach(List<int> indexes in originalIndexes)
+            {
+                count += indexes.Count;
+            }
+            return count;
+        }
+        private (int, int, int, int) getMinOccur(List<int> occurs, int k)
         {
             int count = 0;
             int count2 = 0;
+            int count3 = 0;
+            int count4 = 0;
             foreach(int x in occurs)
             {
+                count3 += x;
+                count4++;
                 if (x < k)
                 {
                     count++;
                     count2 += x;
                 }
             }
-            return (count, count2);
+            return (count, count2, count3, count4);
         }
 
         private int getColToGeneralize(List<(String, String, String, String, String, String, String, String)> representative, List<int> occurs, int k)
@@ -264,6 +282,7 @@ namespace ZPI_Projekt_Anonimizator.Algorithm
                     if (!item7.Contains(tuple.Item7)) { item7.Add(tuple.Item7); }
                     if (!item8.Contains(tuple.Item8)) { item8.Add(tuple.Item8); }
                 }
+                i++;
             }
 
             int max = 0;
