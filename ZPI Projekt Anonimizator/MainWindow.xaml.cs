@@ -144,8 +144,9 @@ namespace ZPI_Projekt_Anonimizator
             try
             {
                 var jpg_parser = new ZPI_Projekt_Anonimizator.Parsers.JPGParser();
+                
                 var table = jpg_parser.parseDocument(path);
-                if (table == null) promptUser("An error ocurred, unable to open the jpg file." + path);
+                if (table == null || path == "") promptUser("An error ocurred, unable to open the jpg file." + path);
                 else
                 {
                     var values = table.Rows[0].ItemArray;
@@ -169,7 +170,7 @@ namespace ZPI_Projekt_Anonimizator
             {
                 var dicom_parser = new ZPI_Projekt_Anonimizator.Parsers.DICOMParser();
                 var table = dicom_parser.parseDocument(path);
-                if (table == null) promptUser("An error ocurred, unable to open the jpg file." + path);
+                if (table == null) promptUser("An error ocurred, unable to open the dicom file." + path);
                 else
                 {
                     var values = table.Rows[0].ItemArray;
@@ -201,8 +202,7 @@ namespace ZPI_Projekt_Anonimizator
                     TextLine2.Text = table.Columns[5].ColumnName + ": " + values[5];
                     TextLine3.Text = table.Columns[6].ColumnName + ": " + values[6];
                     TextLine4.Text = table.Columns[7].ColumnName + ": " + values[7];
-                    TextLine5.Text = table.Columns[8].ColumnName + ": " + values[8] +
-                                    "\n\nPATH: " + path;
+                    TextLine5.Text = table.Columns[8].ColumnName + ": " + values[8] + "\n\nPATH: " + path;
                     MetadataDocumentView.Visibility = Visibility.Visible;
                 }
             }
@@ -230,7 +230,7 @@ namespace ZPI_Projekt_Anonimizator
             }
             catch (Exception ex)
             {
-                promptUser("An error ocured while trying to read the file.");
+                promptUser("An error ocured while trying to open the file.");
             }
         }
         private void MetadataClose_Button_Click(object sender, RoutedEventArgs e)
