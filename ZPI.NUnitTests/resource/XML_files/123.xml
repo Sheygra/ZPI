@@ -2,1202 +2,1202 @@
 <Patients>
   <Patient>
     <Id>1</Id>
-    <Name>Urszula</Name>
-    <Surname>Kaczmarek</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Sunday, January 14, 1996</DateOfBirth>
-    <Profession>taksowkarz</Profession>
-    <City>Boleslawiec</City>
-    <Address>UL. ARBUZOWA 188/16, 70-135</Address>
-    <PhoneNumber>415-482-553</PhoneNumber>
-    <PathForFiles>C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI.NUnitTests\resource\JPG_files\new_file_587888l.jpg;C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI.NUnitTests\resource\DICOM_files\new_file_625533c.DCM;C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI.NUnitTests\resource\DOCX_files\1-132351604638187139.docx</PathForFiles>
+    <Name>Mateusz</Name>
+    <Surname>Ostrowski</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Sunday, April 30, 1978</DateOfBirth>
+    <Profession>trener</Profession>
+    <City>Opole</City>
+    <Address>UL. STEFANA BATOREGO 7/18, 34-225</Address>
+    <PhoneNumber>746-458-807</PhoneNumber>
+    <PathForFiles>C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI.NUnitTests\resource\JPG_files\new_file_834571y.jpg;C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI.NUnitTests\resource\DICOM_files\new_file_46952i.DCM;C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI.NUnitTests\resource\DOCX_files\1-132351625358688652.docx</PathForFiles>
   </Patient>
   <Patient>
     <Id>2</Id>
-    <Name>Adam</Name>
-    <Surname>Wróblewski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Thursday, January 26, 1984</DateOfBirth>
-    <Profession>notariusz</Profession>
+    <Name>Renata</Name>
+    <Surname>Woźniak</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Monday, October 2, 1967</DateOfBirth>
+    <Profession>kelner</Profession>
     <City>Boleslawiec</City>
-    <Address>UL. JERZEGO BAJANA 28/88, 57-461</Address>
-    <PhoneNumber>421-884-617</PhoneNumber>
-    <PathForFiles>C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI.NUnitTests\resource\JPG_files\new_file_5525538.jpg;C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI.NUnitTests\resource\DICOM_files\new_file_809377o.DCM;C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI.NUnitTests\resource\DOCX_files\2-132351604639033073.docx</PathForFiles>
+    <Address>UL. STANISŁAWA BĄKA 55/7, 26-164</Address>
+    <PhoneNumber>451-719-860</PhoneNumber>
+    <PathForFiles>C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI.NUnitTests\resource\JPG_files\new_file_797939f.jpg;C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI.NUnitTests\resource\DICOM_files\new_file_956230D.DCM;C:\Users\Artiom\Desktop\anonimizator\ZPI\ZPI.NUnitTests\resource\DOCX_files\2-132351625360055648.docx</PathForFiles>
   </Patient>
   <Patient>
     <Id>3</Id>
-    <Name>Marek</Name>
-    <Surname>Adamczyk</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Sunday, April 1, 1973</DateOfBirth>
-    <Profession>pilkarz</Profession>
-    <City>Olesnica</City>
-    <Address>UL. WŁADYSŁAWA ANCZYCA 102/86, 27-375</Address>
-    <PhoneNumber>573-319-878</PhoneNumber>
+    <Name>Marianna</Name>
+    <Surname>Szewczyk</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Wednesday, July 24, 1968</DateOfBirth>
+    <Profession>weterynarz</Profession>
+    <City>Boleslawiec</City>
+    <Address>UL. IBN SINY AWICENNY 97/67, 35-337</Address>
+    <PhoneNumber>898-700-581</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>4</Id>
-    <Name>Marianna</Name>
-    <Surname>Krajewska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Monday, May 20, 1996</DateOfBirth>
-    <Profession>professor</Profession>
-    <City>Bielsko Biala</City>
-    <Address>UL. BARWINKOWA 84/28, 39-273</Address>
-    <PhoneNumber>716-643-266</PhoneNumber>
+    <Name>Roman</Name>
+    <Surname>Górski</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Thursday, May 8, 2014</DateOfBirth>
+    <Profession>zolnierz</Profession>
+    <City>Olesnica</City>
+    <Address>UL. STEFANA BANACHA 116/79, 33-133</Address>
+    <PhoneNumber>404-898-116</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>5</Id>
-    <Name>Patrycja</Name>
-    <Surname>Wieczorek</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Tuesday, November 8, 1994</DateOfBirth>
-    <Profession>ksiegowy</Profession>
-    <City>Boleslawiec</City>
-    <Address>UL. BARANOWICKA 100/38, 70-368</Address>
-    <PhoneNumber>923-869-777</PhoneNumber>
+    <Name>Tadeusz</Name>
+    <Surname>Mazur</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Thursday, May 31, 2001</DateOfBirth>
+    <Profession>programista</Profession>
+    <City>Wroclawek</City>
+    <Address>UL. ARTYLERYJSKA 174/35, 38-152</Address>
+    <PhoneNumber>706-406-444</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>6</Id>
-    <Name>Leszek</Name>
-    <Surname>Kaźmierczak</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Wednesday, April 13, 1960</DateOfBirth>
-    <Profession>menager</Profession>
-    <City>Boleslawiec</City>
-    <Address>UL. MAXA BERGA 114/97, 49-120</Address>
-    <PhoneNumber>989-111-502</PhoneNumber>
+    <Name>Izabela</Name>
+    <Surname>Brzezińska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Tuesday, February 28, 2012</DateOfBirth>
+    <Profession>nauczyciel</Profession>
+    <City>Olesnica</City>
+    <Address>SKWER WŁADYSŁAWA BEŁZY 38/48, 50-147</Address>
+    <PhoneNumber>615-316-930</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>7</Id>
-    <Name>Janina</Name>
-    <Surname>Kaczmarek</Surname>
+    <Name>Marianna</Name>
+    <Surname>Kaźmierczak</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Thursday, May 13, 2010</DateOfBirth>
-    <Profession>zolnierz</Profession>
-    <City>Brzeg</City>
-    <Address>UL. STANISŁAWA BĄKA 149/24, 35-394</Address>
-    <PhoneNumber>405-210-387</PhoneNumber>
+    <DateOfBirth>Monday, April 11, 1977</DateOfBirth>
+    <Profession>prawnik</Profession>
+    <City>Olesnica</City>
+    <Address>UL. BASKIJSKA 117/32, 50-271</Address>
+    <PhoneNumber>819-911-650</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>8</Id>
-    <Name>Jacek</Name>
-    <Surname>Zając</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Wednesday, September 21, 1983</DateOfBirth>
-    <Profession>notariusz</Profession>
-    <City>Olsztyn</City>
-    <Address>UL. BERBERYSOWA 193/64, 74-255</Address>
-    <PhoneNumber>852-380-241</PhoneNumber>
+    <Name>Katarzyna</Name>
+    <Surname>Kaźmierczak</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Tuesday, February 20, 1990</DateOfBirth>
+    <Profession>zolnierz</Profession>
+    <City>Olesnica</City>
+    <Address>UL. BAŁKAŃSKA 189/70, 40-200</Address>
+    <PhoneNumber>774-178-282</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>9</Id>
-    <Name>Sławomir</Name>
-    <Surname>Zając</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Wednesday, November 26, 1980</DateOfBirth>
+    <Name>Jadwiga</Name>
+    <Surname>Zakrzewska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Thursday, June 9, 1983</DateOfBirth>
     <Profession>lekarz</Profession>
-    <City>Lisia Gora</City>
-    <Address>UL. APTEKARSKA 148/61, 38-189</Address>
-    <PhoneNumber>462-548-513</PhoneNumber>
+    <City>Wroclaw</City>
+    <Address>SKWER ROBERTA BADEN-POWELLA 25/74, 68-192</Address>
+    <PhoneNumber>857-762-700</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>10</Id>
-    <Name>Waldemar</Name>
-    <Surname>Adamczyk</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Wednesday, January 16, 1991</DateOfBirth>
-    <Profession>trener</Profession>
-    <City>Poznan</City>
-    <Address>UL. BAŁKAŃSKA 90/68, 79-158</Address>
-    <PhoneNumber>818-121-683</PhoneNumber>
+    <Name>Jolanta</Name>
+    <Surname>Jakubowska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Wednesday, May 22, 1957</DateOfBirth>
+    <Profession>pracownik ofisu</Profession>
+    <City>Boleslawiec</City>
+    <Address>UL. BERNARDYŃSKA 101/16, 17-221</Address>
+    <PhoneNumber>646-197-590</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>11</Id>
-    <Name>Dorota</Name>
-    <Surname>Cieślak</Surname>
+    <Name>Marzena</Name>
+    <Surname>Michalska</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Tuesday, May 24, 1988</DateOfBirth>
-    <Profession>taksowkarz</Profession>
-    <City>Boleslawiec</City>
-    <Address>UL. BABIEGO LATA 193/46, 58-439</Address>
-    <PhoneNumber>413-530-922</PhoneNumber>
+    <DateOfBirth>Monday, November 23, 2015</DateOfBirth>
+    <Profession>kierowca</Profession>
+    <City>Olawa</City>
+    <Address>UL. STANISŁAWA BĄKA 30/12, 19-174</Address>
+    <PhoneNumber>459-543-726</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>12</Id>
-    <Name>Renata</Name>
-    <Surname>Kalinowska</Surname>
+    <Name>Agnieszka</Name>
+    <Surname>Ziółkowska</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Wednesday, May 29, 2019</DateOfBirth>
-    <Profession>ksiegowy</Profession>
-    <City>Lisia Gora</City>
-    <Address>UL. TADESZA KOŚCIUSZKI 60/92, 42-365</Address>
-    <PhoneNumber>433-849-933</PhoneNumber>
+    <DateOfBirth>Friday, November 29, 2002</DateOfBirth>
+    <Profession>kelner</Profession>
+    <City>Olsztyn</City>
+    <Address>UL. ALPEJSKA 149/4, 26-489</Address>
+    <PhoneNumber>834-534-796</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>13</Id>
-    <Name>Dariusz</Name>
-    <Surname>Kubiak</Surname>
+    <Name>Tadeusz</Name>
+    <Surname>Kucharski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Saturday, August 4, 2018</DateOfBirth>
-    <Profession>straznik</Profession>
-    <City>Wroclawek</City>
-    <Address>UL. ŚW. BARBARY 186/7, 66-432</Address>
-    <PhoneNumber>921-940-746</PhoneNumber>
+    <DateOfBirth>Sunday, June 1, 2008</DateOfBirth>
+    <Profession>taksowkarz</Profession>
+    <City>Boleslawiec</City>
+    <Address>UL. JANA SEBASTIANA BACHA 34/3, 59-333</Address>
+    <PhoneNumber>580-190-205</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>14</Id>
-    <Name>Iwona</Name>
-    <Surname>Maciejewska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Sunday, May 26, 1991</DateOfBirth>
-    <Profession>notariusz</Profession>
+    <Name>Zbigniew</Name>
+    <Surname>Wasilewski</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Friday, January 23, 2009</DateOfBirth>
+    <Profession>barista</Profession>
     <City>Bielsko Biala</City>
-    <Address>UL. ARACHIDOWA 57/35, 40-328</Address>
-    <PhoneNumber>778-115-291</PhoneNumber>
+    <Address>UL. IBN SINY AWICENNY 10/60, 42-466</Address>
+    <PhoneNumber>690-862-154</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>15</Id>
-    <Name>Teresa</Name>
-    <Surname>Szymczak</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Friday, January 17, 2020</DateOfBirth>
-    <Profession>ksiegowy</Profession>
-    <City>Jelenia Gora</City>
-    <Address>UL. ANANASOWA 105/64, 20-395</Address>
-    <PhoneNumber>499-848-288</PhoneNumber>
+    <Name>Krzysztof</Name>
+    <Surname>Nowakowski</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Saturday, February 20, 1954</DateOfBirth>
+    <Profession>notariusz</Profession>
+    <City>Wroclawek</City>
+    <Address>UL. BELGIJSKA 126/30, 50-297</Address>
+    <PhoneNumber>350-997-832</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>16</Id>
-    <Name>Krzysztof</Name>
-    <Surname>Wilk</Surname>
+    <Name>Artur</Name>
+    <Surname>Kozłowski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Friday, December 16, 1977</DateOfBirth>
-    <Profession>programista</Profession>
-    <City>Brzeg</City>
-    <Address>UL. AŁUNOWA 4/44, 51-216</Address>
-    <PhoneNumber>748-819-463</PhoneNumber>
+    <DateOfBirth>Monday, January 22, 2001</DateOfBirth>
+    <Profession>lekarz</Profession>
+    <City>Poznan</City>
+    <Address>UL. BABIEGO LATA 100/46, 67-248</Address>
+    <PhoneNumber>411-795-354</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>17</Id>
-    <Name>Kazimiera</Name>
-    <Surname>Jakubowska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Monday, July 5, 1999</DateOfBirth>
-    <Profession>kierowca</Profession>
-    <City>Poznan</City>
-    <Address>AL. ARMII KRAJOWEJ 158/48, 14-228</Address>
-    <PhoneNumber>844-761-665</PhoneNumber>
+    <Name>Janusz</Name>
+    <Surname>Szymański</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Sunday, May 29, 1977</DateOfBirth>
+    <Profession>taksowkarz</Profession>
+    <City>Jelenia Gora</City>
+    <Address>UL. HELENY I LUDWIKA ADAMCZEWSKICH 158/13, 19-409</Address>
+    <PhoneNumber>856-645-891</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>18</Id>
-    <Name>Aleksandra</Name>
-    <Surname>Kozłowska</Surname>
+    <Name>Urszula</Name>
+    <Surname>Walczak</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Tuesday, September 9, 1947</DateOfBirth>
-    <Profession>ksiegowy</Profession>
-    <City>Olsztyn</City>
-    <Address>UL. BENEDYKTYŃSKA 130/74, 54-340</Address>
-    <PhoneNumber>507-719-848</PhoneNumber>
+    <DateOfBirth>Thursday, May 19, 2005</DateOfBirth>
+    <Profession>menager</Profession>
+    <City>Wroclaw</City>
+    <Address>UL. AUSTRIACKA 166/14, 78-499</Address>
+    <PhoneNumber>565-381-767</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>19</Id>
-    <Name>Rafał</Name>
-    <Surname>Szymczak</Surname>
+    <Name>Tomasz</Name>
+    <Surname>Wojciechowski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Sunday, January 14, 1945</DateOfBirth>
-    <Profession>kierowca</Profession>
-    <City>Wroclawek</City>
-    <Address>AL. ARCHITEKTÓW 90/49, 77-494</Address>
-    <PhoneNumber>325-906-697</PhoneNumber>
+    <DateOfBirth>Saturday, July 26, 1986</DateOfBirth>
+    <Profession>barista</Profession>
+    <City>Brzeg</City>
+    <Address>UL. WACŁAWA BERENTA 12/85, 72-289</Address>
+    <PhoneNumber>888-642-934</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>20</Id>
-    <Name>Dariusz</Name>
-    <Surname>Wojciechowski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Monday, July 15, 2002</DateOfBirth>
-    <Profession>kierowca</Profession>
-    <City>Brzeg</City>
-    <Address>UL. ARMEŃSKA 2/63, 25-106</Address>
-    <PhoneNumber>859-565-234</PhoneNumber>
+    <Name>Elżbieta</Name>
+    <Surname>Włodarczyk</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Wednesday, September 4, 2002</DateOfBirth>
+    <Profession>prawnik</Profession>
+    <City>Poznan</City>
+    <Address>UL. BAZALTOWA 166/41, 78-375</Address>
+    <PhoneNumber>425-964-935</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>21</Id>
-    <Name>Kazimierz</Name>
-    <Surname>Chmielewski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Saturday, May 11, 1963</DateOfBirth>
-    <Profession>sprzedawca</Profession>
-    <City>Olesnica</City>
-    <Address>UL. STEFANA BANACHA 105/92, 31-214</Address>
-    <PhoneNumber>985-743-565</PhoneNumber>
+    <Name>Ewelina</Name>
+    <Surname>Kalinowska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Wednesday, October 10, 1962</DateOfBirth>
+    <Profession>programista</Profession>
+    <City>Jelenia Gora</City>
+    <Address>UL. ANANASOWA 27/28, 38-454</Address>
+    <PhoneNumber>518-457-874</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>22</Id>
-    <Name>Janusz</Name>
-    <Surname>Kołodziej</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Thursday, November 10, 1949</DateOfBirth>
-    <Profession>pilkarz</Profession>
-    <City>Opole</City>
-    <Address>UL. ARTYLERYJSKA 95/13, 29-266</Address>
-    <PhoneNumber>528-178-316</PhoneNumber>
+    <Name>Edyta</Name>
+    <Surname>Zielińska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Friday, February 11, 2000</DateOfBirth>
+    <Profession>menager</Profession>
+    <City>Poznan</City>
+    <Address>UL. BABIOGÓRSKA 75/24, 36-433</Address>
+    <PhoneNumber>400-463-640</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>23</Id>
-    <Name>Urszula</Name>
-    <Surname>Pawlak</Surname>
+    <Name>Marta</Name>
+    <Surname>Majewska</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Thursday, February 26, 1998</DateOfBirth>
-    <Profession>straznik</Profession>
-    <City>Opole</City>
-    <Address>UL. JANA SEBASTIANA BACHA 126/50, 29-462</Address>
-    <PhoneNumber>795-629-406</PhoneNumber>
+    <DateOfBirth>Wednesday, September 15, 1948</DateOfBirth>
+    <Profession>barista</Profession>
+    <City>Poznan</City>
+    <Address>UL. BELWEDERCZYKÓW 68/39, 69-459</Address>
+    <PhoneNumber>724-699-732</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>24</Id>
-    <Name>Damian</Name>
-    <Surname>Andrzejewski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Monday, August 5, 2002</DateOfBirth>
-    <Profession>sprzedawca</Profession>
-    <City>Poznan</City>
-    <Address>UL. IBN SINY AWICENNY 81/23, 68-489</Address>
-    <PhoneNumber>586-586-642</PhoneNumber>
+    <Name>Jadwiga</Name>
+    <Surname>Jasińska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Thursday, January 15, 2004</DateOfBirth>
+    <Profession>nauczyciel</Profession>
+    <City>Brzeg</City>
+    <Address>UL. BAZALTOWA 41/9, 52-105</Address>
+    <PhoneNumber>437-452-274</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>25</Id>
-    <Name>Robert</Name>
-    <Surname>Czarnecki</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Thursday, July 24, 1997</DateOfBirth>
-    <Profession>trener</Profession>
-    <City>Wroclawek</City>
-    <Address>UL. BARTNICZA 145/62, 73-153</Address>
-    <PhoneNumber>383-836-866</PhoneNumber>
+    <Name>Danuta</Name>
+    <Surname>Czarnecka</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Saturday, December 8, 2001</DateOfBirth>
+    <Profession>prawnik</Profession>
+    <City>Olawa</City>
+    <Address>RONDO PIOTRA BEDNARZA 154/93, 79-163</Address>
+    <PhoneNumber>597-182-630</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>26</Id>
-    <Name>Mateusz</Name>
-    <Surname>Lis</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Friday, May 4, 2007</DateOfBirth>
-    <Profession>pracownik ofisu</Profession>
-    <City>Lisia Gora</City>
-    <Address>AL. ARCHITEKTÓW 80/93, 68-248</Address>
-    <PhoneNumber>490-784-328</PhoneNumber>
+    <Name>Genowefa</Name>
+    <Surname>Rutkowska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Friday, February 9, 1979</DateOfBirth>
+    <Profession>programista</Profession>
+    <City>Wroclaw</City>
+    <Address>UL. AUSTRALIJSKA 198/41, 31-120</Address>
+    <PhoneNumber>705-176-680</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>27</Id>
-    <Name>Helena</Name>
-    <Surname>Urbańska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Monday, September 20, 2010</DateOfBirth>
-    <Profession>weterynarz</Profession>
-    <City>Bielsko Biala</City>
-    <Address>UL. ALPEJSKA 126/87, 16-283</Address>
-    <PhoneNumber>695-468-818</PhoneNumber>
+    <Name>Krzysztof</Name>
+    <Surname>Maciejewski</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Monday, October 4, 1993</DateOfBirth>
+    <Profession>ksiegowy</Profession>
+    <City>Jelenia Gora</City>
+    <Address>UL. EDWARDA ABRAMOWSKIEGO 10/39, 42-382</Address>
+    <PhoneNumber>955-806-973</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>28</Id>
-    <Name>Edyta</Name>
-    <Surname>Zakrzewska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Friday, October 4, 2019</DateOfBirth>
-    <Profession>zolnierz</Profession>
-    <City>Lisia Gora</City>
-    <Address>UL. HELENY I LUDWIKA ADAMCZEWSKICH 48/92, 10-202</Address>
-    <PhoneNumber>367-273-527</PhoneNumber>
+    <Name>Mieczysław</Name>
+    <Surname>Krajewski</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Friday, October 29, 1954</DateOfBirth>
+    <Profession>barista</Profession>
+    <City>Brzeg</City>
+    <Address>UL. BARWINKOWA 119/59, 73-413</Address>
+    <PhoneNumber>306-376-884</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>29</Id>
-    <Name>Marek</Name>
-    <Surname>Sokołowski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Thursday, March 28, 2002</DateOfBirth>
-    <Profession>sprzedawca</Profession>
-    <City>Jelenia Gora</City>
-    <Address>UL. BEDNARSKA 88/86, 24-354</Address>
-    <PhoneNumber>905-391-826</PhoneNumber>
+    <Name>Kazimiera</Name>
+    <Surname>Majewska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Tuesday, September 29, 1998</DateOfBirth>
+    <Profession>pilkarz</Profession>
+    <City>Brzeg</City>
+    <Address>UL. STEFANA BANACHA 27/36, 53-155</Address>
+    <PhoneNumber>660-382-153</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>30</Id>
-    <Name>Bożena</Name>
-    <Surname>Zając</Surname>
+    <Name>Elżbieta</Name>
+    <Surname>Borkowska</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Thursday, January 19, 1950</DateOfBirth>
+    <DateOfBirth>Sunday, December 21, 1969</DateOfBirth>
     <Profession>kierowca</Profession>
-    <City>Poznan</City>
-    <Address>UL. BARDZKA 198/88, 55-134</Address>
-    <PhoneNumber>645-724-707</PhoneNumber>
+    <City>Olawa</City>
+    <Address>UL. ARTYLERYJSKA 97/4, 53-422</Address>
+    <PhoneNumber>635-268-513</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>31</Id>
-    <Name>Henryk</Name>
-    <Surname>Kamiński</Surname>
+    <Name>Krzysztof</Name>
+    <Surname>Kowalski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Wednesday, January 6, 1971</DateOfBirth>
-    <Profession>notariusz</Profession>
-    <City>Wroclawek</City>
-    <Address>UL. MAXA BERGA 112/13, 29-416</Address>
-    <PhoneNumber>973-457-170</PhoneNumber>
+    <DateOfBirth>Saturday, August 12, 1972</DateOfBirth>
+    <Profession>menager</Profession>
+    <City>Brzeg</City>
+    <Address>SKWER PAWŁA ADAMOWICZA 125/80, 45-331</Address>
+    <PhoneNumber>474-243-213</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>32</Id>
-    <Name>Mariusz</Name>
-    <Surname>Kaczmarek</Surname>
+    <Name>Wojciech</Name>
+    <Surname>Gajewski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Monday, August 17, 2009</DateOfBirth>
-    <Profession>notariusz</Profession>
+    <DateOfBirth>Monday, September 12, 2016</DateOfBirth>
+    <Profession>ksiegowy</Profession>
     <City>Wroclawek</City>
-    <Address>UL. KAROLA ADAMIECKIEGO 174/58, 65-288</Address>
-    <PhoneNumber>566-709-165</PhoneNumber>
+    <Address>UL. MAXA BERGA 158/16, 17-322</Address>
+    <PhoneNumber>943-425-769</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>33</Id>
-    <Name>Monika</Name>
-    <Surname>Zając</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Thursday, March 23, 2000</DateOfBirth>
-    <Profession>professor</Profession>
-    <City>Olesnica</City>
-    <Address>UL. AZALIOWA 42/6, 62-208</Address>
-    <PhoneNumber>691-758-316</PhoneNumber>
+    <Name>Józef</Name>
+    <Surname>Krawczyk</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Saturday, June 5, 1965</DateOfBirth>
+    <Profession>menager</Profession>
+    <City>Opole</City>
+    <Address>UL. ANANASOWA 131/34, 57-222</Address>
+    <PhoneNumber>683-490-232</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>34</Id>
-    <Name>Kazimiera</Name>
-    <Surname>Dąbrowska</Surname>
+    <Name>Urszula</Name>
+    <Surname>Grabowska</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Tuesday, October 12, 1993</DateOfBirth>
-    <Profession>barista</Profession>
-    <City>Wroclaw</City>
-    <Address>UL. ALIANCKA 49/31, 47-230</Address>
-    <PhoneNumber>847-437-783</PhoneNumber>
+    <DateOfBirth>Monday, October 13, 1975</DateOfBirth>
+    <Profession>programista</Profession>
+    <City>Opole</City>
+    <Address>UL. ŚW. BARBARY 54/56, 19-197</Address>
+    <PhoneNumber>526-681-586</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>35</Id>
-    <Name>Helena</Name>
-    <Surname>Brzezińska</Surname>
+    <Name>Edyta</Name>
+    <Surname>Bąk</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Monday, August 6, 1990</DateOfBirth>
-    <Profession>pracownik ofisu</Profession>
-    <City>Jelenia Gora</City>
-    <Address>RONDO TADEUSZA BARANOWSKIEGO 156/1, 44-211</Address>
-    <PhoneNumber>442-427-174</PhoneNumber>
+    <DateOfBirth>Friday, February 26, 1960</DateOfBirth>
+    <Profession>ksiegowy</Profession>
+    <City>Wroclawek</City>
+    <Address>UL. BELWEDERCZYKÓW 134/39, 71-382</Address>
+    <PhoneNumber>383-434-306</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>36</Id>
-    <Name>Karolina</Name>
-    <Surname>Dudek</Surname>
+    <Name>Paulina</Name>
+    <Surname>Szulc</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Monday, December 13, 1971</DateOfBirth>
-    <Profession>menager</Profession>
-    <City>Olawa</City>
-    <Address>UL. HELENY I LUDWIKA ADAMCZEWSKICH 90/44, 12-353</Address>
-    <PhoneNumber>306-172-458</PhoneNumber>
+    <DateOfBirth>Tuesday, December 13, 1955</DateOfBirth>
+    <Profession>notariusz</Profession>
+    <City>Opole</City>
+    <Address>UL. BABIOGÓRSKA 38/21, 73-371</Address>
+    <PhoneNumber>791-278-758</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>37</Id>
-    <Name>Stanisław</Name>
-    <Surname>Urbański</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Monday, May 29, 2017</DateOfBirth>
-    <Profession>menager</Profession>
-    <City>Olsztyn</City>
-    <Address>UL. ŚW. ANTONIEGO 62/14, 53-331</Address>
-    <PhoneNumber>846-236-927</PhoneNumber>
+    <Name>Natalia</Name>
+    <Surname>Chmielewska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Wednesday, November 15, 1961</DateOfBirth>
+    <Profession>weterynarz</Profession>
+    <City>Bielsko Biala</City>
+    <Address>UL. ARBUZOWA 17/62, 62-178</Address>
+    <PhoneNumber>995-755-843</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>38</Id>
-    <Name>Stefania</Name>
-    <Surname>Kowalska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Thursday, June 7, 2018</DateOfBirth>
-    <Profession>taksowkarz</Profession>
-    <City>Wroclaw</City>
-    <Address>UL. STEFANA BANACHA 154/72, 47-116</Address>
-    <PhoneNumber>829-582-378</PhoneNumber>
+    <Name>Zbigniew</Name>
+    <Surname>Marciniak</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Thursday, April 3, 1947</DateOfBirth>
+    <Profession>kierowca</Profession>
+    <City>Boleslawiec</City>
+    <Address>UL. BERNARDYŃSKA 152/52, 44-488</Address>
+    <PhoneNumber>951-783-979</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>39</Id>
-    <Name>Alicja</Name>
-    <Surname>Witkowska</Surname>
+    <Name>Stanisława</Name>
+    <Surname>Przybylska</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Friday, March 20, 1998</DateOfBirth>
-    <Profession>programista</Profession>
-    <City>Bielsko Biala</City>
-    <Address>UL. STEFANA BATOREGO 75/30, 46-428</Address>
-    <PhoneNumber>915-584-699</PhoneNumber>
+    <DateOfBirth>Wednesday, August 15, 2018</DateOfBirth>
+    <Profession>barista</Profession>
+    <City>Poznan</City>
+    <Address>UL. ADAMA ASNYKA 47/37, 39-496</Address>
+    <PhoneNumber>674-550-456</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>40</Id>
-    <Name>Zbigniew</Name>
-    <Surname>Włodarczyk</Surname>
+    <Name>Andrzej</Name>
+    <Surname>Sikorski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Friday, June 29, 1962</DateOfBirth>
-    <Profession>programista</Profession>
-    <City>Bielsko Biala</City>
-    <Address>UL. BAZYLIOWA 133/84, 22-163</Address>
-    <PhoneNumber>803-264-375</PhoneNumber>
+    <DateOfBirth>Friday, November 24, 1978</DateOfBirth>
+    <Profession>taksowkarz</Profession>
+    <City>Brzeg</City>
+    <Address>UL. MARCELLEGO BACCIARELLEGO 76/14, 72-216</Address>
+    <PhoneNumber>692-228-418</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>41</Id>
-    <Name>Marcin</Name>
-    <Surname>Sikorski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Friday, June 1, 1979</DateOfBirth>
-    <Profession>prawnik</Profession>
+    <Name>Iwona</Name>
+    <Surname>Stępień</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Sunday, August 5, 1979</DateOfBirth>
+    <Profession>kelner</Profession>
     <City>Bielsko Biala</City>
-    <Address>UL. GEN. ROMANA ABRAHAMA 63/4, 21-430</Address>
-    <PhoneNumber>855-707-822</PhoneNumber>
+    <Address>UL. AZALIOWA 41/53, 61-378</Address>
+    <PhoneNumber>398-977-279</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>42</Id>
-    <Name>Marcin</Name>
-    <Surname>Kucharski</Surname>
+    <Name>Andrzej</Name>
+    <Surname>Sikora</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Tuesday, January 16, 1990</DateOfBirth>
-    <Profession>menager</Profession>
-    <City>Opole</City>
-    <Address>UL. ŚW. ANTONIEGO 106/32, 74-301</Address>
-    <PhoneNumber>841-975-626</PhoneNumber>
+    <DateOfBirth>Tuesday, November 23, 1971</DateOfBirth>
+    <Profession>zolnierz</Profession>
+    <City>Brzeg</City>
+    <Address>UL. AUGUSTOWSKA 122/13, 38-228</Address>
+    <PhoneNumber>659-162-839</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>43</Id>
-    <Name>Alicja</Name>
-    <Surname>Lewandowska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Saturday, April 12, 1969</DateOfBirth>
-    <Profession>professor</Profession>
-    <City>Opole</City>
-    <Address>UL. ARBUZOWA 69/60, 20-145</Address>
-    <PhoneNumber>647-773-272</PhoneNumber>
+    <Name>Zbigniew</Name>
+    <Surname>Woźniak</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Sunday, November 15, 1981</DateOfBirth>
+    <Profession>nauczyciel</Profession>
+    <City>Olawa</City>
+    <Address>UL. ALTANOWA 189/47, 76-127</Address>
+    <PhoneNumber>308-533-319</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>44</Id>
-    <Name>Jakub</Name>
-    <Surname>Szulc</Surname>
+    <Name>Waldemar</Name>
+    <Surname>Zawadzki</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Tuesday, May 31, 1988</DateOfBirth>
-    <Profession>weterynarz</Profession>
-    <City>Opole</City>
-    <Address>UL. BASKIJSKA 198/98, 78-228</Address>
-    <PhoneNumber>905-132-564</PhoneNumber>
+    <DateOfBirth>Wednesday, October 13, 1965</DateOfBirth>
+    <Profession>straznik</Profession>
+    <City>Olsztyn</City>
+    <Address>RONDO WŁADYSŁAWA BARTOSZEWSKIEGO 14/15, 49-148</Address>
+    <PhoneNumber>630-674-718</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>45</Id>
-    <Name>Wanda</Name>
-    <Surname>Walczak</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Friday, December 28, 2001</DateOfBirth>
-    <Profession>programista</Profession>
-    <City>Olawa</City>
-    <Address>UL. BARWINKOWA 51/46, 17-151</Address>
-    <PhoneNumber>349-235-764</PhoneNumber>
+    <Name>Zbigniew</Name>
+    <Surname>Andrzejewski</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Thursday, August 31, 1995</DateOfBirth>
+    <Profession>lekarz</Profession>
+    <City>Opole</City>
+    <Address>UL. BESKIDZKA 89/33, 45-258</Address>
+    <PhoneNumber>733-125-709</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>46</Id>
-    <Name>Marian</Name>
-    <Surname>Sobczak</Surname>
+    <Name>Kamil</Name>
+    <Surname>Malinowski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Friday, February 17, 1950</DateOfBirth>
+    <DateOfBirth>Sunday, October 29, 1967</DateOfBirth>
     <Profession>prawnik</Profession>
-    <City>Wroclaw</City>
-    <Address>UL. BABIEGO LATA 174/71, 56-474</Address>
-    <PhoneNumber>802-555-276</PhoneNumber>
+    <City>Lisia Gora</City>
+    <Address>UL. NORBERTA BARLICKIEGO 154/78, 64-123</Address>
+    <PhoneNumber>313-938-864</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>47</Id>
-    <Name>Teresa</Name>
-    <Surname>Włodarczyk</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Saturday, June 29, 1991</DateOfBirth>
-    <Profession>menager</Profession>
-    <City>Jelenia Gora</City>
-    <Address>UL. AMARANTOWA 49/91, 68-239</Address>
-    <PhoneNumber>952-737-856</PhoneNumber>
+    <Name>Sebastian</Name>
+    <Surname>Wojciechowski</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Monday, January 16, 2012</DateOfBirth>
+    <Profession>kierowca</Profession>
+    <City>Olawa</City>
+    <Address>UL. AMARANTOWA 178/98, 78-350</Address>
+    <PhoneNumber>304-929-799</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>48</Id>
-    <Name>Anna</Name>
-    <Surname>Wojciechowska</Surname>
+    <Name>Sylwia</Name>
+    <Surname>Lewandowska</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Saturday, December 2, 1967</DateOfBirth>
-    <Profession>zolnierz</Profession>
-    <City>Brzeg</City>
-    <Address>UL. ALTANOWA 117/4, 47-263</Address>
-    <PhoneNumber>408-513-813</PhoneNumber>
+    <DateOfBirth>Sunday, November 19, 2000</DateOfBirth>
+    <Profession>trener</Profession>
+    <City>Olsztyn</City>
+    <Address>UL. BAGATELA 43/27, 22-394</Address>
+    <PhoneNumber>734-916-415</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>49</Id>
-    <Name>Zofia</Name>
-    <Surname>Kubiak</Surname>
+    <Name>Karolina</Name>
+    <Surname>Wójcik</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Wednesday, August 16, 1961</DateOfBirth>
-    <Profession>trener</Profession>
-    <City>Olawa</City>
-    <Address>UL. ŚW. BARBARY 128/45, 36-344</Address>
-    <PhoneNumber>937-662-473</PhoneNumber>
+    <DateOfBirth>Saturday, March 19, 1994</DateOfBirth>
+    <Profession>weterynarz</Profession>
+    <City>Olsztyn</City>
+    <Address>UL. GEN. ROMANA ABRAHAMA 171/58, 52-277</Address>
+    <PhoneNumber>357-433-248</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>50</Id>
-    <Name>Henryk</Name>
-    <Surname>Dąbrowski</Surname>
+    <Name>Zdzisław</Name>
+    <Surname>Kamiński</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Saturday, March 26, 2016</DateOfBirth>
-    <Profession>barista</Profession>
-    <City>Brzeg</City>
-    <Address>UL. BABIOGÓRSKA 5/52, 61-389</Address>
-    <PhoneNumber>612-152-805</PhoneNumber>
+    <DateOfBirth>Wednesday, August 10, 1988</DateOfBirth>
+    <Profession>straznik</Profession>
+    <City>Jelenia Gora</City>
+    <Address>UL. ALIANCKA 151/67, 64-448</Address>
+    <PhoneNumber>877-188-568</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>51</Id>
-    <Name>Józef</Name>
-    <Surname>Jaworski</Surname>
+    <Name>Piotr</Name>
+    <Surname>Sikorski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Thursday, May 8, 2003</DateOfBirth>
-    <Profession>ksiegowy</Profession>
-    <City>Olsztyn</City>
-    <Address>UL. KRZYSZTOFA KAMILA BACZYŃSKIEGO 111/56, 64-358</Address>
-    <PhoneNumber>423-268-387</PhoneNumber>
+    <DateOfBirth>Tuesday, March 21, 1978</DateOfBirth>
+    <Profession>notariusz</Profession>
+    <City>Jelenia Gora</City>
+    <Address>UL. BAŁTYCKA 129/6, 32-439</Address>
+    <PhoneNumber>732-633-367</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>52</Id>
-    <Name>Zofia</Name>
-    <Surname>Zielińska</Surname>
+    <Name>Krystyna</Name>
+    <Surname>Zakrzewska</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Saturday, September 5, 2015</DateOfBirth>
-    <Profession>weterynarz</Profession>
-    <City>Olsztyn</City>
-    <Address>UL. ARTYLERYJSKA 102/56, 49-166</Address>
-    <PhoneNumber>965-954-866</PhoneNumber>
+    <DateOfBirth>Friday, December 22, 1961</DateOfBirth>
+    <Profession>sprzedawca</Profession>
+    <City>Olawa</City>
+    <Address>UL. AUSTRIACKA 110/33, 61-327</Address>
+    <PhoneNumber>869-176-672</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>53</Id>
-    <Name>Irena</Name>
-    <Surname>Majewska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Sunday, September 12, 1965</DateOfBirth>
-    <Profession>lekarz</Profession>
-    <City>Wroclawek</City>
-    <Address>UL. ŚW. BARBARY 90/28, 46-309</Address>
-    <PhoneNumber>815-594-748</PhoneNumber>
+    <Name>Dawid</Name>
+    <Surname>Chmielewski</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Tuesday, November 23, 1971</DateOfBirth>
+    <Profession>trener</Profession>
+    <City>Poznan</City>
+    <Address>UL. BAŻANCIA 50/16, 64-285</Address>
+    <PhoneNumber>557-314-912</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>54</Id>
-    <Name>Mirosław</Name>
-    <Surname>Dudek</Surname>
+    <Name>Ryszard</Name>
+    <Surname>Olszewski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Tuesday, September 25, 1962</DateOfBirth>
-    <Profession>pilkarz</Profession>
-    <City>Wroclaw</City>
-    <Address>PL. MORDECHAJA ANIELEWICZA 69/77, 46-454</Address>
-    <PhoneNumber>760-218-433</PhoneNumber>
+    <DateOfBirth>Wednesday, July 4, 1951</DateOfBirth>
+    <Profession>straznik</Profession>
+    <City>Boleslawiec</City>
+    <Address>UL. BELGRADZKA 134/32, 18-437</Address>
+    <PhoneNumber>960-379-979</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>55</Id>
-    <Name>Andrzej</Name>
-    <Surname>Stępień</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Wednesday, November 15, 1972</DateOfBirth>
-    <Profession>barista</Profession>
-    <City>Jelenia Gora</City>
-    <Address>UL. 8 MAJA 145/10, 27-110</Address>
-    <PhoneNumber>885-126-341</PhoneNumber>
+    <Name>Katarzyna</Name>
+    <Surname>Kalinowska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Friday, August 29, 2003</DateOfBirth>
+    <Profession>lekarz</Profession>
+    <City>Wroclawek</City>
+    <Address>UL. BAZYLIOWA 71/26, 51-493</Address>
+    <PhoneNumber>615-171-608</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>56</Id>
-    <Name>Teresa</Name>
-    <Surname>Mazurek</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Saturday, December 11, 1971</DateOfBirth>
-    <Profession>kelner</Profession>
-    <City>Jelenia Gora</City>
-    <Address>UL. MAXA BERGA 4/69, 58-203</Address>
-    <PhoneNumber>761-253-793</PhoneNumber>
+    <Name>Jakub</Name>
+    <Surname>Zieliński</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Thursday, May 31, 1951</DateOfBirth>
+    <Profession>straznik</Profession>
+    <City>Poznan</City>
+    <Address>RONDO PIOTRA BEDNARZA 33/22, 51-405</Address>
+    <PhoneNumber>787-269-962</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>57</Id>
-    <Name>Patrycja</Name>
-    <Surname>Michalska</Surname>
+    <Name>Irena</Name>
+    <Surname>Brzezińska</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Saturday, November 21, 1987</DateOfBirth>
-    <Profession>sprzedawca</Profession>
-    <City>Wroclaw</City>
-    <Address>UL. ARCHEOLOGÓW 153/49, 56-398</Address>
-    <PhoneNumber>887-546-457</PhoneNumber>
+    <DateOfBirth>Wednesday, February 19, 2014</DateOfBirth>
+    <Profession>nauczyciel</Profession>
+    <City>Poznan</City>
+    <Address>UL. BASKIJSKA 87/15, 48-168</Address>
+    <PhoneNumber>554-721-510</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>58</Id>
-    <Name>Patrycja</Name>
-    <Surname>Kucharska</Surname>
+    <Name>Ewa</Name>
+    <Surname>Makowska</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Friday, August 28, 1970</DateOfBirth>
-    <Profession>trener</Profession>
-    <City>Jelenia Gora</City>
-    <Address>UL. BAGATELA 84/32, 21-178</Address>
-    <PhoneNumber>335-121-888</PhoneNumber>
+    <DateOfBirth>Tuesday, August 5, 2003</DateOfBirth>
+    <Profession>kelner</Profession>
+    <City>Bielsko Biala</City>
+    <Address>UL. AMARANTOWA 26/30, 31-116</Address>
+    <PhoneNumber>594-943-646</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>59</Id>
-    <Name>Andrzej</Name>
-    <Surname>Lewandowski</Surname>
+    <Name>Damian</Name>
+    <Surname>Kaźmierczak</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Thursday, November 26, 1959</DateOfBirth>
-    <Profession>pracownik ofisu</Profession>
-    <City>Lisia Gora</City>
-    <Address>AL. ARMII KRAJOWEJ 49/95, 19-483</Address>
-    <PhoneNumber>338-235-709</PhoneNumber>
+    <DateOfBirth>Friday, August 13, 1965</DateOfBirth>
+    <Profession>barista</Profession>
+    <City>Brzeg</City>
+    <Address>UL. KRZYSZTOFA KAMILA BACZYŃSKIEGO 38/14, 32-285</Address>
+    <PhoneNumber>396-280-602</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>60</Id>
-    <Name>Waldemar</Name>
-    <Surname>Jaworski</Surname>
+    <Name>Maciej</Name>
+    <Surname>Pawłowski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Sunday, October 24, 1993</DateOfBirth>
-    <Profession>sprzedawca</Profession>
-    <City>Lisia Gora</City>
-    <Address>UL. BALONOWA 82/93, 74-450</Address>
-    <PhoneNumber>763-511-474</PhoneNumber>
+    <DateOfBirth>Wednesday, January 1, 1964</DateOfBirth>
+    <Profession>programista</Profession>
+    <City>Jelenia Gora</City>
+    <Address>UL. BELGIJSKA 134/49, 32-347</Address>
+    <PhoneNumber>718-290-805</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>61</Id>
-    <Name>Jolanta</Name>
-    <Surname>Sikora</Surname>
+    <Name>Wiesława</Name>
+    <Surname>Kowalska</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Tuesday, December 10, 1963</DateOfBirth>
-    <Profession>barista</Profession>
-    <City>Jelenia Gora</City>
-    <Address>UL. KAZIMIERZA BARTLA 8/53, 23-282</Address>
-    <PhoneNumber>794-699-715</PhoneNumber>
+    <DateOfBirth>Friday, July 28, 1950</DateOfBirth>
+    <Profession>trener</Profession>
+    <City>Olsztyn</City>
+    <Address>UL. BAŁTYCKA 19/39, 56-159</Address>
+    <PhoneNumber>667-621-393</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>62</Id>
-    <Name>Jerzy</Name>
-    <Surname>Michalak</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Thursday, October 17, 1985</DateOfBirth>
-    <Profession>sprzedawca</Profession>
-    <City>Bielsko Biala</City>
-    <Address>UL. BARDZKA 192/97, 36-129</Address>
-    <PhoneNumber>584-839-236</PhoneNumber>
+    <Name>Barbara</Name>
+    <Surname>Majewska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Wednesday, April 1, 2020</DateOfBirth>
+    <Profession>pilkarz</Profession>
+    <City>Opole</City>
+    <Address>UL. AUSTRIACKA 195/83, 38-253</Address>
+    <PhoneNumber>370-227-417</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>63</Id>
-    <Name>Janina</Name>
-    <Surname>Majewska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Sunday, March 24, 1996</DateOfBirth>
-    <Profession>lekarz</Profession>
-    <City>Bielsko Biala</City>
-    <Address>UL. ARACHIDOWA 61/68, 43-354</Address>
-    <PhoneNumber>551-659-437</PhoneNumber>
+    <Name>Tadeusz</Name>
+    <Surname>Zawadzki</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Saturday, February 2, 1952</DateOfBirth>
+    <Profession>nauczyciel</Profession>
+    <City>Wroclawek</City>
+    <Address>UL. 3 MAJA 10/56, 43-480</Address>
+    <PhoneNumber>508-291-146</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>64</Id>
-    <Name>Justyna</Name>
-    <Surname>Zielińska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Monday, November 2, 2015</DateOfBirth>
-    <Profession>zolnierz</Profession>
-    <City>Jelenia Gora</City>
-    <Address>UL. AFGAŃSKA 92/80, 60-122</Address>
-    <PhoneNumber>745-291-807</PhoneNumber>
+    <Name>Rafał</Name>
+    <Surname>Kowalski</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Sunday, August 4, 2002</DateOfBirth>
+    <Profession>weterynarz</Profession>
+    <City>Wroclaw</City>
+    <Address>UL. BELWEDERCZYKÓW 13/27, 48-141</Address>
+    <PhoneNumber>690-346-952</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>65</Id>
-    <Name>Danuta</Name>
-    <Surname>Kowalczyk</Surname>
+    <Name>Irena</Name>
+    <Surname>Przybylska</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Saturday, April 7, 1973</DateOfBirth>
-    <Profession>nauczyciel</Profession>
+    <DateOfBirth>Monday, November 6, 1967</DateOfBirth>
+    <Profession>prawnik</Profession>
     <City>Opole</City>
-    <Address>UL. EDWARDA ABRAMOWSKIEGO 76/56, 19-146</Address>
-    <PhoneNumber>837-838-437</PhoneNumber>
+    <Address>AL. AKACJOWA 68/2, 71-464</Address>
+    <PhoneNumber>755-195-776</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>66</Id>
-    <Name>Dawid</Name>
-    <Surname>Kamiński</Surname>
+    <Name>Waldemar</Name>
+    <Surname>Szulc</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Tuesday, December 31, 1996</DateOfBirth>
+    <DateOfBirth>Sunday, January 18, 1976</DateOfBirth>
     <Profession>professor</Profession>
-    <City>Jelenia Gora</City>
-    <Address>UL. GEN. JÓZEFA BEMA 1/37, 57-407</Address>
-    <PhoneNumber>896-146-503</PhoneNumber>
+    <City>Olawa</City>
+    <Address>UL. KRZYSZTOFA KAMILA BACZYŃSKIEGO 158/93, 57-191</Address>
+    <PhoneNumber>831-463-903</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>67</Id>
-    <Name>Krystyna</Name>
-    <Surname>Ziółkowska</Surname>
+    <Name>Elżbieta</Name>
+    <Surname>Chmielewska</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Friday, July 6, 2001</DateOfBirth>
-    <Profession>kelner</Profession>
-    <City>Olsztyn</City>
-    <Address>AL. ARMII KRAJOWEJ 60/56, 56-425</Address>
-    <PhoneNumber>991-935-575</PhoneNumber>
+    <DateOfBirth>Monday, December 20, 1993</DateOfBirth>
+    <Profession>barista</Profession>
+    <City>Wroclaw</City>
+    <Address>UL. BARDZKA 144/29, 17-411</Address>
+    <PhoneNumber>965-158-294</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>68</Id>
-    <Name>Sławomir</Name>
-    <Surname>Krajewski</Surname>
+    <Name>Mateusz</Name>
+    <Surname>Ziółkowski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Wednesday, September 29, 1954</DateOfBirth>
+    <DateOfBirth>Thursday, January 13, 1966</DateOfBirth>
     <Profession>ksiegowy</Profession>
-    <City>Wroclawek</City>
-    <Address>UL. ANGIELSKA 173/54, 38-312</Address>
-    <PhoneNumber>340-745-974</PhoneNumber>
+    <City>Opole</City>
+    <Address>SKWER PAWŁA ADAMOWICZA 164/99, 18-129</Address>
+    <PhoneNumber>388-538-270</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>69</Id>
-    <Name>Genowefa</Name>
-    <Surname>Krajewska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Thursday, March 5, 1987</DateOfBirth>
-    <Profession>straznik</Profession>
-    <City>Jelenia Gora</City>
-    <Address>UL. MAXA BERGA 39/2, 14-430</Address>
-    <PhoneNumber>420-378-829</PhoneNumber>
+    <Name>Damian</Name>
+    <Surname>Kołodziej</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Saturday, June 27, 2009</DateOfBirth>
+    <Profession>kierowca</Profession>
+    <City>Lisia Gora</City>
+    <Address>UL. ASTROWA 94/64, 25-385</Address>
+    <PhoneNumber>943-473-241</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>70</Id>
-    <Name>Paweł</Name>
-    <Surname>Ostrowski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Sunday, October 23, 1983</DateOfBirth>
-    <Profession>professor</Profession>
-    <City>Bielsko Biala</City>
-    <Address>SKWER PAWŁA ADAMOWICZA 178/86, 23-287</Address>
-    <PhoneNumber>676-555-660</PhoneNumber>
+    <Name>Maria</Name>
+    <Surname>Mazurek</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Monday, June 13, 2005</DateOfBirth>
+    <Profession>straznik</Profession>
+    <City>Olsztyn</City>
+    <Address>UL. ADAMA ASNYKA 23/76, 43-386</Address>
+    <PhoneNumber>633-128-453</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>71</Id>
-    <Name>Beata</Name>
-    <Surname>Kucharska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Thursday, March 7, 1957</DateOfBirth>
-    <Profession>taksowkarz</Profession>
-    <City>Lisia Gora</City>
-    <Address>UL. ALPEJSKA 171/10, 33-268</Address>
-    <PhoneNumber>454-698-946</PhoneNumber>
+    <Name>Mieczysław</Name>
+    <Surname>Górski</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Wednesday, February 21, 1968</DateOfBirth>
+    <Profession>weterynarz</Profession>
+    <City>Poznan</City>
+    <Address>UL. BAŁKAŃSKA 142/21, 20-222</Address>
+    <PhoneNumber>847-736-494</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>72</Id>
-    <Name>Dariusz</Name>
-    <Surname>Walczak</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Tuesday, November 2, 2004</DateOfBirth>
-    <Profession>kierowca</Profession>
+    <Name>Stanisława</Name>
+    <Surname>Sawicka</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Sunday, February 10, 1985</DateOfBirth>
+    <Profession>ksiegowy</Profession>
     <City>Olsztyn</City>
-    <Address>UL. BARYCKA 56/15, 35-112</Address>
-    <PhoneNumber>471-808-378</PhoneNumber>
+    <Address>UL. KAROLA ADAMIECKIEGO 26/86, 53-245</Address>
+    <PhoneNumber>612-833-326</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>73</Id>
-    <Name>Jarosław</Name>
-    <Surname>Zakrzewski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Wednesday, January 9, 2019</DateOfBirth>
-    <Profession>ksiegowy</Profession>
+    <Name>Jadwiga</Name>
+    <Surname>Pietrzak</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Wednesday, September 10, 1980</DateOfBirth>
+    <Profession>kelner</Profession>
     <City>Poznan</City>
-    <Address>UL. STEFANA BANACHA 3/45, 69-154</Address>
-    <PhoneNumber>859-267-249</PhoneNumber>
+    <Address>UL. BENEDYKTYŃSKA 51/52, 63-148</Address>
+    <PhoneNumber>853-908-679</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>74</Id>
-    <Name>Marian</Name>
-    <Surname>Wieczorek</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Wednesday, December 31, 2014</DateOfBirth>
-    <Profession>pracownik recepcji</Profession>
-    <City>Olawa</City>
-    <Address>UL. 3 MAJA 56/80, 63-430</Address>
-    <PhoneNumber>615-547-759</PhoneNumber>
+    <Name>Beata</Name>
+    <Surname>Cieślak</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Tuesday, July 19, 1983</DateOfBirth>
+    <Profession>weterynarz</Profession>
+    <City>Opole</City>
+    <Address>MOST BARTOSZOWICKI 1/73, 35-268</Address>
+    <PhoneNumber>487-739-883</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>75</Id>
-    <Name>Marian</Name>
-    <Surname>Tomaszewski</Surname>
+    <Name>Janusz</Name>
+    <Surname>Przybylski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Tuesday, February 22, 2005</DateOfBirth>
-    <Profession>pracownik ofisu</Profession>
-    <City>Boleslawiec</City>
-    <Address>PL. GEN. JÓZEFA BEMA 20/11, 48-182</Address>
-    <PhoneNumber>339-656-312</PhoneNumber>
+    <DateOfBirth>Tuesday, June 20, 1972</DateOfBirth>
+    <Profession>nauczyciel</Profession>
+    <City>Bielsko Biala</City>
+    <Address>UL. STEFANA BATOREGO 188/9, 66-492</Address>
+    <PhoneNumber>422-490-993</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>76</Id>
-    <Name>Mariusz</Name>
-    <Surname>Woźniak</Surname>
+    <Name>Tomasz</Name>
+    <Surname>Maciejewski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Sunday, March 20, 1988</DateOfBirth>
-    <Profession>pracownik recepcji</Profession>
-    <City>Wroclaw</City>
-    <Address>UL. MAURYCEGO BENIOWSKIEGO 45/9, 55-487</Address>
-    <PhoneNumber>475-147-515</PhoneNumber>
+    <DateOfBirth>Tuesday, June 21, 1955</DateOfBirth>
+    <Profession>menager</Profession>
+    <City>Lisia Gora</City>
+    <Address>UL. IBN SINY AWICENNY 170/51, 49-314</Address>
+    <PhoneNumber>664-107-589</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>77</Id>
-    <Name>Kazimierz</Name>
-    <Surname>Marciniak</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Monday, January 5, 1981</DateOfBirth>
-    <Profession>prawnik</Profession>
-    <City>Brzeg</City>
-    <Address>UL. AGATOWA 158/63, 43-493</Address>
-    <PhoneNumber>936-617-280</PhoneNumber>
+    <Name>Sylwia</Name>
+    <Surname>Borkowska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Friday, January 24, 2020</DateOfBirth>
+    <Profession>kierowca</Profession>
+    <City>Lisia Gora</City>
+    <Address>UL. GEN. JÓZEFA BEMA 193/38, 21-267</Address>
+    <PhoneNumber>533-380-214</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>78</Id>
-    <Name>Maciej</Name>
-    <Surname>Kowalczyk</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Thursday, September 10, 1981</DateOfBirth>
-    <Profession>prawnik</Profession>
-    <City>Lisia Gora</City>
-    <Address>UL. BARANOWICKA 82/53, 61-279</Address>
-    <PhoneNumber>534-708-884</PhoneNumber>
+    <Name>Anna</Name>
+    <Surname>Jakubowska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Sunday, December 12, 1948</DateOfBirth>
+    <Profession>kelner</Profession>
+    <City>Olsztyn</City>
+    <Address>UL. MAXA BERGA 68/45, 65-459</Address>
+    <PhoneNumber>975-711-142</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>79</Id>
-    <Name>Tadeusz</Name>
-    <Surname>Duda</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Tuesday, November 8, 2005</DateOfBirth>
+    <Name>Jolanta</Name>
+    <Surname>Dudek</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Wednesday, February 3, 1999</DateOfBirth>
     <Profession>menager</Profession>
-    <City>Olsztyn</City>
-    <Address>UL. ARACHIDOWA 126/43, 12-200</Address>
-    <PhoneNumber>735-529-369</PhoneNumber>
+    <City>Olawa</City>
+    <Address>UL. JERZEGO BAJANA 156/69, 56-100</Address>
+    <PhoneNumber>429-175-443</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>80</Id>
-    <Name>Kazimierz</Name>
-    <Surname>Wieczorek</Surname>
+    <Name>Mariusz</Name>
+    <Surname>Kucharski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Monday, May 13, 1957</DateOfBirth>
-    <Profession>kierowca</Profession>
-    <City>Opole</City>
-    <Address>UL. BARANOWICKA 61/83, 59-401</Address>
-    <PhoneNumber>796-706-320</PhoneNumber>
+    <DateOfBirth>Monday, October 27, 1986</DateOfBirth>
+    <Profession>menager</Profession>
+    <City>Brzeg</City>
+    <Address>UL. STEFANA BATOREGO 163/69, 30-101</Address>
+    <PhoneNumber>902-359-396</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>81</Id>
-    <Name>Sebastian</Name>
-    <Surname>Jankowski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Tuesday, August 13, 1974</DateOfBirth>
-    <Profession>sprzedawca</Profession>
+    <Name>Marzena</Name>
+    <Surname>Witkowska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Saturday, July 26, 1952</DateOfBirth>
+    <Profession>kierowca</Profession>
     <City>Wroclawek</City>
-    <Address>AL. ARMII KRAJOWEJ 115/40, 58-482</Address>
-    <PhoneNumber>590-517-489</PhoneNumber>
+    <Address>UL. BAZALTOWA 90/61, 41-471</Address>
+    <PhoneNumber>904-276-754</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>82</Id>
-    <Name>Justyna</Name>
-    <Surname>Pietrzak</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Wednesday, June 5, 2013</DateOfBirth>
-    <Profession>menager</Profession>
-    <City>Lisia Gora</City>
-    <Address>UL. AUSTRIACKA 18/28, 67-304</Address>
-    <PhoneNumber>311-188-975</PhoneNumber>
+    <Name>Zdzisław</Name>
+    <Surname>Głowacki</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Friday, March 6, 2015</DateOfBirth>
+    <Profession>notariusz</Profession>
+    <City>Brzeg</City>
+    <Address>UL. ARACHIDOWA 36/68, 46-369</Address>
+    <PhoneNumber>748-539-676</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>83</Id>
-    <Name>Jan</Name>
-    <Surname>Kołodziej</Surname>
+    <Name>Kazimierz</Name>
+    <Surname>Szymczak</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Wednesday, February 26, 1964</DateOfBirth>
+    <DateOfBirth>Sunday, July 18, 1976</DateOfBirth>
     <Profession>sprzedawca</Profession>
-    <City>Opole</City>
-    <Address>UL. BABIOGÓRSKA 114/73, 75-174</Address>
-    <PhoneNumber>469-712-816</PhoneNumber>
+    <City>Boleslawiec</City>
+    <Address>UL. HENRYKA ARCTOWSKIEGO 89/49, 22-153</Address>
+    <PhoneNumber>635-600-473</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>84</Id>
-    <Name>Łukasz</Name>
-    <Surname>Kucharski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Friday, April 8, 1955</DateOfBirth>
-    <Profession>notariusz</Profession>
-    <City>Wroclaw</City>
-    <Address>UL. JANA BAUDOUINA DE COURTENAY 16/76, 37-339</Address>
-    <PhoneNumber>712-620-708</PhoneNumber>
+    <Name>Karolina</Name>
+    <Surname>Brzezińska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Saturday, December 15, 1973</DateOfBirth>
+    <Profession>lekarz</Profession>
+    <City>Bielsko Biala</City>
+    <Address>UL. BAZALTOWA 163/82, 29-106</Address>
+    <PhoneNumber>613-617-536</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>85</Id>
-    <Name>Paulina</Name>
-    <Surname>Sokołowska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Wednesday, October 5, 1988</DateOfBirth>
+    <Name>Stanisław</Name>
+    <Surname>Baran</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Sunday, January 20, 2013</DateOfBirth>
     <Profession>zolnierz</Profession>
-    <City>Wroclawek</City>
-    <Address>AL. ARMII KRAJOWEJ 14/67, 30-325</Address>
-    <PhoneNumber>742-630-687</PhoneNumber>
+    <City>Olsztyn</City>
+    <Address>UL. ALPEJSKA 28/94, 46-101</Address>
+    <PhoneNumber>898-656-594</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>86</Id>
-    <Name>Waldemar</Name>
-    <Surname>Kalinowski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Tuesday, July 13, 2010</DateOfBirth>
-    <Profession>sprzedawca</Profession>
-    <City>Olsztyn</City>
-    <Address>UL. ARBUZOWA 13/83, 26-184</Address>
-    <PhoneNumber>818-623-726</PhoneNumber>
+    <Name>Maria</Name>
+    <Surname>Głowacka</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Friday, January 14, 2011</DateOfBirth>
+    <Profession>ksiegowy</Profession>
+    <City>Wroclawek</City>
+    <Address>UL. ARACHIDOWA 55/34, 72-488</Address>
+    <PhoneNumber>522-124-139</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>87</Id>
-    <Name>Anna</Name>
-    <Surname>Mazur</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Monday, June 1, 2015</DateOfBirth>
-    <Profession>pracownik recepcji</Profession>
-    <City>Wroclawek</City>
-    <Address>UL. KRYSTYNY I MARIANA BARSKICH 129/49, 47-492</Address>
-    <PhoneNumber>509-403-909</PhoneNumber>
+    <Name>Zbigniew</Name>
+    <Surname>Zając</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Saturday, March 4, 1950</DateOfBirth>
+    <Profession>kierowca</Profession>
+    <City>Olawa</City>
+    <Address>UL. ŚW. BARBARY 151/79, 31-109</Address>
+    <PhoneNumber>854-613-574</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>88</Id>
-    <Name>Wiesława</Name>
-    <Surname>Sadowska</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Thursday, May 19, 1960</DateOfBirth>
-    <Profession>weterynarz</Profession>
-    <City>Olsztyn</City>
-    <Address>UL. MICHAŁA BAŁUCKIEGO 30/94, 59-467</Address>
-    <PhoneNumber>350-684-140</PhoneNumber>
+    <Name>Grzegorz</Name>
+    <Surname>Wilk</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Tuesday, October 4, 1988</DateOfBirth>
+    <Profession>programista</Profession>
+    <City>Olawa</City>
+    <Address>AL. ARCHITEKTÓW 14/14, 77-304</Address>
+    <PhoneNumber>682-153-152</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>89</Id>
-    <Name>Roman</Name>
-    <Surname>Witkowski</Surname>
+    <Name>Waldemar</Name>
+    <Surname>Wiśniewski</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Wednesday, March 20, 1985</DateOfBirth>
-    <Profession>zolnierz</Profession>
-    <City>Lisia Gora</City>
-    <Address>UL. PŁK. JÓZEFA BECKA 83/50, 15-298</Address>
-    <PhoneNumber>872-449-437</PhoneNumber>
+    <DateOfBirth>Sunday, February 11, 1951</DateOfBirth>
+    <Profession>pracownik recepcji</Profession>
+    <City>Boleslawiec</City>
+    <Address>UL. AMETYSTOWA 79/25, 55-460</Address>
+    <PhoneNumber>632-648-502</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>90</Id>
-    <Name>Jan</Name>
-    <Surname>Lis</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Monday, January 31, 1983</DateOfBirth>
-    <Profession>programista</Profession>
-    <City>Wroclaw</City>
-    <Address>UL. BELGRADZKA 151/9, 60-477</Address>
-    <PhoneNumber>954-171-610</PhoneNumber>
+    <Name>Elżbieta</Name>
+    <Surname>Lewandowska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Friday, February 27, 2015</DateOfBirth>
+    <Profession>pracownik recepcji</Profession>
+    <City>Poznan</City>
+    <Address>AL. ARMII KRAJOWEJ 194/92, 75-169</Address>
+    <PhoneNumber>390-179-325</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>91</Id>
-    <Name>Robert</Name>
-    <Surname>Mazurek</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Thursday, January 12, 2017</DateOfBirth>
-    <Profession>menager</Profession>
-    <City>Bielsko Biala</City>
-    <Address>SKWER WŁADYSŁAWA BEŁZY 111/72, 24-237</Address>
-    <PhoneNumber>786-107-153</PhoneNumber>
+    <Name>Elżbieta</Name>
+    <Surname>Kaczmarek</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Thursday, September 27, 2007</DateOfBirth>
+    <Profession>lekarz</Profession>
+    <City>Olsztyn</City>
+    <Address>UL. ŚW. ANNY 63/36, 35-214</Address>
+    <PhoneNumber>814-484-639</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>92</Id>
-    <Name>Jacek</Name>
-    <Surname>Kozłowski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Wednesday, October 31, 2012</DateOfBirth>
-    <Profession>pracownik recepcji</Profession>
-    <City>Olawa</City>
-    <Address>UL. BABIMOJSKA 130/26, 20-167</Address>
-    <PhoneNumber>604-769-691</PhoneNumber>
+    <Name>Katarzyna</Name>
+    <Surname>Sikora</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Thursday, August 28, 1986</DateOfBirth>
+    <Profession>professor</Profession>
+    <City>Olsztyn</City>
+    <Address>UL. BAGATELA 119/50, 40-494</Address>
+    <PhoneNumber>887-472-692</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>93</Id>
-    <Name>Maria</Name>
-    <Surname>Szymczak</Surname>
+    <Name>Stanisława</Name>
+    <Surname>Kołodziej</Surname>
     <Gender>F</Gender>
-    <DateOfBirth>Sunday, September 11, 1988</DateOfBirth>
-    <Profession>menager</Profession>
-    <City>Olesnica</City>
-    <Address>UL. EDWARDA ABRAMOWSKIEGO 170/43, 17-479</Address>
-    <PhoneNumber>837-437-698</PhoneNumber>
+    <DateOfBirth>Tuesday, August 25, 2009</DateOfBirth>
+    <Profession>professor</Profession>
+    <City>Olsztyn</City>
+    <Address>UL. ANYŻOWA 49/55, 76-318</Address>
+    <PhoneNumber>738-394-366</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>94</Id>
-    <Name>Damian</Name>
-    <Surname>Lis</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Sunday, November 24, 2002</DateOfBirth>
-    <Profession>pracownik ofisu</Profession>
-    <City>Poznan</City>
-    <Address>UL. BALONOWA 17/1, 60-310</Address>
-    <PhoneNumber>477-788-628</PhoneNumber>
+    <Name>Jadwiga</Name>
+    <Surname>Chmielewska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Sunday, February 16, 2020</DateOfBirth>
+    <Profession>notariusz</Profession>
+    <City>Olesnica</City>
+    <Address>UL. ŚW. ANNY 56/74, 42-428</Address>
+    <PhoneNumber>333-136-367</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>95</Id>
-    <Name>Marek</Name>
-    <Surname>Jakubowski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Sunday, December 4, 2016</DateOfBirth>
-    <Profession>lekarz</Profession>
-    <City>Brzeg</City>
-    <Address>UL. ALIANCKA 183/44, 10-112</Address>
-    <PhoneNumber>380-958-803</PhoneNumber>
+    <Name>Irena</Name>
+    <Surname>Duda</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Saturday, September 27, 2008</DateOfBirth>
+    <Profession>barista</Profession>
+    <City>Boleslawiec</City>
+    <Address>UL. MARCELLEGO BACCIARELLEGO 160/91, 45-444</Address>
+    <PhoneNumber>572-184-518</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>96</Id>
-    <Name>Aneta</Name>
-    <Surname>Zając</Surname>
-    <Gender>F</Gender>
-    <DateOfBirth>Sunday, October 30, 1983</DateOfBirth>
-    <Profession>pracownik ofisu</Profession>
-    <City>Boleslawiec</City>
-    <Address>UL. BAŁTYCKA 35/90, 21-352</Address>
-    <PhoneNumber>617-914-779</PhoneNumber>
+    <Name>Rafał</Name>
+    <Surname>Malinowski</Surname>
+    <Gender>M</Gender>
+    <DateOfBirth>Monday, June 17, 1968</DateOfBirth>
+    <Profession>kelner</Profession>
+    <City>Olawa</City>
+    <Address>UL. BELGRADZKA 174/24, 33-107</Address>
+    <PhoneNumber>686-716-157</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>97</Id>
-    <Name>Jarosław</Name>
-    <Surname>Kwiatkowski</Surname>
+    <Name>Jan</Name>
+    <Surname>Czarnecki</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Monday, January 9, 1956</DateOfBirth>
+    <DateOfBirth>Friday, July 1, 1994</DateOfBirth>
     <Profession>nauczyciel</Profession>
     <City>Olsztyn</City>
-    <Address>UL. ARBUZOWA 5/72, 23-290</Address>
-    <PhoneNumber>812-250-578</PhoneNumber>
+    <Address>UL. 8 MAJA 59/47, 19-471</Address>
+    <PhoneNumber>588-571-464</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>98</Id>
-    <Name>Paweł</Name>
-    <Surname>Kucharski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Thursday, January 25, 1951</DateOfBirth>
-    <Profession>kelner</Profession>
-    <City>Poznan</City>
-    <Address>UL. AGRESTOWA 49/99, 50-138</Address>
-    <PhoneNumber>432-631-548</PhoneNumber>
+    <Name>Marianna</Name>
+    <Surname>Zalewska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Friday, June 19, 2015</DateOfBirth>
+    <Profession>notariusz</Profession>
+    <City>Olsztyn</City>
+    <Address>UL. ARRASOWA 182/30, 41-177</Address>
+    <PhoneNumber>540-516-949</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>99</Id>
-    <Name>Paweł</Name>
-    <Surname>Borkowski</Surname>
-    <Gender>M</Gender>
-    <DateOfBirth>Wednesday, October 3, 1945</DateOfBirth>
-    <Profession>weterynarz</Profession>
+    <Name>Kazimiera</Name>
+    <Surname>Wasilewska</Surname>
+    <Gender>F</Gender>
+    <DateOfBirth>Wednesday, August 28, 1957</DateOfBirth>
+    <Profession>programista</Profession>
     <City>Olawa</City>
-    <Address>UL. BABIOGÓRSKA 60/10, 35-378</Address>
-    <PhoneNumber>672-655-196</PhoneNumber>
+    <Address>UL. ALIANCKA 60/10, 44-258</Address>
+    <PhoneNumber>462-313-147</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
   <Patient>
     <Id>100</Id>
-    <Name>Wojciech</Name>
-    <Surname>Nowak</Surname>
+    <Name>Jan</Name>
+    <Surname>Kaczmarek</Surname>
     <Gender>M</Gender>
-    <DateOfBirth>Tuesday, January 11, 1972</DateOfBirth>
-    <Profession>straznik</Profession>
-    <City>Olawa</City>
-    <Address>UL. 8 MAJA 81/10, 10-324</Address>
-    <PhoneNumber>681-313-621</PhoneNumber>
+    <DateOfBirth>Sunday, February 26, 2012</DateOfBirth>
+    <Profession>pracownik recepcji</Profession>
+    <City>Bielsko Biala</City>
+    <Address>UL. HENRYKA ARCTOWSKIEGO 29/29, 22-174</Address>
+    <PhoneNumber>870-413-515</PhoneNumber>
     <PathForFiles></PathForFiles>
   </Patient>
 </Patients>

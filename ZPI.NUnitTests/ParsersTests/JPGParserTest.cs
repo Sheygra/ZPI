@@ -31,9 +31,7 @@ namespace ZPI.NUnitTests.ParsersTests
             Assert.IsTrue(values[1].Equals("Patient name - Jadwiga Jabłońska"));
             Assert.IsTrue(values[2].Equals("F kierowca Poznan "));
             Assert.IsTrue(values[3].Equals("Born Saturday, February 14, 1970"));
-            Assert.IsTrue(values[4].Equals("5/23/2020 12:00:00 AM"));
-
-            
+            Assert.IsTrue(values[4].Equals("5/23/2020 12:00:00 AM"));        
         }
     }
 }
