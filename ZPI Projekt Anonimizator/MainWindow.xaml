@@ -84,9 +84,9 @@
                                     <TextBlock Name="BrowseTextBlockPath" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="20"  Margin="90,0,10,8" FontSize="10" Visibility="Hidden"></TextBlock>
                                 </Grid>
                                 <Grid Grid.Row="2">
-                                    <Label FontWeight="Bold" FontSize="13" Margin="5,4,0,0">Choose algorithm</Label>
-                                    <Rectangle Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Fill="{DynamicResource MaterialDesignPaper}" Margin="10,28,52,10"></Rectangle>
-                                    <StackPanel Margin="10,40,10,10" >
+                                    <Label FontWeight="Bold" FontSize="13" Margin="5,2,0,0">Choose algorithm</Label>
+                                    <Rectangle Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Fill="{DynamicResource MaterialDesignPaper}" Margin="10,26,52,10"></Rectangle>
+                                    <StackPanel Margin="10,25,10,25" >
                                         <RadioButton Name="RButton1KAnoAlgorithm" Margin="0,5"  Foreground="White">
                                             <WrapPanel>
                                                 <TextBlock Text="k-anonimization" />
@@ -98,6 +98,8 @@
                                             </WrapPanel>
                                         </RadioButton>
                                     </StackPanel>
+                                    <Label FontWeight="Bold" FontSize="12" Margin="10,0,0,9" VerticalAlignment="Bottom" Width="25" HorizontalAlignment="Left">K =</Label>
+                                    <TextBox  Name="kValue" MaxLength="50" Width="150px" VerticalAlignment="Bottom"  MaxLines="1" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" />
                                 </Grid>
                                 <Grid Grid.Row="3">
                                     <Button Name="RunAlgButton" Content="Run algorithm" Click="RunAlgorithm_Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0,10,0" Height="44" Background="{StaticResource primaryCustomOrange}" BorderThickness="0" FontFamily="{DynamicResource MaterialDesignFont}"/>

@@ -101,14 +101,21 @@ namespace ZPI_Projekt_Anonimizator
             }
             else if (k_anonimization)
             {
-                promptUser("K-anonimization algoritm.");
+                //promptUser("K-anonimization algoritm.");
                 try
                 {
-                    var anonimizator = new Anonymization();
-                    var anonymized = anonimizator.AnonymizeData(patientDataGenerated, 7);
-
-                    XMLAfterAnonimizationGrid.DataContext = anonymized.DefaultView; //tutaj wynik anonimizacji
-                    XMLAfterAnonimizationGrid.Visibility = Visibility.Visible;
+                    int k = 0;
+                    var k_text = kValue.Text;
+                    Int32.TryParse(k_text, out k);
+                    kValue.Text = "";
+                    if (k > 2 && k < 21)
+                    {
+                        var anonimizator = new Anonymization();
+                        var anonymized = anonimizator.AnonymizeData(patientDataGenerated, k);
+                        XMLAfterAnonimizationGrid.DataContext = anonymized.DefaultView; //tutaj wynik anonimizacji
+                        XMLAfterAnonimizationGrid.Visibility = Visibility.Visible;
+                    }
+                    else promptUser("K has to be in range <3,10>");
                 }
                 catch(Exception ex)
                 {
@@ -117,7 +124,7 @@ namespace ZPI_Projekt_Anonimizator
             }
             else if(k_alfa_anonimization)
             {
-                promptUser("K-alfa-anonimization algoritm.");
+               // promptUser("K-alfa-anonimization algoritm.");
                 try
                 {
                  
