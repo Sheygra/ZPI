@@ -184,7 +184,7 @@
                         <RowDefinition Height="30"></RowDefinition>
                         <RowDefinition Height="30"></RowDefinition>
                         <RowDefinition Height="30"></RowDefinition>
-                        <RowDefinition Height="80"></RowDefinition>
+                        <RowDefinition Height="120"></RowDefinition>
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0">
                         <TextBlock x:Name="TextLine0" FontSize="12" FontWeight="Bold" Margin="5"></TextBlock>
@@ -202,7 +202,7 @@
                         <TextBlock x:Name="TextLine4" FontSize="12" FontWeight="Bold" Margin="5"></TextBlock>
                     </Grid>
                     <Grid Grid.Row="5">
-                        <TextBlock x:Name="TextLine5" FontSize="12" FontWeight="Bold" Margin="5" TextWrapping="Wrap"></TextBlock>
+                        <TextBlock x:Name="TextLine5" FontSize="12" FontWeight="Bold" Margin="5" TextWrapping="Wrap" ></TextBlock>
                     </Grid>
                 </Grid>
                 <Button Click="MetadataClose_Button_Click"  Foreground="Black" BorderBrush="Transparent" Background="{StaticResource primaryCustomOrange}" Width="60"  VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="30,10,10,10">X</Button>
