@@ -104,7 +104,10 @@ namespace ZPI_Projekt_Anonimizator
                 promptUser("K-anonimization algoritm.");
                 try
                 {
-                    XMLAfterAnonimizationGrid.DataContext = patientDataGenerated.DefaultView; //tutaj wynik anonimizacji
+                    var anonimizator = new Anonymization();
+                    var anonymized = anonimizator.AnonymizeData(patientDataGenerated, 7);
+
+                    XMLAfterAnonimizationGrid.DataContext = anonymized.DefaultView; //tutaj wynik anonimizacji
                     XMLAfterAnonimizationGrid.Visibility = Visibility.Visible;
                 }
                 catch(Exception ex)
@@ -117,8 +120,7 @@ namespace ZPI_Projekt_Anonimizator
                 promptUser("K-alfa-anonimization algoritm.");
                 try
                 {
-                    XMLAfterAnonimizationGrid.DataContext = patientDataGenerated.DefaultView; //tutaj wynik anonimizacji
-                    XMLAfterAnonimizationGrid.Visibility = Visibility.Visible;
+                 
                 }
                 catch (Exception ex)
                 {
