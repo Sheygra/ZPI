@@ -1,12 +1,16 @@
 ﻿Wroclaw
 Olawa
-Brzeg
 Jelenia Gora
-Wroclawek
-Bielsko Biala
-Olsztyn
-Lisia Gora
-Boleslawiec
-Opole
 Olesnica
+Boleslawiec
+Warszawa
+Radom
+Plock
+Bielsko Biala
+Katowice
+Opole
+Bytom
+Leszno
 Poznan
+Kalisz
+Konin

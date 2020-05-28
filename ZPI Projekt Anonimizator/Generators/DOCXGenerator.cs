@@ -17,9 +17,8 @@ namespace ZPI_Projekt_Anonimizator.Generators
             String finalPath = "";
 
             String patientDisease = "";
-            
-            Random random = new Random();
-            int rand = random.Next(5);
+
+            int rand = Convert.ToInt16(patientData.Id) % 5;
             try
             {
                 using (StreamReader sr = new StreamReader(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\Generators\Files\Diseases.txt"))

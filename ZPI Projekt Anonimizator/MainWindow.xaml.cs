@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
 using Microsoft.Win32;
+using ZPI_Projekt_Anonimizator.Algorithm;
 using ZPI_Projekt_Anonimizator.entity;
 using ZPI_Projekt_Anonimizator.Generators;
 
@@ -96,6 +97,7 @@ namespace ZPI_Projekt_Anonimizator
             if(patientDataGenerated == null || patientDataGenerated.Rows.Count == 0)
             {
                 promptUser("Patient data is empty.");
+
             }
             else if (k_anonimization)
             {

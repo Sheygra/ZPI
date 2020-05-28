@@ -171,3 +171,7 @@ C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp
 C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.csproj.CopyComplete
 C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.dll
 C:\Users\Artiom\Desktop\anonim\ZPI\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.pdb
+C:\Users\Michal\source\repos\ZPI2\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\Michal\source\repos\ZPI2\ZPI Projekt Anonimizator\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\Michal\source\repos\ZPI2\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\ZPI Projekt Anonimizator.csprojAssemblyReference.cache
+C:\Users\Michal\source\repos\ZPI2\ZPI Projekt Anonimizator\obj\Debug\netcoreapp3.1\App.baml

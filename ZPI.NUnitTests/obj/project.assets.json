@@ -7214,11 +7214,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Michal\\Source\\Repos\\ZPI2\\ZPI.NUnitTests\\ZPI.NUnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\Michal\\source\\repos\\ZPI2\\ZPI.NUnitTests\\ZPI.NUnitTests.csproj",
       "projectName": "ZPI.NUnitTests",
-      "projectPath": "C:\\Users\\Michal\\Source\\Repos\\ZPI2\\ZPI.NUnitTests\\ZPI.NUnitTests.csproj",
+      "projectPath": "C:\\Users\\Michal\\source\\repos\\ZPI2\\ZPI.NUnitTests\\ZPI.NUnitTests.csproj",
       "packagesPath": "C:\\Users\\Michal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Michal\\Source\\Repos\\ZPI2\\ZPI.NUnitTests\\obj\\",
+      "outputPath": "C:\\Users\\Michal\\source\\repos\\ZPI2\\ZPI.NUnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Michal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7234,8 +7234,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Michal\\Source\\Repos\\ZPI2\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
-              "projectPath": "C:\\Users\\Michal\\Source\\Repos\\ZPI2\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj"
+            "C:\\Users\\Michal\\source\\repos\\ZPI2\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
+              "projectPath": "C:\\Users\\Michal\\source\\repos\\ZPI2\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj"
             }
           }
         }
