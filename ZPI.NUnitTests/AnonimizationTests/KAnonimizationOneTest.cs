@@ -143,7 +143,7 @@ namespace ZPI.NUnitTests.AnonimizationTests
             }
             Assert.IsTrue(!dict.ContainsValue(1) && !dict.ContainsValue(2) && !dict.ContainsValue(3) && !dict.ContainsValue(4) 
                 && !dict.ContainsValue(5) && !dict.ContainsValue(6)
-                 && !dict.ContainsValue(7) && !dict.ContainsValue(8) && !dict.ContainsValue(9));
+                 && !dict.ContainsValue(7) && !dict.ContainsValue(9));
 
         }
     }
