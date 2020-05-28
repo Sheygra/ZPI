@@ -73,7 +73,7 @@ namespace ZPI_Projekt_Anonimizator.Generators
 
             foreach (Patient p in dataBase)
             {
-                if(Int32.Parse(p.Id) < 3)
+                if(Int32.Parse(p.Id) < 101)
                 {
                     string s = JPG_gen.generateDocument(p) + ";" + DICOM_gen.generateDocument(p) + ";" + DOCX_gen.generateDocument(p);
                     pathes.Add(s);

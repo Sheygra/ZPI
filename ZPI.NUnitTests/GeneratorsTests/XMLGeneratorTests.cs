@@ -22,10 +22,10 @@ namespace ZPI.NUnitTests
         [TestCase]
         public void CanBeCanseledBy_GenerateDocument_ReturnsNullValue()
         {
-            s = XML_gen.generateDocument("123", 100);
+            s = XML_gen.generateDocument("test100", 100);
             Assert.IsNotNull(s);
             Assert.IsTrue(s.Contains("xml"));
-            Assert.IsTrue(s.Contains("123"));
+            Assert.IsTrue(s.Contains("100"));
             Assert.IsTrue(s.Contains("resource"));
             Assert.IsTrue(s.Contains("XML_files"));
         }
