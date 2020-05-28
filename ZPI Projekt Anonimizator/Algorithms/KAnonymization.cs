@@ -244,7 +244,7 @@ public class KAnonymization
 			{
 				if (node.getNodes()[i].getCounter() < k)
 				{
-					node.getNodes()[i].setSign="*";
+					node.getNodes()[i].setSign('*');
 					node.setEnd(true);
 				}
 				else nodeStack.Push(node.getNodes()[i]);
