@@ -94,7 +94,7 @@
                                         </RadioButton>
                                         <RadioButton Name="RButton1KAlfaAnoAlgorithm" Margin="0,5" Foreground="White">
                                             <WrapPanel>
-                                                <TextBlock Text="K-anonimization (Lexicat tree)"/>
+                                                <TextBlock Text="K-anonimization (Reduction)"/>
                                             </WrapPanel>
                                         </RadioButton>
                                     </StackPanel>
