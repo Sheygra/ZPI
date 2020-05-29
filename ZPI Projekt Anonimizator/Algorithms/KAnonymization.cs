@@ -8,7 +8,6 @@ using System.Data;
 using System.Globalization;
 using System.Linq;
 using System.Diagnostics.Tracing;
-using Dicom;
 
 //Node of a Tree
 class Node
