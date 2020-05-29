@@ -217,7 +217,7 @@ public class KAnonymization
 						{
 							for (int j = 0; j < node.getNodes().Count; j++)
 							{
-								if (node.getNodes()[j].getSign() == data[k + 1])
+								if (node.getNodes()[j].getSign() == data[k + 1] && node.getNodes()[j].getCategory() == category)
 								{
 									j = node.getNodes().Count;
 									node = node.getNode(data[k + 1]);
