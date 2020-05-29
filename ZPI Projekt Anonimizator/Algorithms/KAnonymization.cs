@@ -286,7 +286,7 @@ public class KAnonymization
 		DataTable patients = new DataTable();
 		patients.Columns.Add("Id", typeof(int));
 		patients.Columns.Add("Name", typeof(String));
-		patients.Columns.Add("SurName", typeof(String));
+		patients.Columns.Add("Surname", typeof(String));
 		patients.Columns.Add("Gender", typeof(String));
 		patients.Columns.Add("DateOfBirth", typeof(String));
 		patients.Columns.Add("Profession", typeof(String));
@@ -324,14 +324,13 @@ public class KAnonymization
 			iterator = 0;
 			node = root;
 			row["Name"] = table[0].Trim('*')+"*";
-			row["SurName"] = table[1].Trim('*') + "*";
+			row["Surname"] = table[1].Trim('*') + "*";
 			row["Gender"] = table[2];
 			row["DateOfBirth"] = table[3].Trim('*') + "*";
 			row["Profession"] = table[4].Trim('*') + "*";
 			row["City"] = table[5].Trim('*') + "*";
 			row["Address"] = table[6].Trim('*') + "*";
 			row["PhoneNumber"] = table[7].Trim('*') + "*";
-			Console.WriteLine(table[0]);
 			
 			s = table[table.Length-1].Split(";");
 			row["Id"] = int.Parse(s[0]);
