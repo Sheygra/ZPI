@@ -359,9 +359,9 @@ public class KAnonymization
 			row["PathFile"] = cleared[9];
 			if (patients.Rows.Count < 100)
 			{
-				Patient patient = new Patient(cleared[0], cleared[1], cleared[2], cleared[8], cleared[7], cleared[2], cleared[5],
+				Patient patient = new Patient(cleared[0], cleared[1], cleared[2], cleared[8], cleared[7], table[2], cleared[5],
 				cleared[6], cleared[4]);
-				row["PathFile"] = DOCXGen.generateDocument(patient) + ";" + JPGGen.generateDocument(patient) + ";" + DICOMGen.generateDocument(patient);
+				row["PathFile"] = JPGGen.generateDocument(p) + ";" + DICOMGen.generateDocument(p) + ";" + DOCXGen.generateDocument(p);
 			}
 			table = new string[patients.Columns.Count - 1];
 			cleared = new string[patients.Columns.Count];

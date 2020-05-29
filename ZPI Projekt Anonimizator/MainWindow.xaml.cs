@@ -289,9 +289,12 @@ namespace ZPI_Projekt_Anonimizator
                 var links = row["PathForFiles"].ToString().Split(";");
                 switch (button.Name)
                 {
-                    case "BtnJPG": showJPGMetadata(links[0]); break;
-                    case "BtnDICOM": showDICOMMetadata(links[1]); break;
-                    case "BtnDOCX": showDOCXData(links[2]); break;
+                    case "BtnJPG":
+                    case "BtnJPG2": showJPGMetadata(links[0]); break;
+                    case "BtnDICOM":
+                    case "BtnDICOM2": showDICOMMetadata(links[1]); break;
+                    case "BtnDOCX":
+                    case "BtnDOCX2": showDOCXData(links[2]); break;
                     default: promptUser("An error ocurred, no file can be opened."); break;
                 }
             }
