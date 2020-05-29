@@ -189,8 +189,11 @@ namespace ZPI_Projekt_Anonimizator
                         var anonimizator = new KAnonymization();
                         anonimizator.add(patientDataGenerated, k);
                         var anonymized = anonimizator.normalize();
+
                         XMLAfterAnonimizationGrid.DataContext = anonymized.DefaultView;
                         XMLAfterAnonimizationGrid.Visibility = Visibility.Visible;
+
+
                     }
                     else promptUser("K has to be in range <3,20>");
                 }
@@ -198,6 +201,7 @@ namespace ZPI_Projekt_Anonimizator
                 {
                     promptUser("Algoritm execution resulted in an error.");
                 }
+
             }
             else
             {

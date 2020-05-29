@@ -296,7 +296,7 @@ public class KAnonymization
 		patients.Columns.Add("City", typeof(String));
 		patients.Columns.Add("Address", typeof(String));
 		patients.Columns.Add("PhoneNumber", typeof(String));
-		patients.Columns.Add("PathFile", typeof(String));
+		patients.Columns.Add("PathForFiles", typeof(String));
 		string[] table = new string[patients.Columns.Count - 1];
 		string[] cleared = new string[patients.Columns.Count];
 		string[] s = null;
@@ -356,21 +356,29 @@ public class KAnonymization
 			row["City"] = cleared[6];
 			row["Address"] = cleared[7];
 			row["PhoneNumber"] = cleared[8];
-			row["PathFile"] = cleared[9];
+			row["PathForFiles"] = cleared[9];
 			if (patients.Rows.Count < 100)
 			{
-				Patient patient = new Patient(cleared[0], cleared[1], cleared[2], cleared[8], cleared[7], table[2], cleared[5],
+				string sex = "M";
+				if (table[2].Equals('K'))
+				{
+					sex = "F";
+				}
+				Patient patient = new Patient(cleared[0], cleared[1], cleared[2], cleared[8], cleared[7], sex, cleared[5],
 				cleared[6], cleared[4]);
-				row["PathFile"] = JPGGen.generateDocument(p) + ";" + DICOMGen.generateDocument(p) + ";" + DOCXGen.generateDocument(p);
+				row["PathForFiles"] = JPGGen.generateDocument(patient) + ";" + DICOMGen.generateDocument(patient) + ";" + DOCXGen.generateDocument(patient);
 			}
 			table = new string[patients.Columns.Count - 1];
 			cleared = new string[patients.Columns.Count];
 
 			s = null;
+
+
 			patients.Rows.Add(row);
+
 		}
 		patients.DefaultView.Sort = "Id";
-
+		
 		return patients;
 	}
 
