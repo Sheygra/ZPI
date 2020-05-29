@@ -125,9 +125,21 @@ namespace ZPI_Projekt_Anonimizator
             {
                 try
                 {
-                 
+                    int k = 0;
+                    var k_text = kValue.Text;
+                    Int32.TryParse(k_text, out k);
+                    kValue.Text = "";
+                    if (k > 2 && k < 21)
+                    {
+                        var anonimizator = new KAnonymization();
+                        anonimizator.add(patientDataGenerated, k);
+                        var anonymized = anonimizator.normalize();
+                        XMLAfterAnonimizationGrid.DataContext = anonymized.DefaultView;
+                        XMLAfterAnonimizationGrid.Visibility = Visibility.Visible;
+                    }
+                    else promptUser("K has to be in range <3,20>");
                 }
-                catch (Exception ex)
+                catch(Exception ex)
                 {
                     promptUser("Algoritm execution resulted in an error.");
                 }

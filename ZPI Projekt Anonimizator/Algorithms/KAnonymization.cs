@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ZPI_Projekt_Anonimizator.entity;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Collections;
@@ -6,8 +7,10 @@ using System.Security.Permissions;
 using System.Data;
 using System.Globalization;
 using System.Linq;
-using ZPI_Projekt_Anonimizator.entity;
+using System.Diagnostics.Tracing;
+using Dicom;
 
+//Node of a Tree
 class Node
 {
 	List<Node> nodes = new List<Node>(0);
@@ -16,6 +19,7 @@ class Node
 	int counter;
 	bool end;
 	int category;
+	Stack<string> stack = null;
 
 	public Node()
 	{
@@ -142,8 +146,28 @@ class Node
 	{
 		return this.category;
 	}
+
+	public void addToStack(string info)
+	{
+		if(stack == null)
+		{
+			stack = new Stack<string>();
+		}
+		stack.Push(info);
+	}
+
+	public string getFromStack()
+	{
+		return stack.Pop();
+	}
+
+	public int stackNull()
+	{
+		return stack.Count;
+	}
 }
 
+//Tree for KAnonymization
 public class KAnonymization
 {
 	private Node root;
@@ -166,8 +190,8 @@ public class KAnonymization
 	}
 
 
-
-	public void add(DataTable patients)
+	//Addind data to the tree for DataTable
+	public void add(DataTable patients, int K)
 	{
 		string data = "";
 		int category = 0;
@@ -175,21 +199,21 @@ public class KAnonymization
 		bool check = false;
 		for (int i = 0; i < patients.Rows.Count; i++)
 		{
-			foreach (string s in patients.Rows[i].ItemArray)
+			Console.WriteLine(i);
+			for (int j = 1; j < patients.Columns.Count - 1; j++)
 			{
-				data += ";" + s;
+				data += ";" + patients.Rows[i].ItemArray[j];
 			}
 			category = 0;
-			slowa++;
+			root.CounterPlusOne();
 			node = root;
 			check = false;
-			while (data.Length > 8)
+			while (data.Length > patients.Columns.Count-2)
 			{
 				for (int k = 0; k < data.Length - 1; k++)
 				{
 					if (data[k] == ';')
 					{
-						category++;
 						if ((!data[k + 1].Equals(';')))
 						{
 							for (int j = 0; j < node.getNodes().Count; j++)
@@ -213,16 +237,21 @@ public class KAnonymization
 							check = false;
 							data = data.Remove(k + 1, 1);
 						}
+						category++;
 					}
 				}
 				category = 0;
 			}
 			node.setEnd(true);
+			Console.WriteLine(patients.Rows[i].ItemArray[0] + ";" + patients.Rows[i].ItemArray[4]);
+			node.addToStack(patients.Rows[i].ItemArray[0]+";"+patients.Rows[i].ItemArray[4]);
 			data = "";
 		}
+		k_anonymization(K);
 	}
 
-	public void k_anonymization(int k)
+	//Anonymization of the tree
+	private void k_anonymization(int k)
 	{
 		Node node = root;
 
@@ -245,33 +274,86 @@ public class KAnonymization
 				if (node.getNodes()[i].getCounter() < k)
 				{
 					node.getNodes()[i].setSign('*');
-					node.setEnd(true);
+					nodeStack.Push(node.getNodes()[i]);
 				}
 				else nodeStack.Push(node.getNodes()[i]);
 			}
 		}
 	}
 
-	public Patient normalize(Patient patient)
+	//Getting data back into DataTable
+	public DataTable normalize()
 	{
+		DataTable patients = new DataTable();
+		patients.Columns.Add("Id", typeof(int));
+		patients.Columns.Add("Name", typeof(String));
+		patients.Columns.Add("SurName", typeof(String));
+		patients.Columns.Add("Gender", typeof(String));
+		patients.Columns.Add("DateOfBirth", typeof(String));
+		patients.Columns.Add("Profession", typeof(String));
+		patients.Columns.Add("City", typeof(String));
+		patients.Columns.Add("Address", typeof(String));
+		patients.Columns.Add("PhoneNumber", typeof(String));
+		patients.Columns.Add("PathFile", typeof(String));
+		string[] table = new string[patients.Columns.Count-1];
+		string[] s = null;
 		Node node = root;
-		while (node.getNodes() != null)
+		int iterator = 0;
+		while (root.getCounter()>0)
 		{
-			for (int i = 0; i < node.getNodes().Count; i++)
+			var row = patients.NewRow();
+			do
 			{
-
-			}
+				if (node.getNodes()[iterator].getCounter() > 0)
+				{
+					node.CounterMinusOne();
+					node = node.getNodes()[iterator];
+					int categ = node.getCategory();
+					table[categ] += node.getSign();
+					iterator = 0;
+					if (node.isEnd())
+					{
+						node.CounterMinusOne();
+						table[table.Length-1] = node.getFromStack();
+					}
+				}
+				else
+				{
+					iterator++;
+				}
+			} while (!node.isEnd());
+			iterator = 0;
+			node = root;
+			row["Name"] = table[0].Trim('*')+"*";
+			row["SurName"] = table[1].Trim('*') + "*";
+			row["Gender"] = table[2];
+			row["DateOfBirth"] = table[3].Trim('*') + "*";
+			row["Profession"] = table[4].Trim('*') + "*";
+			row["City"] = table[5].Trim('*') + "*";
+			row["Address"] = table[6].Trim('*') + "*";
+			row["PhoneNumber"] = table[7].Trim('*') + "*";
+			Console.WriteLine(table[0]);
+			
+			s = table[table.Length-1].Split(";");
+			row["Id"] = int.Parse(s[0]);
+			row["PathFile"] = s[1];
+			table = new string[patients.Columns.Count-1];
+			s = null;
+			patients.Rows.Add(row);
 		}
-		return patient;
+		patients.DefaultView.Sort = "Id";
+
+		return patients;
 	}
 
 	private void Inor(Node node)
 	{
 		if (node == null)
 		{
+			
 			return;
 		}
-		Console.WriteLine(node.getSign() + " " + node.getCategory() + " " + node.isEnd() + node.getCounter());
+		Console.WriteLine(node.getSign() + " "+ node.getCounter());
 		for (int i = 0; i < node.getNodes().Count; i++)
 		{
 			Inor(node.getNodes()[i]);
