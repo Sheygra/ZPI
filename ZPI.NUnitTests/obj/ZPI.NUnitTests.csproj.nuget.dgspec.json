@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS UX410U\\Source\\Repos\\ZPI6\\ZPI.NUnitTests\\ZPI.NUnitTests.csproj": {}
+    "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI.NUnitTests\\ZPI.NUnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS UX410U\\Source\\Repos\\ZPI6\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
+    "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS UX410U\\Source\\Repos\\ZPI6\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
+        "projectUniqueName": "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
         "projectName": "ZPI Projekt Anonimizator",
-        "projectPath": "C:\\Users\\ASUS UX410U\\Source\\Repos\\ZPI6\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
-        "packagesPath": "C:\\Users\\ASUS UX410U\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS UX410U\\Source\\Repos\\ZPI6\\ZPI Projekt Anonimizator\\obj\\",
+        "projectPath": "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj",
+        "packagesPath": "C:\\Users\\Artiom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ASUS UX410U\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Artiom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,24 +72,24 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ASUS UX410U\\Source\\Repos\\ZPI6\\ZPI.NUnitTests\\ZPI.NUnitTests.csproj": {
+    "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI.NUnitTests\\ZPI.NUnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS UX410U\\Source\\Repos\\ZPI6\\ZPI.NUnitTests\\ZPI.NUnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI.NUnitTests\\ZPI.NUnitTests.csproj",
         "projectName": "ZPI.NUnitTests",
-        "projectPath": "C:\\Users\\ASUS UX410U\\Source\\Repos\\ZPI6\\ZPI.NUnitTests\\ZPI.NUnitTests.csproj",
-        "packagesPath": "C:\\Users\\ASUS UX410U\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS UX410U\\Source\\Repos\\ZPI6\\ZPI.NUnitTests\\obj\\",
+        "projectPath": "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI.NUnitTests\\ZPI.NUnitTests.csproj",
+        "packagesPath": "C:\\Users\\Artiom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI.NUnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ASUS UX410U\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Artiom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,8 +102,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ASUS UX410U\\Source\\Repos\\ZPI6\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
-                "projectPath": "C:\\Users\\ASUS UX410U\\Source\\Repos\\ZPI6\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj"
+              "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj": {
+                "projectPath": "C:\\Users\\Artiom\\Desktop\\anonimizator\\ZPI\\ZPI Projekt Anonimizator\\ZPI Projekt Anonimizator.csproj"
               }
             }
           }
@@ -148,7 +148,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
