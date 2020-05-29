@@ -419,9 +419,10 @@ namespace ZPI_Projekt_Anonimizator.Algorithm
 
             DataTable newData = originalData.Copy();
 
-            for(int i=0; i< representative.Count(); i++) {
+            for (int i = 0; i < representative.Count(); i++)
+            {
 
-                foreach(int id in originalIndexes[i])
+                foreach (int id in originalIndexes[i])
                 {
                     newData.Rows[id].BeginEdit();
                     newData.Rows[id][1] = representative[i].Item1;
@@ -438,22 +439,5 @@ namespace ZPI_Projekt_Anonimizator.Algorithm
 
             return newData;
         }
-
-
-
-
-        public String Test()
-        {
-            XMLParser parser = new XMLParser();
-            DataTable testowyplik = parser.parseDocument(@"C:\Users\Michal\source\repos\ZPI2\ZPI Projekt Anonimizator\resource\XML_files\mojtest2.xml");
-            
-            return AnonymizeData(testowyplik, 9).Rows.Count+"";
-        }
-
-
-
-
-
-
     }
 }

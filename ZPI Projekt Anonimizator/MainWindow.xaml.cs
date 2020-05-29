@@ -1,14 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
+using System.Xml.Linq;
 using Microsoft.Win32;
 using ZPI_Projekt_Anonimizator.Algorithm;
 using ZPI_Projekt_Anonimizator.entity;
 using ZPI_Projekt_Anonimizator.Generators;
+using System.Linq;
+
+
 
 namespace ZPI_Projekt_Anonimizator
 {
@@ -111,6 +116,56 @@ namespace ZPI_Projekt_Anonimizator
                     {
                         var anonimizator = new Anonymization();
                         var anonymized = anonimizator.AnonymizeData(patientDataGenerated, k);
+
+                        DocumentGenerator JPG_gen = new JPGGenerator();
+                        DocumentGenerator DICOM_gen = new DICOMGenerator();
+                        DocumentGenerator DOCX_gen = new DOCXGenerator();
+                        List<ZPI_Projekt_Anonimizator.entity.Patient> dataBasePatients = new List<ZPI_Projekt_Anonimizator.entity.Patient>();
+                        List<string> pathes = new List<string>();
+
+
+                        foreach (DataRow row in anonymized.Rows)
+                        {
+                            var values = row.ItemArray;
+                            Patient p = new Patient(values[0] + "", values[1] + "", values[2] + "", values[8] + "", values[7] + "", values[3] + "", values[5] + "", values[6] + "", values[4] + "");
+                            dataBasePatients.Add(p);
+
+                            if (!values[9].Equals(""))
+                            {
+                                string s = JPG_gen.generateDocument(p) + ";" + DICOM_gen.generateDocument(p) + ";" + DOCX_gen.generateDocument(p);
+                                row.BeginEdit();
+                                row[9] = s;
+                                pathes.Add(s);
+                            }
+                            else
+                            {
+                                pathes.Add("");
+                            }
+                        }
+                        anonymized.AcceptChanges();
+
+
+                        XDocument xdoc = new XDocument(
+                        new XDeclaration("1.0", "utf-8", "yes"),
+
+                        new XElement("Patients",
+                        from patient in dataBasePatients
+                            select
+                                new XElement("Patient", new XElement("Id", patient.Id),
+                                new XElement("Name", patient.Name),
+                                new XElement("Surname", patient.SurName),
+                                new XElement("Gender", patient.Gender),
+                                new XElement("DateOfBirth", patient.DateOfBirth),
+                                new XElement("Profession", patient.Profession),
+                                new XElement("City", patient.City),
+                                new XElement("Address", patient.Address),
+                                new XElement("PhoneNumber", patient.PhoneNumber),
+                                new XElement("PathForFiles", pathes[Int32.Parse(patient.Id) - 1])
+                        )));
+
+                        string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName+@"/resource/XML_files/"+ "anonymized_data" + ".xml";
+                        xdoc.Save(path);
+                        
                         XMLAfterAnonimizationGrid.DataContext = anonymized.DefaultView;
                         XMLAfterAnonimizationGrid.Visibility = Visibility.Visible;
                     }

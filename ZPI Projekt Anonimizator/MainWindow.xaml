@@ -89,12 +89,12 @@
                                     <StackPanel Margin="10,25,10,25" >
                                         <RadioButton Name="RButton1KAnoAlgorithm" Margin="0,5"  Foreground="White">
                                             <WrapPanel>
-                                                <TextBlock Text="k-anonimization" />
+                                                <TextBlock Text="K-anonimization (Datafly)" />
                                             </WrapPanel>
                                         </RadioButton>
                                         <RadioButton Name="RButton1KAlfaAnoAlgorithm" Margin="0,5" Foreground="White">
                                             <WrapPanel>
-                                                <TextBlock Text="(k, alfa)-anonimization"/>
+                                                <TextBlock Text="K-anonimization (Lexicat tree)"/>
                                             </WrapPanel>
                                         </RadioButton>
                                     </StackPanel>
@@ -129,6 +129,7 @@
                             <DataGridTextColumn Header="Date of birth" Binding="{Binding Path=DateOfBirth}" FontSize="10"></DataGridTextColumn>
                             <DataGridTextColumn Header="Profession" Binding="{Binding Path=Profession}" FontSize="10"></DataGridTextColumn>
                             <DataGridTextColumn Header="Address" Binding="{Binding Path=Address}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="City" Binding="{Binding Path=City}" FontSize="10"></DataGridTextColumn>
                             <DataGridTextColumn Header="Phone" Binding="{Binding Path=PhoneNumber}" FontSize="10"></DataGridTextColumn>
                             <DataGridTextColumn Header="PathForFiles" Binding="{Binding Path=PathForFiles}" FontSize="10" Visibility="Hidden"></DataGridTextColumn>
                             <DataGridTemplateColumn Header="Documents">
@@ -164,6 +165,7 @@
                             <DataGridTextColumn Header="Date of birth" Binding="{Binding Path=DateOfBirth}" FontSize="10"></DataGridTextColumn>
                             <DataGridTextColumn Header="Profession" Binding="{Binding Path=Profession}" FontSize="10"></DataGridTextColumn>
                             <DataGridTextColumn Header="Address" Binding="{Binding Path=Address}" FontSize="10"></DataGridTextColumn>
+                            <DataGridTextColumn Header="City" Binding="{Binding Path=City}" FontSize="10"></DataGridTextColumn>
                             <DataGridTextColumn Header="Phone" Binding="{Binding Path=PhoneNumber}" FontSize="10"></DataGridTextColumn>
                             <DataGridTemplateColumn Header="Documents">
                                 <DataGridTemplateColumn.CellTemplate>
