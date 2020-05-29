@@ -8,6 +8,7 @@ using System.Data;
 using System.Globalization;
 using System.Linq;
 using System.Diagnostics.Tracing;
+using ZPI_Projekt_Anonimizator.Generators;
 
 //Node of a Tree
 class Node
@@ -31,20 +32,20 @@ class Node
 	public Node(char sign)
 	{
 		this.sign = sign;
-		this.counter++;
+		this.counter = 1;
 	}
 
 	public Node(char sign, Node parent)
 	{
 		this.sign = sign;
-		this.counter++;
+		this.counter = 1;
 		this.parent = parent;
 	}
 
 	public Node(char sign, Node parent, int category)
 	{
 		this.sign = sign;
-		this.counter++;
+		this.counter = 1;
 		this.parent = parent;
 		this.category = category;
 	}
@@ -148,7 +149,7 @@ class Node
 
 	public void addToStack(string info)
 	{
-		if(stack == null)
+		if (stack == null)
 		{
 			stack = new Stack<string>();
 		}
@@ -207,7 +208,7 @@ public class KAnonymization
 			root.CounterPlusOne();
 			node = root;
 			check = false;
-			while (data.Length > patients.Columns.Count-2)
+			while (data.Length > patients.Columns.Count - 2)
 			{
 				for (int k = 0; k < data.Length - 1; k++)
 				{
@@ -243,7 +244,7 @@ public class KAnonymization
 			}
 			node.setEnd(true);
 			Console.WriteLine(patients.Rows[i].ItemArray[0] + ";" + patients.Rows[i].ItemArray[4]);
-			node.addToStack(patients.Rows[i].ItemArray[0]+";"+patients.Rows[i].ItemArray[4]);
+			node.addToStack(patients.Rows[i].ItemArray[0] + ";" + patients.Rows[i].ItemArray[4]);
 			data = "";
 		}
 		k_anonymization(K);
@@ -273,7 +274,6 @@ public class KAnonymization
 				if (node.getNodes()[i].getCounter() < k)
 				{
 					node.getNodes()[i].setSign('*');
-					nodeStack.Push(node.getNodes()[i]);
 				}
 				else nodeStack.Push(node.getNodes()[i]);
 			}
@@ -283,6 +283,9 @@ public class KAnonymization
 	//Getting data back into DataTable
 	public DataTable normalize()
 	{
+		//DocumentGenerator DOCXGen = new DOCXGenerator();
+		//DocumentGenerator JPGGen = new JPGGenerator();
+		//DocumentGenerator DICOMGen = new DICOMGenerator();
 		DataTable patients = new DataTable();
 		patients.Columns.Add("Id", typeof(int));
 		patients.Columns.Add("Name", typeof(String));
@@ -294,11 +297,13 @@ public class KAnonymization
 		patients.Columns.Add("Address", typeof(String));
 		patients.Columns.Add("PhoneNumber", typeof(String));
 		patients.Columns.Add("PathFile", typeof(String));
-		string[] table = new string[patients.Columns.Count-1];
+		string[] table = new string[patients.Columns.Count - 1];
+		string[] cleared = new string[patients.Columns.Count];
 		string[] s = null;
+		bool check = true;
 		Node node = root;
 		int iterator = 0;
-		while (root.getCounter()>0)
+		while (root.getCounter() > 0)
 		{
 			var row = patients.NewRow();
 			do
@@ -308,12 +313,23 @@ public class KAnonymization
 					node.CounterMinusOne();
 					node = node.getNodes()[iterator];
 					int categ = node.getCategory();
-					table[categ] += node.getSign();
+					if (check)
+					{
+						table[categ] += node.getSign();
+					}
+					else
+					{
+						table[categ] += "*";
+					}
 					iterator = 0;
 					if (node.isEnd())
 					{
 						node.CounterMinusOne();
-						table[table.Length-1] = node.getFromStack();
+						table[table.Length - 1] = node.getFromStack();
+					}
+					if (node.getSign().Equals('*'))
+					{
+						check = false;
 					}
 				}
 				else
@@ -321,21 +337,33 @@ public class KAnonymization
 					iterator++;
 				}
 			} while (!node.isEnd());
+			check = true;
 			iterator = 0;
 			node = root;
-			row["Name"] = table[0].Trim('*')+"*";
-			row["Surname"] = table[1].Trim('*') + "*";
+			s = table[table.Length - 1].Split(";");
+			cleared[0] = s[0];
+			cleared[9] = s[1];
+			for (int i = 1; i < cleared.Length - 1; i++)
+			{
+				cleared[i] = table[i - 1].Trim('*') + "*";
+			}
+			row["Id"] = int.Parse(cleared[0]);
+			row["Name"] = cleared[1];
+			row["Surname"] = cleared[2];
 			row["Gender"] = table[2];
-			row["DateOfBirth"] = table[3].Trim('*') + "*";
-			row["Profession"] = table[4].Trim('*') + "*";
-			row["City"] = table[5].Trim('*') + "*";
-			row["Address"] = table[6].Trim('*') + "*";
-			row["PhoneNumber"] = table[7].Trim('*') + "*";
-			
-			s = table[table.Length-1].Split(";");
-			row["Id"] = int.Parse(s[0]);
-			row["PathFile"] = s[1];
-			table = new string[patients.Columns.Count-1];
+			row["DateOfBirth"] = cleared[4];
+			row["Profession"] = cleared[5];
+			row["City"] = cleared[6];
+			row["Address"] = cleared[7];
+			row["PhoneNumber"] = cleared[8];
+			row["PathFile"] = cleared[9];
+			Console.WriteLine(cleared[0] + " " + cleared[1] + " " + cleared[2] + " " + cleared[3] + " " + cleared[4]);
+			//Patient patient = new Patient(trimmed[0], trimmed[1], trimmed[2], trimmed[8], trimmed[7], table[2], trimmed[5],
+			//trimmed[6], trimmed[4]);
+			//row["PathFile"] = DOCXGen.generateDocument(patient) + ";" + JPGGen.generateDocument(patient) + ";" + DICOMGen.generateDocument(patient);
+			table = new string[patients.Columns.Count - 1];
+			cleared = new string[patients.Columns.Count];
+
 			s = null;
 			patients.Rows.Add(row);
 		}
@@ -348,10 +376,10 @@ public class KAnonymization
 	{
 		if (node == null)
 		{
-			
+
 			return;
 		}
-		Console.WriteLine(node.getSign() + " "+ node.getCounter());
+		Console.WriteLine(node.getSign() + " " + node.getCounter());
 		for (int i = 0; i < node.getNodes().Count; i++)
 		{
 			Inor(node.getNodes()[i]);
