@@ -283,9 +283,9 @@ public class KAnonymization
 	//Getting data back into DataTable
 	public DataTable normalize()
 	{
-		//DocumentGenerator DOCXGen = new DOCXGenerator();
-		//DocumentGenerator JPGGen = new JPGGenerator();
-		//DocumentGenerator DICOMGen = new DICOMGenerator();
+		DocumentGenerator DOCXGen = new DOCXGenerator();
+		DocumentGenerator JPGGen = new JPGGenerator();
+		DocumentGenerator DICOMGen = new DICOMGenerator();
 		DataTable patients = new DataTable();
 		patients.Columns.Add("Id", typeof(int));
 		patients.Columns.Add("Name", typeof(String));
@@ -357,10 +357,12 @@ public class KAnonymization
 			row["Address"] = cleared[7];
 			row["PhoneNumber"] = cleared[8];
 			row["PathFile"] = cleared[9];
-			Console.WriteLine(cleared[0] + " " + cleared[1] + " " + cleared[2] + " " + cleared[3] + " " + cleared[4]);
-			//Patient patient = new Patient(trimmed[0], trimmed[1], trimmed[2], trimmed[8], trimmed[7], table[2], trimmed[5],
-			//trimmed[6], trimmed[4]);
-			//row["PathFile"] = DOCXGen.generateDocument(patient) + ";" + JPGGen.generateDocument(patient) + ";" + DICOMGen.generateDocument(patient);
+			if (patients.Rows.Count < 100)
+			{
+				Patient patient = new Patient(cleared[0], cleared[1], cleared[2], cleared[8], cleared[7], cleared[2], cleared[5],
+				cleared[6], cleared[4]);
+				row["PathFile"] = DOCXGen.generateDocument(patient) + ";" + JPGGen.generateDocument(patient) + ";" + DICOMGen.generateDocument(patient);
+			}
 			table = new string[patients.Columns.Count - 1];
 			cleared = new string[patients.Columns.Count];
 
